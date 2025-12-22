@@ -83,6 +83,8 @@
         android:layout_marginStart="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="?attr/actionModeCloseDrawable"
-        tools:layout_editor_absoluteY="34dp" />
+        android:onClick="back"
+        tools:layout_editor_absoluteY="34dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
