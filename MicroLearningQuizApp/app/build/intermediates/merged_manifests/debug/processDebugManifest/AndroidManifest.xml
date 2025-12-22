@@ -28,6 +28,12 @@
         android:testOnly="true"
         android:theme="@style/Theme.MicroLearningQuizApp" >
         <activity
+            android:name="com.example.microlearningquizapp.activity_admin"
+            android:exported="false" />
+        <activity
+            android:name="com.example.microlearningquizapp.AdminActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.microlearningquizapp.MainActivity"
             android:exported="true"
             android:theme="@style/Theme.MicroLearningQuizApp.Splash" >

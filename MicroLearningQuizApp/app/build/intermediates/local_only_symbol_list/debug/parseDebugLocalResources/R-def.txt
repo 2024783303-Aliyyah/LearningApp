@@ -2,6 +2,7 @@ R_DEF: Internal format may change without notice
 local
 color black
 color white
+drawable back_svgrepo_com
 drawable children
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -9,12 +10,16 @@ drawable logo
 drawable progress_bar
 drawable teacher
 drawable teacher2
+id imageButton7
 id imgChildren
 id imgLogo
 id main
 id progressBar
+id textView
 id tvTitle
+layout activity_admin
 layout activity_splash
+layout learningmodules
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name

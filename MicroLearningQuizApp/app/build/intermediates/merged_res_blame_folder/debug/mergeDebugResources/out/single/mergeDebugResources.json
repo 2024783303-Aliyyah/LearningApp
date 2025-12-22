@@ -1,13 +1,5 @@
 [
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/ic_launcher_background.xml"
-    },
-    {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_logo.jpg.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/logo.jpg"
-    },
-    {
         "merged": "com.example.microlearningquizapp-debug-37:/mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "com.example.microlearningquizapp-main-39:/mipmap-hdpi/ic_launcher_round.webp"
     },
@@ -20,36 +12,16 @@
         "source": "com.example.microlearningquizapp-main-39:/layout/activity_splash.xml"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.example.microlearningquizapp-main-39:/mipmap-hdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_children.jpg.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/children.jpg"
-    },
-    {
         "merged": "com.example.microlearningquizapp-debug-37:/drawable_ic_launcher_foreground.xml.flat",
         "source": "com.example.microlearningquizapp-main-39:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.microlearningquizapp-main-39:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "com.example.microlearningquizapp-debug-37:/layout_activity_admin.xml.flat",
+        "source": "com.example.microlearningquizapp-main-39:/layout/activity_admin.xml"
     },
     {
         "merged": "com.example.microlearningquizapp-debug-37:/mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "com.example.microlearningquizapp-main-39:/mipmap-mdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_progress_bar.xml.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/progress_bar.xml"
-    },
-    {
-        "merged": "com.example.microlearningquizapp-debug-37:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.microlearningquizapp-main-39:/mipmap-xxhdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_teacher.jpg.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/teacher.jpg"
     },
     {
         "merged": "com.example.microlearningquizapp-debug-37:/drawable_teacher2.jpg.flat",
@@ -62,10 +34,6 @@
     {
         "merged": "com.example.microlearningquizapp-debug-37:/xml_backup_rules.xml.flat",
         "source": "com.example.microlearningquizapp-main-39:/xml/backup_rules.xml"
-    },
-    {
-        "merged": "com.example.microlearningquizapp-debug-37:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.example.microlearningquizapp-main-39:/mipmap-mdpi/ic_launcher.webp"
     },
     {
         "merged": "com.example.microlearningquizapp-debug-37:/xml_data_extraction_rules.xml.flat",
@@ -82,6 +50,50 @@
     {
         "merged": "com.example.microlearningquizapp-debug-37:/mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "com.example.microlearningquizapp-main-39:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.microlearningquizapp-debug-37:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.microlearningquizapp-main-39:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.microlearningquizapp-debug-37:/drawable_logo.jpg.flat",
+        "source": "com.example.microlearningquizapp-main-39:/drawable/logo.jpg"
+    },
+    {
+        "merged": "com.example.microlearningquizapp-debug-37:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.microlearningquizapp-main-39:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.microlearningquizapp-debug-37:/drawable_children.jpg.flat",
+        "source": "com.example.microlearningquizapp-main-39:/drawable/children.jpg"
+    },
+    {
+        "merged": "com.example.microlearningquizapp-debug-37:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.microlearningquizapp-main-39:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.microlearningquizapp-debug-37:/drawable_progress_bar.xml.flat",
+        "source": "com.example.microlearningquizapp-main-39:/drawable/progress_bar.xml"
+    },
+    {
+        "merged": "com.example.microlearningquizapp-debug-37:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.microlearningquizapp-main-39:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.microlearningquizapp-debug-37:/drawable_teacher.jpg.flat",
+        "source": "com.example.microlearningquizapp-main-39:/drawable/teacher.jpg"
+    },
+    {
+        "merged": "com.example.microlearningquizapp-debug-37:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.microlearningquizapp-main-39:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.microlearningquizapp-debug-37:/layout_learningmodules.xml.flat",
+        "source": "com.example.microlearningquizapp-main-39:/layout/learningmodules.xml"
+    },
+    {
+        "merged": "com.example.microlearningquizapp-debug-37:/drawable_back_svgrepo_com.xml.flat",
+        "source": "com.example.microlearningquizapp-main-39:/drawable/back_svgrepo_com.xml"
     },
     {
         "merged": "com.example.microlearningquizapp-debug-37:/mipmap-xxxhdpi_ic_launcher.webp.flat",
