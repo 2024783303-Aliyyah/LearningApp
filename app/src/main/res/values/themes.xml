@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Main application theme. -->
+    <style name="Theme.MicroLearningQuizApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <!-- Splash Screen theme -->
+    <style name="Theme.MicroLearningQuizApp.Splash" parent="Theme.SplashScreen">
+
+        <item name="windowSplashScreenBackground">#FFF7C2</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo</item>
+        <item name="postSplashScreenTheme">@style/Theme.MicroLearningQuizApp</item>
+    </style>   
+</resources>
