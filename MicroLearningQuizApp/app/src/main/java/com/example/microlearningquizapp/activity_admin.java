@@ -8,7 +8,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class AdminActivity extends AppCompatActivity {
+public class activity_admin extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
