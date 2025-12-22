@@ -11,48 +11,61 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="77dp"
+        android:layout_marginBottom="43dp"
         android:text="LEARNING MODULES"
         android:textSize="24sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/math"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/math"
-        android:layout_width="385dp"
-        android:layout_height="143dp"
-        android:layout_margin="12dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="19dp"
         app:cardBackgroundColor="#F7C97C"
         app:cardCornerRadius="20dp"
         app:cardElevation="4dp"
         app:layout_constraintBottom_toTopOf="@+id/english"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="13dp" />
+        tools:ignore="MissingConstraints" />
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/english"
-        android:layout_width="385dp"
-        android:layout_height="143dp"
-        android:layout_margin="12dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="18dp"
         app:cardBackgroundColor="#F7C97C"
         app:cardCornerRadius="20dp"
         app:cardElevation="4dp"
         app:layout_constraintBottom_toTopOf="@+id/science"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="13dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/math"
+        tools:ignore="MissingConstraints" />
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/science"
-        android:layout_width="385dp"
-        android:layout_height="143dp"
-        android:layout_margin="12dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="113dp"
         app:cardBackgroundColor="#F7C97C"
         app:cardCornerRadius="20dp"
         app:cardElevation="4dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="482dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/english"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
