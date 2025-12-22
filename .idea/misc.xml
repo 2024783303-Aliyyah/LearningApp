@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
@@ -6,5 +7,10 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+=======
+<project version="4">
+  <component name="ProjectRootManager">
+    <output url="file://$PROJECT_DIR$/out" />
+>>>>>>> 80ebf146ffe52bea3d3222792fd7652d7d5487b6
   </component>
 </project>

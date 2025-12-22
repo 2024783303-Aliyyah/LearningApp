@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Micro Learning Quiz App</string>
+    <style name="Theme.MicroLearningQuizApp" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.MicroLearningQuizApp.Splash" parent="Theme.SplashScreen">
+
+        <item name="windowSplashScreenBackground">#FFF7C2</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo</item>
+        <item name="postSplashScreenTheme">@style/Theme.MicroLearningQuizApp</item>
+    </style>
+</resources>
