@@ -3554,7 +3554,6 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
-drawable back_svgrepo_com
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -3859,6 +3858,7 @@ id elastic
 id embed
 id end
 id endToStart
+id english
 id enterAlways
 id enterAlwaysCollapsed
 id entireSpace
@@ -3906,7 +3906,6 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
-id imageButton7
 id imgChildren
 id imgLogo
 id immediateStop
@@ -3955,6 +3954,7 @@ id material_timepicker_mode_button
 id material_timepicker_ok_button
 id material_timepicker_view
 id material_value_index
+id math
 id matrix
 id message
 id middle
@@ -4067,6 +4067,7 @@ id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
 id scale
+id science
 id screen
 id scroll
 id scrollIndicatorDown
