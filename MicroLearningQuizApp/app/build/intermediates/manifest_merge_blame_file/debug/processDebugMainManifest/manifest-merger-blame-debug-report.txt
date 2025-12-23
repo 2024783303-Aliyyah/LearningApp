@@ -9,178 +9,184 @@
 9        android:targetSdkVersion="36" />
 10
 11    <permission
-11-->[androidx.core:core:1.16.0] C:\Users\ALIYYAH\.gradle\caches\8.13\transforms\2a28f9fe7553e0069360a2ae9cfff29e\transformed\core-1.16.0\AndroidManifest.xml:22:5-24:47
+11-->[androidx.core:core:1.16.0] C:\Users\Huawei\.gradle\caches\8.13\transforms\2a28f9fe7553e0069360a2ae9cfff29e\transformed\core-1.16.0\AndroidManifest.xml:22:5-24:47
 12        android:name="com.example.microlearningquizapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-12-->[androidx.core:core:1.16.0] C:\Users\ALIYYAH\.gradle\caches\8.13\transforms\2a28f9fe7553e0069360a2ae9cfff29e\transformed\core-1.16.0\AndroidManifest.xml:23:9-81
+12-->[androidx.core:core:1.16.0] C:\Users\Huawei\.gradle\caches\8.13\transforms\2a28f9fe7553e0069360a2ae9cfff29e\transformed\core-1.16.0\AndroidManifest.xml:23:9-81
 13        android:protectionLevel="signature" />
-13-->[androidx.core:core:1.16.0] C:\Users\ALIYYAH\.gradle\caches\8.13\transforms\2a28f9fe7553e0069360a2ae9cfff29e\transformed\core-1.16.0\AndroidManifest.xml:24:9-44
+13-->[androidx.core:core:1.16.0] C:\Users\Huawei\.gradle\caches\8.13\transforms\2a28f9fe7553e0069360a2ae9cfff29e\transformed\core-1.16.0\AndroidManifest.xml:24:9-44
 14
 15    <uses-permission android:name="com.example.microlearningquizapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-15-->[androidx.core:core:1.16.0] C:\Users\ALIYYAH\.gradle\caches\8.13\transforms\2a28f9fe7553e0069360a2ae9cfff29e\transformed\core-1.16.0\AndroidManifest.xml:26:5-97
-15-->[androidx.core:core:1.16.0] C:\Users\ALIYYAH\.gradle\caches\8.13\transforms\2a28f9fe7553e0069360a2ae9cfff29e\transformed\core-1.16.0\AndroidManifest.xml:26:22-94
+15-->[androidx.core:core:1.16.0] C:\Users\Huawei\.gradle\caches\8.13\transforms\2a28f9fe7553e0069360a2ae9cfff29e\transformed\core-1.16.0\AndroidManifest.xml:26:5-97
+15-->[androidx.core:core:1.16.0] C:\Users\Huawei\.gradle\caches\8.13\transforms\2a28f9fe7553e0069360a2ae9cfff29e\transformed\core-1.16.0\AndroidManifest.xml:26:22-94
 16
 17    <application
-17-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:5:5-51:19
+17-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:5:5-54:19
 18        android:allowBackup="true"
-18-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:6:9-35
+18-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:6:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-19-->[androidx.core:core:1.16.0] C:\Users\ALIYYAH\.gradle\caches\8.13\transforms\2a28f9fe7553e0069360a2ae9cfff29e\transformed\core-1.16.0\AndroidManifest.xml:28:18-86
+19-->[androidx.core:core:1.16.0] C:\Users\Huawei\.gradle\caches\8.13\transforms\2a28f9fe7553e0069360a2ae9cfff29e\transformed\core-1.16.0\AndroidManifest.xml:28:18-86
 20        android:dataExtractionRules="@xml/data_extraction_rules"
-20-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:7:9-65
+20-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:7:9-65
 21        android:debuggable="true"
 22        android:extractNativeLibs="false"
 23        android:fullBackupContent="@xml/backup_rules"
-23-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:8:9-54
+23-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:8:9-54
 24        android:icon="@drawable/logo"
-24-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:9:9-38
+24-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:9:9-38
 25        android:label="@string/app_name"
-25-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:10:9-41
+25-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:10:9-41
 26        android:roundIcon="@drawable/logo"
-26-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:11:9-43
+26-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:11:9-43
 27        android:supportsRtl="true"
-27-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:12:9-35
+27-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:12:9-35
 28        android:testOnly="true"
 29        android:theme="@style/Theme.MicroLearningQuizApp" >
-29-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:13:9-58
+29-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:13:9-58
 30        <activity
-30-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:14:9-16:40
-31            android:name="com.example.microlearningquizapp.ScienceLessons"
-31-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:15:13-43
+30-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:14:9-16:40
+31            android:name="com.example.microlearningquizapp.AddLesson"
+31-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:15:13-38
 32            android:exported="false" />
-32-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:16:13-37
+32-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:16:13-37
 33        <activity
-33-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:17:9-19:40
-34            android:name="com.example.microlearningquizapp.EnglishLessons"
-34-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:18:13-43
+33-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:17:9-19:40
+34            android:name="com.example.microlearningquizapp.ScienceLessons"
+34-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:18:13-43
 35            android:exported="false" />
-35-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:19:13-37
+35-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:19:13-37
 36        <activity
-36-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:20:9-22:40
-37            android:name="com.example.microlearningquizapp.learningmodules"
-37-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:21:13-44
+36-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:20:9-22:40
+37            android:name="com.example.microlearningquizapp.EnglishLessons"
+37-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:21:13-43
 38            android:exported="false" />
-38-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:22:13-37
+38-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:22:13-37
 39        <activity
-39-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:23:9-25:40
-40            android:name="com.example.microlearningquizapp.LearningModule"
-40-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:24:13-43
+39-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:23:9-25:40
+40            android:name="com.example.microlearningquizapp.learningmodules"
+40-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:24:13-44
 41            android:exported="false" />
-41-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:25:13-37
+41-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:25:13-37
 42        <activity
-42-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:26:9-28:40
-43            android:name="com.example.microlearningquizapp.MathLessons"
-43-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:27:13-40
+42-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:26:9-28:40
+43            android:name="com.example.microlearningquizapp.LearningModule"
+43-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:27:13-43
 44            android:exported="false" />
-44-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:28:13-37
+44-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:28:13-37
 45        <activity
-45-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:29:9-31:40
-46            android:name="com.example.microlearningquizapp.additionLessons"
-46-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:30:13-44
+45-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:29:9-31:40
+46            android:name="com.example.microlearningquizapp.MathLessons"
+46-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:30:13-40
 47            android:exported="false" />
-47-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:31:13-37
+47-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:31:13-37
 48        <activity
-48-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:32:9-34:40
-49            android:name="com.example.microlearningquizapp.adminDashboard"
-49-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:33:13-43
+48-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:32:9-34:40
+49            android:name="com.example.microlearningquizapp.additionLessons"
+49-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:33:13-44
 50            android:exported="false" />
-50-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:34:13-37
+50-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:34:13-37
 51        <activity
-51-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:35:9-37:40
-52            android:name="com.example.microlearningquizapp.SplashActivity"
-52-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:36:13-43
+51-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:35:9-37:40
+52            android:name="com.example.microlearningquizapp.adminDashboard"
+52-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:36:13-43
 53            android:exported="false" />
-53-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:37:13-37
+53-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:37:13-37
 54        <activity
-54-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:38:9-40:40
-55            android:name="com.example.microlearningquizapp.activity_admin"
-55-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:39:13-43
+54-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:38:9-40:40
+55            android:name="com.example.microlearningquizapp.SplashActivity"
+55-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:39:13-43
 56            android:exported="false" />
-56-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:40:13-37
+56-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:40:13-37
 57        <activity
-57-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:41:9-50:20
-58            android:name="com.example.microlearningquizapp.MainActivity"
-58-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:42:13-41
-59            android:exported="true"
-59-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:43:13-36
-60            android:theme="@style/Theme.MicroLearningQuizApp.Splash" >
-60-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:44:13-69
-61            <intent-filter>
-61-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:45:13-49:29
-62                <action android:name="android.intent.action.MAIN" />
-62-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:46:17-69
-62-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:46:25-66
-63
-64                <category android:name="android.intent.category.LAUNCHER" />
-64-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:48:17-77
-64-->C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:48:27-74
-65            </intent-filter>
-66        </activity>
-67
-68        <provider
-68-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ALIYYAH\.gradle\caches\8.13\transforms\f58f9c39c8f68c88716f9462b09325ca\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
-69            android:name="androidx.startup.InitializationProvider"
-69-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ALIYYAH\.gradle\caches\8.13\transforms\f58f9c39c8f68c88716f9462b09325ca\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
-70            android:authorities="com.example.microlearningquizapp.androidx-startup"
-70-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ALIYYAH\.gradle\caches\8.13\transforms\f58f9c39c8f68c88716f9462b09325ca\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
-71            android:exported="false" >
-71-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ALIYYAH\.gradle\caches\8.13\transforms\f58f9c39c8f68c88716f9462b09325ca\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
-72            <meta-data
-72-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ALIYYAH\.gradle\caches\8.13\transforms\f58f9c39c8f68c88716f9462b09325ca\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
-73                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-73-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ALIYYAH\.gradle\caches\8.13\transforms\f58f9c39c8f68c88716f9462b09325ca\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
-74                android:value="androidx.startup" />
-74-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ALIYYAH\.gradle\caches\8.13\transforms\f58f9c39c8f68c88716f9462b09325ca\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+57-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:41:9-43:40
+58            android:name="com.example.microlearningquizapp.activity_admin"
+58-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:42:13-43
+59            android:exported="false" />
+59-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:43:13-37
+60        <activity
+60-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:44:9-53:20
+61            android:name="com.example.microlearningquizapp.MainActivity"
+61-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:45:13-41
+62            android:exported="true"
+62-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:46:13-36
+63            android:theme="@style/Theme.MicroLearningQuizApp.Splash" >
+63-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:47:13-69
+64            <intent-filter>
+64-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:48:13-52:29
+65                <action android:name="android.intent.action.MAIN" />
+65-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:49:17-69
+65-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:49:25-66
+66
+67                <category android:name="android.intent.category.LAUNCHER" />
+67-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:51:17-77
+67-->C:\Users\Huawei\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:51:27-74
+68            </intent-filter>
+69        </activity>
+70
+71        <provider
+71-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Huawei\.gradle\caches\8.13\transforms\f58f9c39c8f68c88716f9462b09325ca\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+72            android:name="androidx.startup.InitializationProvider"
+72-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Huawei\.gradle\caches\8.13\transforms\f58f9c39c8f68c88716f9462b09325ca\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+73            android:authorities="com.example.microlearningquizapp.androidx-startup"
+73-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Huawei\.gradle\caches\8.13\transforms\f58f9c39c8f68c88716f9462b09325ca\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+74            android:exported="false" >
+74-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Huawei\.gradle\caches\8.13\transforms\f58f9c39c8f68c88716f9462b09325ca\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
 75            <meta-data
-75-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ALIYYAH\.gradle\caches\8.13\transforms\b2d7c4f050ed5b6e9de969a844ca4ccd\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
-76                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-76-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ALIYYAH\.gradle\caches\8.13\transforms\b2d7c4f050ed5b6e9de969a844ca4ccd\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+75-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Huawei\.gradle\caches\8.13\transforms\f58f9c39c8f68c88716f9462b09325ca\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+76                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+76-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Huawei\.gradle\caches\8.13\transforms\f58f9c39c8f68c88716f9462b09325ca\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
 77                android:value="androidx.startup" />
-77-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ALIYYAH\.gradle\caches\8.13\transforms\b2d7c4f050ed5b6e9de969a844ca4ccd\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+77-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Huawei\.gradle\caches\8.13\transforms\f58f9c39c8f68c88716f9462b09325ca\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
 78            <meta-data
-78-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ALIYYAH\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
-79                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-79-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ALIYYAH\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+78-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Huawei\.gradle\caches\8.13\transforms\b2d7c4f050ed5b6e9de969a844ca4ccd\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+79                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+79-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Huawei\.gradle\caches\8.13\transforms\b2d7c4f050ed5b6e9de969a844ca4ccd\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
 80                android:value="androidx.startup" />
-80-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ALIYYAH\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
-81        </provider>
-82
-83        <receiver
-83-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ALIYYAH\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
-84            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-84-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ALIYYAH\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
-85            android:directBootAware="false"
-85-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ALIYYAH\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
-86            android:enabled="true"
-86-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ALIYYAH\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
-87            android:exported="true"
-87-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ALIYYAH\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
-88            android:permission="android.permission.DUMP" >
-88-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ALIYYAH\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
-89            <intent-filter>
-89-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ALIYYAH\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
-90                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-90-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ALIYYAH\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
-90-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ALIYYAH\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
-91            </intent-filter>
+80-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Huawei\.gradle\caches\8.13\transforms\b2d7c4f050ed5b6e9de969a844ca4ccd\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+81            <meta-data
+81-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Huawei\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+82                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+82-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Huawei\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+83                android:value="androidx.startup" />
+83-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Huawei\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+84        </provider>
+85
+86        <receiver
+86-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Huawei\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+87            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+87-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Huawei\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+88            android:directBootAware="false"
+88-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Huawei\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+89            android:enabled="true"
+89-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Huawei\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+90            android:exported="true"
+90-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Huawei\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+91            android:permission="android.permission.DUMP" >
+91-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Huawei\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
 92            <intent-filter>
-92-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ALIYYAH\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
-93                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-93-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ALIYYAH\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
-93-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ALIYYAH\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+92-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Huawei\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+93                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+93-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Huawei\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+93-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Huawei\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
 94            </intent-filter>
 95            <intent-filter>
-95-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ALIYYAH\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
-96                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-96-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ALIYYAH\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
-96-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ALIYYAH\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+95-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Huawei\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+96                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+96-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Huawei\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+96-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Huawei\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
 97            </intent-filter>
 98            <intent-filter>
-98-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ALIYYAH\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
-99                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-99-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ALIYYAH\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
-99-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ALIYYAH\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+98-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Huawei\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+99                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+99-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Huawei\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+99-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Huawei\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
 100            </intent-filter>
-101        </receiver>
-102    </application>
-103
-104</manifest>
+101            <intent-filter>
+101-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Huawei\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+102                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+102-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Huawei\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+102-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Huawei\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+103            </intent-filter>
+104        </receiver>
+105    </application>
+106
+107</manifest>
