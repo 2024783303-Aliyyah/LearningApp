@@ -12,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MicroLearningQuizApp">
         <activity
+            android:name=".ViewLesson"
+            android:exported="false" />
+        <activity
+            android:name=".EditLesson"
+            android:exported="false" />
+        <activity
+            android:name=".RecyclerViewstudentscore"
+            android:exported="false" />
+        <activity
+            android:name=".StudentScore"
+            android:exported="false" />
+        <activity
             android:name=".ScienceLessons"
             android:exported="false" />
         <activity
