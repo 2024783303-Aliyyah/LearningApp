@@ -32,8 +32,24 @@ public class ScienceLessons extends AppCompatActivity {
 
         lessonList = new ArrayList<>();
 
-        lessonList.add(new Lesson("Living vs Non-Living"));
-        lessonList.add(new Lesson("Five senses"));
+        // Add lessons with all fields
+        lessonList.add(new Lesson(
+                "Science",
+                "Living vs Non-living",
+                "Year 1",
+                "Learn basic living and non living things",
+                "content goes here",
+                "android.resource://" + getPackageName() + "/" + R.raw.addition_video
+        ));
+
+        lessonList.add(new Lesson(
+                "Science",
+                "Five Senses",
+                "Year 1",
+                "Learn human Senses",
+                "Human Senses content goes here",
+                "android.resource://" + getPackageName() + "/" + R.raw.subtraction_video
+        ));
 
         LessonAdapter adapter = new LessonAdapter(this, lessonList);
         rvLessons.setAdapter(adapter);
