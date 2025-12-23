@@ -28,10 +28,31 @@
         android:testOnly="true"
         android:theme="@style/Theme.MicroLearningQuizApp" >
         <activity
-            android:name="com.example.microlearningquizapp.activity_admin"
+            android:name="com.example.microlearningquizapp.ScienceLessons"
             android:exported="false" />
         <activity
-            android:name="com.example.microlearningquizapp.AdminActivity"
+            android:name="com.example.microlearningquizapp.EnglishLessons"
+            android:exported="false" />
+        <activity
+            android:name="com.example.microlearningquizapp.learningmodules"
+            android:exported="false" />
+        <activity
+            android:name="com.example.microlearningquizapp.LearningModule"
+            android:exported="false" />
+        <activity
+            android:name="com.example.microlearningquizapp.MathLessons"
+            android:exported="false" />
+        <activity
+            android:name="com.example.microlearningquizapp.additionLessons"
+            android:exported="false" />
+        <activity
+            android:name="com.example.microlearningquizapp.adminDashboard"
+            android:exported="false" />
+        <activity
+            android:name="com.example.microlearningquizapp.SplashActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.microlearningquizapp.activity_admin"
             android:exported="false" />
         <activity
             android:name="com.example.microlearningquizapp.MainActivity"

@@ -12,17 +12,16 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class MathLessons extends AppCompatActivity {
+public class ScienceLessons extends AppCompatActivity {
 
     RecyclerView rvLessons;
     ArrayList<Lesson> lessonList;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_math_lessons);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.math), (v, insets) -> {
+        setContentView(R.layout.activity_science_lessons);
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.science), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
@@ -35,30 +34,21 @@ public class MathLessons extends AppCompatActivity {
 
         // Add lessons with all fields
         lessonList.add(new Lesson(
-                "Math",
-                "Addition",
+                "Science",
+                "Living vs Non-living",
                 "Year 1",
-                "Learn basic addition",
-                "Addition content goes here",
+                "Learn basic living and non living things",
+                "content goes here",
                 "android.resource://" + getPackageName() + "/" + R.raw.addition_video
         ));
 
         lessonList.add(new Lesson(
-                "Math",
-                "Subtraction",
+                "Science",
+                "Five Senses",
                 "Year 1",
-                "Learn basic subtraction",
-                "Subtraction content goes here",
+                "Learn human Senses",
+                "Human Senses content goes here",
                 "android.resource://" + getPackageName() + "/" + R.raw.subtraction_video
-        ));
-
-        lessonList.add(new Lesson(
-                "Math",
-                "Multiplication",
-                "Year 1",
-                "Learn multiplication",
-                "Multiplication content goes here",
-                "android.resource://" + getPackageName() + "/" + R.raw.multiplication_video
         ));
 
         LessonAdapter adapter = new LessonAdapter(this, lessonList);
