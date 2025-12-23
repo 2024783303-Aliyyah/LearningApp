@@ -188,7 +188,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/userNav"
+            android:src="@drawable/usernav"
             android:contentDescription="Profile"
             android:padding="10dp"/>
 
@@ -197,7 +197,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/bookNav"
+            android:src="@drawable/booknav"
             android:contentDescription="Lessons"
             android:padding="10dp"/>
 
@@ -206,7 +206,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/homeNav"
+            android:src="@drawable/homenav"
             android:contentDescription="Home"
             android:padding="10dp"/>
 
@@ -215,7 +215,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/quizNavv"
+            android:src="@drawable/quiznav"
             android:contentDescription="Quiz"
             android:padding="10dp"/>
 
@@ -224,7 +224,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/trophyNav"
+            android:src="@drawable/trophynav"
             android:contentDescription="Scores"
             android:padding="10dp"/>
 
