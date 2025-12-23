@@ -12,10 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MicroLearningQuizApp">
         <activity
-            android:name=".learningmodules"
+            android:name=".StudentDashboardActivity"
             android:exported="false" />
         <activity
-            android:name=".LearningModule"
+            android:name=".learningmodules"
             android:exported="false" />
         <activity
             android:name=".MathLessons"
@@ -28,9 +28,6 @@
             android:exported="false" />
         <activity
             android:name=".SplashActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activity_admin"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
