@@ -12,17 +12,16 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class MathLessons extends AppCompatActivity {
+public class ScienceLessons extends AppCompatActivity {
 
     RecyclerView rvLessons;
     ArrayList<Lesson> lessonList;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_math_lessons);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.math), (v, insets) -> {
+        setContentView(R.layout.activity_science_lessons);
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.science), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
@@ -33,13 +32,10 @@ public class MathLessons extends AppCompatActivity {
 
         lessonList = new ArrayList<>();
 
-        lessonList.add(new Lesson("Addition"));
-        lessonList.add(new Lesson("Subtraction"));
-        lessonList.add(new Lesson("Multiplication"));
-        lessonList.add(new Lesson("Division")); // added later
+        lessonList.add(new Lesson("Living vs Non-Living"));
+        lessonList.add(new Lesson("Five senses"));
 
         LessonAdapter adapter = new LessonAdapter(this, lessonList);
         rvLessons.setAdapter(adapter);
-
     }
 }
