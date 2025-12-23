@@ -1,6 +1,7 @@
 package com.example.microlearningquizapp;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,35 +10,40 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.ArrayList;
+import java.util.List;
 
-public class LessonAdapter
-        extends RecyclerView.Adapter<LessonAdapter.ViewHolder> {
+public class LessonAdapter extends RecyclerView.Adapter<LessonAdapter.LessonViewHolder> {
 
-    Context context;
-    ArrayList<Lesson> lessonList;
+    private List<Lesson> lessonList;
+    private Context context;
 
-    public LessonAdapter(Context context, ArrayList<Lesson> lessonList) {
+    public LessonAdapter(Context context, List<Lesson> lessonList) {
         this.context = context;
         this.lessonList = lessonList;
     }
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(
-            @NonNull ViewGroup parent, int viewType) {
-
-        View view = LayoutInflater.from(context)
-                .inflate(R.layout.item_lessons, parent, false);
-        return new ViewHolder(view);
+    public LessonViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(context).inflate(R.layout.item_lessons, parent, false);
+        return new LessonViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(
-            @NonNull ViewHolder holder, int position) {
-
+    public void onBindViewHolder(@NonNull LessonViewHolder holder, int position) {
         Lesson lesson = lessonList.get(position);
-        holder.tvLessonName.setText(lesson.getName());
+        holder.title.setText(lesson.getTitle());
+
+        holder.itemView.setOnClickListener(v -> {
+            Intent intent = new Intent(context, lessonActivity.class);
+            intent.putExtra("subject", lesson.getSubject());
+            intent.putExtra("title", lesson.getTitle());
+            intent.putExtra("year", lesson.getYear());
+            intent.putExtra("description", lesson.getDescription());
+            intent.putExtra("content", lesson.getContent());
+            intent.putExtra("video", lesson.getVideoUrl());
+            context.startActivity(intent);
+        });
     }
 
     @Override
@@ -45,14 +51,11 @@ public class LessonAdapter
         return lessonList.size();
     }
 
-    static class ViewHolder extends RecyclerView.ViewHolder {
-
-        TextView tvLessonName;
-
-        public ViewHolder(@NonNull View itemView) {
+    static class LessonViewHolder extends RecyclerView.ViewHolder {
+        TextView title;
+        public LessonViewHolder(@NonNull View itemView) {
             super(itemView);
-            tvLessonName = itemView.findViewById(R.id.item_lessons);
+            title = itemView.findViewById(R.id.textTitle);
         }
     }
 }
-

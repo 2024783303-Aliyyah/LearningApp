@@ -32,8 +32,25 @@ public class EnglishLessons extends AppCompatActivity {
 
         lessonList = new ArrayList<>();
 
-        lessonList.add(new Lesson("Alphabet Adventures"));
-        lessonList.add(new Lesson("Fun with synonyms"));
+        // Add lessons with all fields
+        lessonList.add(new Lesson(
+                "English",
+                "Alphabet Adventures",
+                "Year 1",
+                "Learn alphabet",
+                "alphabet content goes here",
+                "android.resource://" + getPackageName() + "/" + R.raw.addition_video
+        ));
+
+        lessonList.add(new Lesson(
+                "English",
+                "Fun with Synonyms",
+                "Year 1",
+                "Learn basic synonyms",
+                "Synonyms content goes here",
+                "android.resource://" + getPackageName() + "/" + R.raw.subtraction_video
+        ));
+
 
         LessonAdapter adapter = new LessonAdapter(this, lessonList);
         rvLessons.setAdapter(adapter);
