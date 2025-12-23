@@ -22,4 +22,5 @@
             android:textStyle="bold"/>
     </FrameLayout>
 
+    <!-- comment -->
 </com.google.android.material.card.MaterialCardView>
