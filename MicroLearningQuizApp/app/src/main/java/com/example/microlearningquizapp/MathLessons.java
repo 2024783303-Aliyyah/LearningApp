@@ -33,13 +33,35 @@ public class MathLessons extends AppCompatActivity {
 
         lessonList = new ArrayList<>();
 
-        lessonList.add(new Lesson("Addition"));
-        lessonList.add(new Lesson("Subtraction"));
-        lessonList.add(new Lesson("Multiplication"));
-        lessonList.add(new Lesson("Division")); // added later
+        // Add lessons with all fields
+        lessonList.add(new Lesson(
+                "Math",
+                "Addition",
+                "Year 1",
+                "Learn basic addition",
+                "Addition content goes here",
+                "android.resource://" + getPackageName() + "/" + R.raw.addition_video
+        ));
+
+        lessonList.add(new Lesson(
+                "Math",
+                "Subtraction",
+                "Year 1",
+                "Learn basic subtraction",
+                "Subtraction content goes here",
+                "android.resource://" + getPackageName() + "/" + R.raw.subtraction_video
+        ));
+
+        lessonList.add(new Lesson(
+                "Math",
+                "Multiplication",
+                "Year 1",
+                "Learn multiplication",
+                "Multiplication content goes here",
+                "android.resource://" + getPackageName() + "/" + R.raw.multiplication_video
+        ));
 
         LessonAdapter adapter = new LessonAdapter(this, lessonList);
         rvLessons.setAdapter(adapter);
-
     }
 }
