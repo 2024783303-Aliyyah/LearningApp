@@ -34,6 +34,9 @@ id bottomNavBar
 id bottomNavigationView7
 id btnAddLesson
 id btnBack
+id btnBack2
+id btnBack3
+id btnBack4
 id btnBrowse
 id btnCancel
 id btnChangeImage
@@ -54,7 +57,6 @@ id etLessonTitle
 id etVideoUrl
 id etYears
 id imageButton
-id imageButton9
 id imageView2
 id imageView3
 id imageView4

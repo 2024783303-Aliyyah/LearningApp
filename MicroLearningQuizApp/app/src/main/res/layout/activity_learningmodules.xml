@@ -8,7 +8,7 @@
     android:background="#FFFACD">
 
     <ImageView
-        android:id="@+id/btnBack2"
+        android:id="@+id/btnBack6"
         android:layout_width="48dp"
         android:layout_height="33dp"
         android:layout_margin="16dp"
