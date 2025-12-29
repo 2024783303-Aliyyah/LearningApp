@@ -5,7 +5,8 @@
     android:id="@+id/lessonactivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".lessonActivity">
+    tools:context=".lessonActivity"
+    android:background="#FFFACD">
 
 
     <LinearLayout
@@ -69,7 +70,6 @@
     <ScrollView
         android:layout_width="412dp"
         android:layout_height="659dp"
-        android:background="#FFFACD"
         android:padding="16dp"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavBar"
         app:layout_constraintEnd_toEndOf="parent"
@@ -82,7 +82,6 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
             android:orientation="vertical">
 
 

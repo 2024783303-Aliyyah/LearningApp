@@ -40,7 +40,8 @@ public class MathLessons extends AppCompatActivity {
                 "Year 1",
                 "Learn basic addition",
                 "Addition content goes here",
-                "android.resource://" + getPackageName() + "/" + R.raw.addition_video
+                "android.resource://" + getPackageName() + "/"
+                //+ R.raw.addition_video
         ));
 
         lessonList.add(new Lesson(
@@ -49,7 +50,8 @@ public class MathLessons extends AppCompatActivity {
                 "Year 1",
                 "Learn basic subtraction",
                 "Subtraction content goes here",
-                "android.resource://" + getPackageName() + "/" + R.raw.subtraction_video
+                "android.resource://" + getPackageName() + "/"
+                //+ R.raw.subtraction_video
         ));
 
         lessonList.add(new Lesson(
@@ -58,10 +60,12 @@ public class MathLessons extends AppCompatActivity {
                 "Year 1",
                 "Learn multiplication",
                 "Multiplication content goes here",
-                "android.resource://" + getPackageName() + "/" + R.raw.multiplication_video
+                "android.resource://" + getPackageName() + "/"
+                //+ R.raw.multiplication_video
         ));
 
         LessonAdapter adapter = new LessonAdapter(this, lessonList);
         rvLessons.setAdapter(adapter);
     }
 }
+
