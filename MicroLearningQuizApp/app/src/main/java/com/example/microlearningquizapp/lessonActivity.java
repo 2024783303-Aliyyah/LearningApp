@@ -2,6 +2,7 @@ package com.example.microlearningquizapp;
 
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.VideoView;
 
@@ -39,5 +40,10 @@ public class lessonActivity extends AppCompatActivity {
         videoView.setVideoPath(getIntent().getStringExtra("video"));
         videoView.start();
 
+    }
+
+    public void goBack(View view)
+    {
+        finish();
     }
 }

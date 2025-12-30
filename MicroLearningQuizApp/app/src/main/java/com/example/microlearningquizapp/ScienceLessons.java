@@ -1,6 +1,7 @@
 package com.example.microlearningquizapp;
 
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -55,5 +56,10 @@ public class ScienceLessons extends AppCompatActivity {
 
         LessonAdapter adapter = new LessonAdapter(this, lessonList);
         rvLessons.setAdapter(adapter);
+    }
+
+    public void goBack(View view)
+    {
+        finish();
     }
 }

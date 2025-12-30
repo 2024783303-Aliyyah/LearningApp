@@ -38,6 +38,9 @@ public class learningmodules extends AppCompatActivity {
         }
     }
 
-
+public void goBack(View view)
+{
+    finish();
+}
 
 }
