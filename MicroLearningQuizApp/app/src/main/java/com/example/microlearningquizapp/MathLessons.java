@@ -41,8 +41,7 @@ public class MathLessons extends AppCompatActivity {
                 "Year 1",
                 "Learn basic addition",
                 "Addition content goes here",
-                "android.resource://" + getPackageName() + "/"
-                //+ R.raw.addition_video
+                "android.resource://" + getPackageName() + "/" + R.raw.mathaddition
         ));
 
         lessonList.add(new Lesson(

@@ -5,9 +5,98 @@
     android:id="@+id/lessonactivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".lessonActivity"
-    android:background="#FFFACD">
+    android:background="#FFFACD"
+    tools:context=".lessonActivity">
 
+    <!-- =========== FIXED HEADER (OUTSIDE SCROLLVIEW) =========== -->
+
+    <ImageView
+        android:id="@+id/btnBack2"
+        android:layout_width="48dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="goBack"
+        android:src="@drawable/buttonback"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Subject"
+        android:textAllCaps="true"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBack2" />
+
+
+    <!-- =========== SCROLLABLE CONTENT =========== -->
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:paddingHorizontal="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSubject">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- The Back Button and Subject TextView were MOVED OUT from here -->
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="Lesson Title"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="Year"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="Description"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp"
+                android:text="Lesson Content"
+                android:textSize="20sp" />
+
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <!-- =========== FIXED FOOTER (UNCHANGED) =========== -->
 
     <LinearLayout
         android:id="@+id/bottomNavBar"
@@ -20,6 +109,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
+        <!-- Navigation Buttons ... -->
         <ImageView
             android:id="@+id/navProfile"
             android:layout_width="0dp"
@@ -64,88 +154,6 @@
             android:contentDescription="Scores"
             android:padding="10dp"
             android:src="@drawable/trophynav" />
-
     </LinearLayout>
-
-    <ScrollView
-        android:layout_width="412dp"
-        android:layout_height="659dp"
-        android:padding="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavBar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
-
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-
-            <ImageView
-                android:id="@+id/btnBack2"
-                android:layout_width="48dp"
-                android:layout_height="33dp"
-                android:layout_margin="16dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:src="@drawable/buttonback"
-                android:onClick="goBack"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-            <TextView
-                android:id="@+id/textSubject"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:paddingBottom="4dp"
-                android:text="Subject"
-                android:textAllCaps="true"
-                android:textSize="23sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textTitle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingBottom="8dp"
-                android:text="Lesson Title"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textYear"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingBottom="8dp"
-                android:text="Year"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/textDescription"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingBottom="8dp"
-                android:text="Description"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/textContent"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingBottom="16dp"
-                android:text="Lesson Content"
-                android:textSize="20sp" />
-
-            <VideoView
-                android:id="@+id/videoView"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:background="@android:color/darker_gray" />
-        </LinearLayout>
-    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
