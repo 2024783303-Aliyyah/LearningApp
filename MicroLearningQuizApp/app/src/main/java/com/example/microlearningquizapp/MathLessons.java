@@ -50,8 +50,7 @@ public class MathLessons extends AppCompatActivity {
                 "Year 1",
                 "Learn basic subtraction",
                 "Subtraction content goes here",
-                "android.resource://" + getPackageName() + "/"
-                //+ R.raw.subtraction_video
+                "android.resource://" + getPackageName() + "/" + R.raw.mathsubtraction
         ));
 
         lessonList.add(new Lesson(
@@ -60,8 +59,7 @@ public class MathLessons extends AppCompatActivity {
                 "Year 1",
                 "Learn multiplication",
                 "Multiplication content goes here",
-                "android.resource://" + getPackageName() + "/"
-                //+ R.raw.multiplication_video
+                "android.resource://" + getPackageName() + "/" + R.raw.mathmultiplication
         ));
 
         LessonAdapter adapter = new LessonAdapter(this, lessonList);
