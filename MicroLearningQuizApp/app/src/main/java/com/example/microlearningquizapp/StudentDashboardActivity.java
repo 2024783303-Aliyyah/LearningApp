@@ -1,6 +1,9 @@
 package com.example.microlearningquizapp;
 
+
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +23,19 @@ public class StudentDashboardActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+
+    public void openActivity(View view)
+    {
+        int id = view.getId();
+        if(id == R.id.cardLessons)
+        {
+            startActivity(new Intent(this, learningmodules.class));
+        }
+        else if(id == R.id.cardQuiz)
+        {
+            startActivity(new Intent(this, quizzesmodules.class));
+        }
+
     }
 }

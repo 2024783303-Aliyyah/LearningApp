@@ -1,8 +1,13 @@
 package com.example.microlearningquizapp;
 
+
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.VideoView;
+import android.widget.MediaController;
+import android.widget.FrameLayout;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -35,8 +40,28 @@ public class lessonActivity extends AppCompatActivity {
         textYear.setText(getIntent().getStringExtra("year"));
         textDescription.setText(getIntent().getStringExtra("description"));
         textContent.setText(getIntent().getStringExtra("content"));
-        videoView.setVideoPath(getIntent().getStringExtra("video"));
-        videoView.start();
+        String videoPath = getIntent().getStringExtra("video");
+        if (videoPath != null && !videoPath.isEmpty()) {
+            Uri videoUri = Uri.parse(videoPath);
+            videoView.setVideoURI(videoUri);
 
+            android.widget.MediaController mediaController = new android.widget.MediaController(this);
+            mediaController.setAnchorView(videoView);
+            videoView.setMediaController(mediaController);
+
+            videoView.setOnPreparedListener(new android.media.MediaPlayer.OnPreparedListener() {
+                @Override
+                public void onPrepared(android.media.MediaPlayer mp) {
+                    mp.setLooping(true);
+                    videoView.start();
+                }
+            });
+        }
+
+    }
+
+    public void goBack(View view)
+    {
+        finish();
     }
 }

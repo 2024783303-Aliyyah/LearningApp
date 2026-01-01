@@ -1,6 +1,7 @@
 package com.example.microlearningquizapp;
 
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -39,7 +40,8 @@ public class ScienceLessons extends AppCompatActivity {
                 "Year 1",
                 "Learn basic living and non living things",
                 "content goes here",
-                "android.resource://" + getPackageName() + "/" + R.raw.addition_video
+                "android.resource://" + getPackageName() + "/"
+                //+ R.raw.addition_video
         ));
 
         lessonList.add(new Lesson(
@@ -48,10 +50,16 @@ public class ScienceLessons extends AppCompatActivity {
                 "Year 1",
                 "Learn human Senses",
                 "Human Senses content goes here",
-                "android.resource://" + getPackageName() + "/" + R.raw.subtraction_video
+                "android.resource://" + getPackageName() + "/"
+                //+ R.raw.subtraction_video
         ));
 
         LessonAdapter adapter = new LessonAdapter(this, lessonList);
         rvLessons.setAdapter(adapter);
+    }
+
+    public void goBack(View view)
+    {
+        finish();
     }
 }

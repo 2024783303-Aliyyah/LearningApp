@@ -1,0 +1,48 @@
+package com.example.microlearningquizapp;
+
+
+import android.content.Intent;
+import android.os.Bundle;
+import com.example.microlearningquizapp.MathLessons;
+import com.example.microlearningquizapp.EnglishLessons;
+import com.example.microlearningquizapp.ScienceLessons;
+
+import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
+import android.view.View;
+
+public class quizzesmodules extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        EdgeToEdge.enable(this);
+        setContentView(R.layout.activity_quizzesmodules);
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.quizzesmodules), (v, insets) -> {
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            return insets;
+        });
+    }
+
+    public void openQuizzes(View view) {
+        int id = view.getId();
+        if (id == R.id.math) {
+            startActivity(new Intent(this, MathQuizzes.class));
+        } else if (id == R.id.english) {
+            startActivity(new Intent(this, EnglishQuizzes.class));
+        } else if (id == R.id.science) {
+            startActivity(new Intent(this, ScienceQuizzes.class));
+        }
+    }
+
+    public void goBack(View view)
+    {
+        finish();
+    }
+
+
+}

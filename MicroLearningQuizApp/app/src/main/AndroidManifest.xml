@@ -12,16 +12,49 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MicroLearningQuizApp">
         <activity
+            android:name=".Report"
+            android:exported="false" />
+        <activity
+            android:name=".AdminProfile"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ScienceQuizzes"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishQuizzes"
+            android:exported="false" />
+        <activity
+            android:name=".AddQuiz"
+            android:exported="false" />
+        <activity
+            android:name=".MathQuizzes"
+            android:exported="false" />
+        <activity
+            android:name=".quizzesmodules"
+            android:exported="false" />
+        <activity
             android:name=".ViewLesson"
             android:exported="false" />
         <activity
             android:name=".EditLesson"
             android:exported="false" />
         <activity
-            android:name=".RecyclerViewstudentscore"
+            android:name=".learningmodules"
             android:exported="false" />
         <activity
-            android:name=".StudentScore"
+            android:name=".lessonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MathLessons"
             android:exported="false" />
         <activity
             android:name=".ScienceLessons"
@@ -30,30 +63,12 @@
             android:name=".EnglishLessons"
             android:exported="false" />
         <activity
-            android:name=".learningmodules"
-            android:exported="false" />
-        <activity
-            android:name=".LearningModule"
-            android:exported="false" />
-        <activity
-            android:name=".MathLessons"
-            android:exported="false" />
-        <activity
-            android:name=".additionLessons"
-            android:exported="false" />
-        <activity
             android:name=".adminDashboard"
             android:exported="false" />
         <activity
             android:name=".SplashActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activity_admin"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.MicroLearningQuizApp.Splash">
+            android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
