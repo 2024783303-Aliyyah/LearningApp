@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:padding="16dp"
     android:background="#FFFACD"
-    tools:context=".MainActivity">
+    tools:context=".LoginActivity"
+    android:id="@+id/login">
 
     <!-- Logo -->
     <ImageView
@@ -105,7 +106,8 @@
             android:id="@+id/progressBar"
             style="?android:attr/progressBarStyle"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:visibility="visible"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnLogin"
