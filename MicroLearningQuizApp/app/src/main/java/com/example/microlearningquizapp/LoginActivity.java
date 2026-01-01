@@ -23,7 +23,6 @@ import java.util.List;
 public class LoginActivity extends AppCompatActivity {
 
     // UI components
-
     EditText edtUsername, edtPassword;
     MaterialButton btnLogin;
     ProgressBar progressBar;
