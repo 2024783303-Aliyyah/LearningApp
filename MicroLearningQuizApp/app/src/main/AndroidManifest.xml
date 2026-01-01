@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MicroLearningQuizApp">
         <activity
+            android:name=".ScienceQuizzes"
+            android:exported="false" />
+        <activity
+            android:name=".EnglishQuizzes"
+            android:exported="false" />
+        <activity
             android:name=".AddQuiz"
             android:exported="false" />
         <activity
