@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.VideoView;
+import android.widget.MediaController;
+import android.widget.FrameLayout;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -33,10 +35,6 @@ public class lessonActivity extends AppCompatActivity {
         TextView textContent = findViewById(R.id.textContent);
         VideoView videoView = findViewById(R.id.videoView);
 
-        android.widget.MediaController mediaController = new android.widget.MediaController(this);
-        mediaController.setAnchorView(videoView);
-        videoView.setMediaController(mediaController);
-
         textSubject.setText(getIntent().getStringExtra("subject"));
         textTitle.setText(getIntent().getStringExtra("title"));
         textYear.setText(getIntent().getStringExtra("year"));
@@ -46,6 +44,11 @@ public class lessonActivity extends AppCompatActivity {
         if (videoPath != null && !videoPath.isEmpty()) {
             Uri videoUri = Uri.parse(videoPath);
             videoView.setVideoURI(videoUri);
+
+            android.widget.MediaController mediaController = new android.widget.MediaController(this);
+            mediaController.setAnchorView(videoView);
+            videoView.setMediaController(mediaController);
+
             videoView.setOnPreparedListener(new android.media.MediaPlayer.OnPreparedListener() {
                 @Override
                 public void onPrepared(android.media.MediaPlayer mp) {

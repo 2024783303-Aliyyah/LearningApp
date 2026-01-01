@@ -140,6 +140,7 @@ id tvTitle
 id tvUsername
 id tvYears
 id txtTitle
+id videoContainer
 id videoView
 layout activity_add_quiz
 layout activity_admin_dashboard

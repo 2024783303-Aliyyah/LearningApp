@@ -4308,6 +4308,7 @@ int id up 0x7f08025a
 int id useLogo 0x7f08025b
 int id vertical 0x7f08025c
 int id vertical_only 0x7f08025d
+int id videoContainer 0x7f080272
 int id videoView 0x7f08025e
 int id view_offset_helper 0x7f08025f
 int id view_transition 0x7f080260

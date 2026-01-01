@@ -1,286 +1,290 @@
 [
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_homenav.png.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/homenav.png"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/layout_activity_science_lessons.xml.flat",
-        "source": "com.example.microlearningquizapp-main-39:/layout/activity_science_lessons.xml"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_buttonback.xml.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\buttonback.xml"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/raw_mathsubtraction.mp4.flat",
-        "source": "com.example.microlearningquizapp-main-39:/raw/mathsubtraction.mp4"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_logoteacher.png.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/logoteacher.png"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_add3.png.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\add3.png"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_buttonback.xml.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/buttonback.xml"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.example.microlearningquizapp-main-39:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/layout_activity_splash.xml.flat",
-        "source": "com.example.microlearningquizapp-main-39:/layout/activity_splash.xml"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_book.png.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/book.png"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_maths.png.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/maths.png"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_logo.jpg.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\logo.jpg"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_add1.png.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/add1.png"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_science.png.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\science.png"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/layout_activity_view_lesson.xml.flat",
-        "source": "com.example.microlearningquizapp-main-39:/layout/activity_view_lesson.xml"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_kid.png.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\kid.png"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_englishquiz.png.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/englishquiz.png"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\layout_activity_edit_lesson.xml.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\layout\\activity_edit_lesson.xml"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.microlearningquizapp-main-39:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\layout_activity_student_dashboard.xml.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\layout\\activity_student_dashboard.xml"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_boy.png.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/boy.png"
-    },
-    {
-        "merged": "com.example.microlearningquizapp-debug-37:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.example.microlearningquizapp-main-39:/mipmap-xhdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "com.example.microlearningquizapp-debug-37:/xml_backup_rules.xml.flat",
-        "source": "com.example.microlearningquizapp-main-39:/xml/backup_rules.xml"
-    },
-    {
-        "merged": "com.example.microlearningquizapp-debug-37:/layout_activity_add_quiz.xml.flat",
-        "source": "com.example.microlearningquizapp-main-39:/layout/activity_add_quiz.xml"
-    },
-    {
-        "merged": "com.example.microlearningquizapp-debug-37:/layout_activity_user_profile.xml.flat",
-        "source": "com.example.microlearningquizapp-main-39:/layout/activity_user_profile.xml"
-    },
-    {
-        "merged": "com.example.microlearningquizapp-debug-37:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.microlearningquizapp-main-39:/mipmap-xxhdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_abacus.png.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/abacus.png"
-    },
-    {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_login_style.xml.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/login_style.xml"
-    },
-    {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/ic_launcher_background.xml"
-    },
-    {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_logo.jpg.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/logo.jpg"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_sciencequiz.png.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\sciencequiz.png"
     },
     {
         "merged": "com.example.microlearningquizapp-debug-37:/layout_activity_lesson.xml.flat",
         "source": "com.example.microlearningquizapp-main-39:/layout/activity_lesson.xml"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_answbox.png.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/answbox.png"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_login_style.xml.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\login_style.xml"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/layout_activity_login.xml.flat",
-        "source": "com.example.microlearningquizapp-main-39:/layout/activity_login.xml"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\layout\\activity_login.xml"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_score.png.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/score.png"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\layout_activity_add_quiz.xml.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\layout\\activity_add_quiz.xml"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_quiz.png.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/quiz.png"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.microlearningquizapp-main-39:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_usernav.png.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\usernav.png"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_child.png.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/child.png"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_boy.png.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\boy.png"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_progress_bar.xml.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/progress_bar.xml"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\layout_activity_splash.xml.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\layout\\activity_splash.xml"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_add2.png.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/add2.png"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_teacher2.jpg.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\teacher2.jpg"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_teacher.jpg.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/teacher.jpg"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\layout_activity_view_lesson.xml.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\layout\\activity_view_lesson.xml"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.example.microlearningquizapp-main-39:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_quiz.png.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\quiz.png"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_trophynav.png.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/trophynav.png"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_add2.png.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\add2.png"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_mathquiz.png.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/mathquiz.png"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\raw_mathsubtraction.mp4.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\raw\\mathsubtraction.mp4"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.microlearningquizapp-main-39:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_science.png.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/science.png"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_english.png.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\english.png"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_logoteacher.png.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\logoteacher.png"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_english.png.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/english.png"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\layout_item_lessons.xml.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\layout\\item_lessons.xml"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/layout_activity_math_quizzes.xml.flat",
-        "source": "com.example.microlearningquizapp-main-39:/layout/activity_math_quizzes.xml"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\layout_activity_science_lessons.xml.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\layout\\activity_science_lessons.xml"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_teacher2.jpg.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/teacher2.jpg"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_answbox.png.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\answbox.png"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_add3.png.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/add3.png"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\layout_activity_quizzesmodules.xml.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\layout\\activity_quizzesmodules.xml"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/xml_data_extraction_rules.xml.flat",
-        "source": "com.example.microlearningquizapp-main-39:/xml/data_extraction_rules.xml"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\layout_activity_learningmodules.xml.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\layout\\activity_learningmodules.xml"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.example.microlearningquizapp-main-39:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_playing.png.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\playing.png"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/layout_activity_math_lessons.xml.flat",
-        "source": "com.example.microlearningquizapp-main-39:/layout/activity_math_lessons.xml"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_booknav.png.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/booknav.png"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_score.png.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\score.png"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/layout_item_lessons.xml.flat",
-        "source": "com.example.microlearningquizapp-main-39:/layout/item_lessons.xml"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_children.jpg.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\children.jpg"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/layout_activity_english_lessons.xml.flat",
-        "source": "com.example.microlearningquizapp-main-39:/layout/activity_english_lessons.xml"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\layout_activity_admin_dashboard.xml.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\layout\\activity_admin_dashboard.xml"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_usernav.png.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/usernav.png"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\layout_activity_math_quizzes.xml.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\layout\\activity_math_quizzes.xml"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.microlearningquizapp-main-39:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_progress_bar.xml.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\progress_bar.xml"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_quiznav.png.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/quiznav.png"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\layout_activity_lesson.xml.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\layout\\activity_lesson.xml"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_sciencequiz.png.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/sciencequiz.png"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/layout_activity_english_quizzes.xml.flat",
-        "source": "com.example.microlearningquizapp-main-39:/layout/activity_english_quizzes.xml"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_child.png.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\child.png"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/layout_activity_science_quizzes.xml.flat",
-        "source": "com.example.microlearningquizapp-main-39:/layout/activity_science_quizzes.xml"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_trophynav.png.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\trophynav.png"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.example.microlearningquizapp-main-39:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/layout_activity_edit_lesson.xml.flat",
-        "source": "com.example.microlearningquizapp-main-39:/layout/activity_edit_lesson.xml"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_math_book.png.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\math_book.png"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_children.jpg.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/children.jpg"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_profile.png.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\profile.png"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/layout_activity_student_dashboard.xml.flat",
-        "source": "com.example.microlearningquizapp-main-39:/layout/activity_student_dashboard.xml"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_teacher.jpg.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\teacher.jpg"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/layout_activity_quizzesmodules.xml.flat",
-        "source": "com.example.microlearningquizapp-main-39:/layout/activity_quizzesmodules.xml"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\layout_activity_english_quizzes.xml.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\layout\\activity_english_quizzes.xml"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/layout_activity_learningmodules.xml.flat",
-        "source": "com.example.microlearningquizapp-main-39:/layout/activity_learningmodules.xml"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.microlearningquizapp-main-39:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_quiznav.png.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\quiznav.png"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/layout_activity_admin_dashboard.xml.flat",
-        "source": "com.example.microlearningquizapp-main-39:/layout/activity_admin_dashboard.xml"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\layout_activity_english_lessons.xml.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\layout\\activity_english_lessons.xml"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_playing.png.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/playing.png"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_add1.png.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\add1.png"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_math_book.png.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/math_book.png"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_profile.png.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/profile.png"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\raw_mathaddition.mp4.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\raw\\mathaddition.mp4"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_kid.png.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/kid.png"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_add4.png.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\add4.png"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/raw_mathmultiplication.mp4.flat",
-        "source": "com.example.microlearningquizapp-main-39:/raw/mathmultiplication.mp4"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\layout_activity_math_lessons.xml.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\layout\\activity_math_lessons.xml"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_add4.png.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/add4.png"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_abacus.png.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\abacus.png"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/raw_mathaddition.mp4.flat",
-        "source": "com.example.microlearningquizapp-main-39:/raw/mathaddition.mp4"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_homenav.png.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\homenav.png"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.microlearningquizapp-main-39:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_mathquiz.png.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\mathquiz.png"
+    },
+    {
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\layout_activity_science_quizzes.xml.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\layout\\activity_science_quizzes.xml"
+    },
+    {
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_book.png.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\book.png"
+    },
+    {
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_booknav.png.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\booknav.png"
+    },
+    {
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_englishquiz.png.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\englishquiz.png"
+    },
+    {
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\raw_mathmultiplication.mp4.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\raw\\mathmultiplication.mp4"
+    },
+    {
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\layout_activity_user_profile.xml.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\layout\\activity_user_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_maths.png.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\maths.png"
     }
 ]
