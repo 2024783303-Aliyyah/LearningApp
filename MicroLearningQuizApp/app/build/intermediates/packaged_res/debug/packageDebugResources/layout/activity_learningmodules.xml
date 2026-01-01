@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/learningmodules"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFACD">
+
+    <ImageView
+        android:id="@+id/btnBack6"
+        android:layout_width="48dp"
+        android:layout_height="33dp"
+        android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/buttonback"
+        android:onClick="goBack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/bottomNavBar"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="#FFEB80"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/navProfile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Profile"
+            android:padding="10dp"
+            android:src="@drawable/usernav" />
+
+        <ImageView
+            android:id="@+id/navLessons"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Lessons"
+            android:padding="10dp"
+            android:src="@drawable/booknav" />
+
+        <ImageView
+            android:id="@+id/navHome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Home"
+            android:padding="10dp"
+            android:src="@drawable/homenav" />
+
+        <ImageView
+            android:id="@+id/navQuiz"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Quiz"
+            android:padding="10dp"
+            android:src="@drawable/quiznav" />
+
+        <ImageView
+            android:id="@+id/navScores"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Scores"
+            android:padding="10dp"
+            android:src="@drawable/trophynav" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="77dp"
+        android:layout_marginBottom="43dp"
+        android:text="LEARNING MODULES"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/math"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/math"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="19dp"
+        app:cardBackgroundColor="#F7C97C"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/english"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:onClick="openLessons"
+        tools:ignore="MissingConstraints" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="105dp"
+            android:layout_height="99dp"
+            android:layout_margin="25dp"
+            app:srcCompat="@drawable/maths" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="59dp"
+            android:text="MATHEMATICS"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/english"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="18dp"
+        app:cardBackgroundColor="#F7C97C"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/science"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/math"
+        android:onClick="openLessons"
+        tools:ignore="MissingConstraints" >
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="106dp"
+            android:layout_height="103dp"
+            android:layout_margin="25dp"
+            app:srcCompat="@drawable/english" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="59dp"
+            android:text="ENGLISH"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/science"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="113dp"
+        app:cardBackgroundColor="#F7C97C"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/english"
+        android:onClick="openLessons"
+        tools:ignore="MissingConstraints" >
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="108dp"
+            android:layout_height="104dp"
+            android:layout_margin="25dp"
+            app:srcCompat="@drawable/science" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="59dp"
+            android:text="SCIENCE"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
