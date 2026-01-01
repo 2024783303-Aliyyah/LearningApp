@@ -13,6 +13,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import android.content.Intent;
+
 import com.google.android.material.button.MaterialButton;
 
 import java.util.ArrayList;
@@ -88,10 +90,13 @@ public class LoginActivity extends AppCompatActivity {
 
                 if (user.getUsername().equals(username)
                 && user.getPassword().equals(password)) {
-
                     isLoginSuccess = true;
-                    Toast.makeText(this, "Login successful (" + user.getRole() + ")",
-                            Toast.LENGTH_SHORT).show();
+
+                    // navigate to StudentDashboardActivity
+                    Intent intent = new Intent(LoginActivity.this, StudentDashboardActivity.class);
+                    startActivity(intent);
+                    finish();
+
                     break;
                 }
             }
