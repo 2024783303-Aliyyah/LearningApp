@@ -54,8 +54,8 @@
             <ImageView
                 android:layout_width="74dp"
                 android:layout_height="64dp"
-                android:src="@drawable/business"
-                app:tint="#FFD700" />
+                android:src="@drawable/book"
+                 />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -89,8 +89,8 @@
             <ImageView
                 android:layout_width="74dp"
                 android:layout_height="64dp"
-                android:src="@drawable/studentgrades"
-                app:tint="#FFD700" />
+                android:src="@drawable/score" />
+
 
             <TextView
                 android:layout_width="wrap_content"
@@ -124,8 +124,8 @@
             <ImageView
                 android:layout_width="74dp"
                 android:layout_height="64dp"
-                android:src="@drawable/report"
-                app:tint="#FFD700" />
+                android:src="@drawable/profile"
+                 />
 
             <TextView
                 android:layout_width="wrap_content"

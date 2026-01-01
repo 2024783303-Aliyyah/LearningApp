@@ -28,6 +28,21 @@
         android:testOnly="true"
         android:theme="@style/Theme.MicroLearningQuizApp" >
         <activity
+            android:name="com.example.microlearningquizapp.ScienceQuizzes"
+            android:exported="false" />
+        <activity
+            android:name="com.example.microlearningquizapp.EnglishQuizzes"
+            android:exported="false" />
+        <activity
+            android:name="com.example.microlearningquizapp.AddQuiz"
+            android:exported="false" />
+        <activity
+            android:name="com.example.microlearningquizapp.MathQuizzes"
+            android:exported="false" />
+        <activity
+            android:name="com.example.microlearningquizapp.quizzesmodules"
+            android:exported="false" />
+        <activity
             android:name="com.example.microlearningquizapp.ViewLesson"
             android:exported="false" />
         <activity
@@ -59,11 +74,8 @@
             android:exported="false" />
         <activity
             android:name="com.example.microlearningquizapp.SplashActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.example.microlearningquizapp.MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.MicroLearningQuizApp.Splash" >
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
