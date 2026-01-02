@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MicroLearningQuizApp">
         <activity
+            android:name=".adminViewLesson"
+            android:exported="false" />
+        <activity
+            android:name=".adminEditLesson"
+            android:exported="false" />
+        <activity
+            android:name=".adminAddLesson"
+            android:exported="false" />
+        <activity
             android:name=".Report"
             android:exported="false" />
         <activity
