@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF7C2">
+    android:background="#FFF7C2"
+    android:id="@+id/adminDashboard">
 
     <!-- Back button -->
     <ImageView
@@ -43,7 +44,8 @@
         app:layout_constraintTop_toBottomOf="@id/txtTitle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="24dp">
+        android:layout_marginTop="24dp"
+        android:onClick="openAdminActivity">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -78,7 +80,8 @@
         app:layout_constraintTop_toBottomOf="@id/cardLessons"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="20dp"
+        android:onClick="openAdminActivity">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -113,7 +116,8 @@
         app:layout_constraintTop_toBottomOf="@id/cardScores"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="20dp"
+        android:onClick="openAdminActivity">
 
         <LinearLayout
             android:layout_width="match_parent"

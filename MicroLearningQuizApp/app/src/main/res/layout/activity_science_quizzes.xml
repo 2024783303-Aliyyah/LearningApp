@@ -47,12 +47,12 @@
             android:layout_marginBottom="16dp"
             app:cardBackgroundColor="#F7C97C"
             app:cardCornerRadius="20dp"
-            android:onClick="quiz1">
+            android:onClick="Animalquiz">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="quiz 1"
+                android:text="Animals Around Us"
                 android:textSize="22sp"
                 android:textStyle="bold"
                 android:layout_gravity="center"/>
@@ -70,7 +70,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="quiz 2"
+                android:text="Parts of the Body"
                 android:textSize="22sp"
                 android:textStyle="bold"
                 android:layout_gravity="center"/>
@@ -88,7 +88,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="quiz 3"
+                android:text="Space &amp; Sky"
                 android:textSize="22sp"
                 android:textStyle="bold"
                 android:layout_gravity="center"/>

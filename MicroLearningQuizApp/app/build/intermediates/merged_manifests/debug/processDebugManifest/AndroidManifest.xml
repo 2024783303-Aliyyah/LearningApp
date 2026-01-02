@@ -28,6 +28,15 @@
         android:testOnly="true"
         android:theme="@style/Theme.MicroLearningQuizApp" >
         <activity
+            android:name="com.example.microlearningquizapp.score"
+            android:exported="false" />
+        <activity
+            android:name="com.example.microlearningquizapp.Report"
+            android:exported="false" />
+        <activity
+            android:name="com.example.microlearningquizapp.AdminProfile"
+            android:exported="false" />
+        <activity
             android:name="com.example.microlearningquizapp.LoginActivity"
             android:exported="false" />
         <activity
