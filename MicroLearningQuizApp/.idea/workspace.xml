@@ -10,7 +10,22 @@
           <theme>@style/Theme.MicroLearningQuizApp</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_admin_add_lesson.xml">
+        <config>
+          <theme>@style/Theme.MicroLearningQuizApp</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_admin_dashboard.xml">
+        <config>
+          <theme>@style/Theme.MicroLearningQuizApp</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_admin_edit_lesson.xml">
+        <config>
+          <theme>@style/Theme.MicroLearningQuizApp</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_admin_view_lesson.xml">
         <config>
           <theme>@style/Theme.MicroLearningQuizApp</theme>
         </config>
@@ -65,6 +80,11 @@
           <theme>@style/Theme.MicroLearningQuizApp</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_admin_lesson.xml">
+        <config>
+          <theme>@style/Theme.MicroLearningQuizApp</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_lessons.xml">
         <config>
           <theme>@style/Theme.MicroLearningQuizApp</theme>
@@ -76,9 +96,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="baf82009-5c32-41d4-9b88-56dc752f5d8a" name="Changes" comment="add file">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="baf82009-5c32-41d4-9b88-56dc752f5d8a" name="Changes" comment="add file" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -114,6 +132,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="resourceFile" />
+        <option value="layoutResourceFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -131,12 +151,12 @@
     &quot;assignee&quot;: &quot;2024757467-star&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/2024783303-Aliyyah/LearningApp.git&quot;,
-    &quot;accountId&quot;: &quot;88230e99-ac3a-4cc9-aa52-7a434f43a77c&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/2024783303-Aliyyah/LearningApp.git",
+    "accountId": "d1a5eac7-475c-44a7-9501-4aff1897bd70"
   }
-}</component>
+}]]></component>
   <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$" gradleHome="C:\Users\User\.gradle\wrapper\dists\gradle-8.13-bin\5xuhj0ry160q40clulazy9h7d\gradle-8.13" javaHome="C:\Program Files\Android\Android Studio\jbr" gradleVersion="8.13" />
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -182,6 +202,9 @@
       <recent name="com.example.microlearningquizapp" />
     </key>
     <key name="android.template.136656342">
+      <recent name="com.example.microlearningquizapp" />
+    </key>
+    <key name="android.template.1496315949">
       <recent name="com.example.microlearningquizapp" />
     </key>
   </component>
@@ -411,7 +434,15 @@
       <option name="project" value="LOCAL" />
       <updated>1767289794260</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="add file">
+      <option name="closed" value="true" />
+      <created>1767380270188</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1767380270188</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -444,12 +475,12 @@
       <map>
         <entry key="com.example.microlearningquizapp">
           <value>
-            <CheckInfo lastCheckTimestamp="1767268219271" />
+            <CheckInfo lastCheckTimestamp="1767376371454" />
           </value>
         </entry>
         <entry key="com.example.microlearningquizapp.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1767268219271" />
+            <CheckInfo lastCheckTimestamp="1767376371390" />
           </value>
         </entry>
       </map>
