@@ -38,9 +38,9 @@ public class MathQuizzes extends AppCompatActivity {
         Intent intent = new Intent(this, SubtractQuiz.class);
         startActivity(intent);
     }
-
+*/
     public void Multiplyquiz(View view) {
         Intent intent = new Intent(this, MultiplyQuiz.class);
         startActivity(intent);
-    }*/
+    }
 }
