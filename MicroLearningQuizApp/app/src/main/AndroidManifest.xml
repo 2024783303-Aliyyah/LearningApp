@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MicroLearningQuizApp">
         <activity
+            android:name=".MultiplyQuiz"
+            android:exported="false" />
+        <activity
             android:name=".score"
             android:exported="false" />
         <activity
