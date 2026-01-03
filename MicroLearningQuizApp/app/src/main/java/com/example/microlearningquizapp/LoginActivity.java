@@ -41,23 +41,23 @@ public class LoginActivity extends AppCompatActivity {
             return insets;
         });
 
-    // Connect UI
-    edtUsername = findViewById(R.id.edtUsername);
-    edtPassword = findViewById(R.id.edtPassword);
-    btnLogin = findViewById(R.id.btnLogin);
-    progressBar = findViewById(R.id.progressBar);
-    loginForm = findViewById(R.id.loginForm);
+        // Connect UI
+        edtUsername = findViewById(R.id.edtUsername);
+        edtPassword = findViewById(R.id.edtPassword);
+        btnLogin = findViewById(R.id.btnLogin);
+        progressBar = findViewById(R.id.progressBar);
+        loginForm = findViewById(R.id.loginForm);
 
-    // prepare dummy users
-    users = fetchAllUsers();
+        // prepare dummy users
+        users = fetchAllUsers();
 
-    // app loading
-    progressBar.setVisibility(View.VISIBLE);
-    loginForm.setVisibility(View.GONE);
+        // app loading
+        progressBar.setVisibility(View.VISIBLE);
+        loginForm.setVisibility(View.GONE);
 
-    loginForm.postDelayed(() -> {
-        progressBar.setVisibility(View.GONE);
-        loginForm.setVisibility(View.VISIBLE);
+        loginForm.postDelayed(() -> {
+            progressBar.setVisibility(View.GONE);
+            loginForm.setVisibility(View.VISIBLE);
         }, 2000);
 
         // login button
@@ -83,22 +83,30 @@ public class LoginActivity extends AppCompatActivity {
 
             boolean isLoginSuccess = false;
 
-            // check dummy data list
-            for (int i = 0; i < users.size(); i++) {
-                UserVO user = users.get(i);
+            // --- BAHAGIAN LOGIK YANG DIUBAH SUAI ---
 
-                if (user.getUsername().equals(username)
-                && user.getPassword().equals(password)) {
+            // Semak senarai data pengguna
+            for (UserVO user : users) {
+                // Pertama, semak jika nama pengguna dan kata laluan sepadan
+                if (user.getUsername().equals(username) && user.getPassword().equals(password)) {
                     isLoginSuccess = true;
 
-                    // navigate to StudentDashboardActivity
-                    Intent intent = new Intent(LoginActivity.this, StudentDashboardActivity.class);
-                    startActivity(intent);
-                    finish();
+                    // Kedua, semak peranan pengguna (role)
+                    if (user.getRole().equals("Admin")) {
+                        // Jika Admin, pergi ke AdminDashboard
+                        Intent intent = new Intent(LoginActivity.this, adminDashboard.class);
+                        startActivity(intent);
+                    } else {
+                        // Jika bukan Admin (cth: Student), pergi ke StudentDashboard
+                        Intent intent = new Intent(LoginActivity.this, StudentDashboardActivity.class);
+                        startActivity(intent);
+                    }
 
-                    break;
+                    finish(); // Tutup LoginActivity selepas berjaya log masuk
+                    break;    // Keluar dari gelung (loop) kerana pengguna telah dijumpai
                 }
             }
+            // --- AKHIR BAHAGIAN YANG DIUBAH SUAI ---
 
             if (!isLoginSuccess) {
                 Toast.makeText(this, "Invalid username or password",
@@ -111,6 +119,7 @@ public class LoginActivity extends AppCompatActivity {
     public List<UserVO> fetchAllUsers() {
         List<UserVO> users = new ArrayList<>();
 
+        // Pastikan UserVO anda mempunyai getter untuk 'getRole()'
         users.add(new UserVO("admin", "1234", "Admin"));
         users.add(new UserVO("student", "1111", "Student"));
 
