@@ -1,6 +1,7 @@
 package com.example.microlearningquizapp;
 
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,4 +22,10 @@ public class AdminProfile extends AppCompatActivity {
             return insets;
         });
     }
+
+    // Tambah fungsi ini
+    public void goBack(View view) {
+        finish(); // 'finish()' akan menutup aktiviti semasa dan kembali ke skrin sebelumnya
+    }
+
 }

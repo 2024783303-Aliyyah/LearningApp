@@ -54,7 +54,7 @@ public class ScienceLessons extends AppCompatActivity {
                 //+ R.raw.subtraction_video
         ));
 
-        LessonAdapter adapter = new LessonAdapter(this, lessonList);
+        LessonAdapter adapter = new LessonAdapter(this, lessonList, false);
         rvLessons.setAdapter(adapter);
     }
 

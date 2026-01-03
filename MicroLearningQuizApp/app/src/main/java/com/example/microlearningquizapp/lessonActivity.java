@@ -1,33 +1,22 @@
+// Fail: lessonActivity.java
 package com.example.microlearningquizapp;
-
 
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.MediaController;
 import android.widget.TextView;
 import android.widget.VideoView;
-import android.widget.MediaController;
-import android.widget.FrameLayout;
-
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class lessonActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_lesson);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.lessonactivity), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
 
+        // Pautkan view dari activity_lesson.xml
         TextView textSubject = findViewById(R.id.textSubject);
         TextView textTitle = findViewById(R.id.textTitle);
         TextView textYear = findViewById(R.id.textYear);
@@ -35,33 +24,36 @@ public class lessonActivity extends AppCompatActivity {
         TextView textContent = findViewById(R.id.textContent);
         VideoView videoView = findViewById(R.id.videoView);
 
-        textSubject.setText(getIntent().getStringExtra("subject"));
-        textTitle.setText(getIntent().getStringExtra("title"));
-        textYear.setText(getIntent().getStringExtra("year"));
-        textDescription.setText(getIntent().getStringExtra("description"));
-        textContent.setText(getIntent().getStringExtra("content"));
-        String videoPath = getIntent().getStringExtra("video");
-        if (videoPath != null && !videoPath.isEmpty()) {
-            Uri videoUri = Uri.parse(videoPath);
-            videoView.setVideoURI(videoUri);
+        // Ambil data yang dihantar dari LessonAdapter
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            textSubject.setText(extras.getString("subject"));
+            textTitle.setText(extras.getString("title"));
+            textYear.setText(extras.getString("year"));
+            textDescription.setText(extras.getString("description"));
+            textContent.setText(extras.getString("content"));
 
-            android.widget.MediaController mediaController = new android.widget.MediaController(this);
-            mediaController.setAnchorView(videoView);
-            videoView.setMediaController(mediaController);
+            String videoPath = extras.getString("video");
+            if (videoPath != null && !videoPath.isEmpty()) {
+                videoView.setVisibility(View.VISIBLE);
+                Uri videoUri = Uri.parse(videoPath);
 
-            videoView.setOnPreparedListener(new android.media.MediaPlayer.OnPreparedListener() {
-                @Override
-                public void onPrepared(android.media.MediaPlayer mp) {
-                    mp.setLooping(true);
-                    videoView.start();
-                }
-            });
+                // Tetapkan video dahulu sebelum mengikat controller
+                videoView.setVideoURI(videoUri);
+
+                // Cipta dan ikat MediaController
+                MediaController mediaController = new MediaController(this);
+                mediaController.setAnchorView(videoView);
+                videoView.setMediaController(mediaController);
+
+                videoView.start(); // Mulakan video secara automatik
+            } else {
+                videoView.setVisibility(View.GONE); // Sembunyikan jika tiada video
+            }
         }
-
     }
 
-    public void goBack(View view)
-    {
+    public void goBack(View view) {
         finish();
     }
 }

@@ -1,6 +1,7 @@
 package com.example.microlearningquizapp;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -54,4 +55,10 @@ public class adminAddLesson extends AppCompatActivity {
                     Toast.LENGTH_SHORT).show();
         });
     }
+
+    // Tambah fungsi ini
+    public void goBack(View view) {
+        finish(); // 'finish()' akan menutup aktiviti semasa dan kembali ke skrin sebelumnya
+    }
+
 }

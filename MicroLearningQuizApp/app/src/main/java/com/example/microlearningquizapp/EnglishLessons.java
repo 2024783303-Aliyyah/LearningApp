@@ -55,7 +55,7 @@ public class EnglishLessons extends AppCompatActivity {
         ));
 
 
-        LessonAdapter adapter = new LessonAdapter(this, lessonList);
+        LessonAdapter adapter = new LessonAdapter(this, lessonList, false);
         rvLessons.setAdapter(adapter);
     }
 

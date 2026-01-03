@@ -29,7 +29,7 @@ public class adminDashboard extends AppCompatActivity {
        int id = view.getId();
        if(id == R.id.cardLessons)
        {
-           startActivity(new Intent(this, ViewLesson.class));
+           startActivity(new Intent(this, adminViewLesson.class));
        }
        else if(id == R.id.cardScores) //kena edit balik link ke view score
        {

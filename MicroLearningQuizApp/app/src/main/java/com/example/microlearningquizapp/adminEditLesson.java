@@ -2,6 +2,7 @@ package com.example.microlearningquizapp;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -72,7 +73,7 @@ public class adminEditLesson extends AppCompatActivity {
             String updatedVideoUrl = etVideoUrl.getText().toString();
 
             // Toast
-            Toast.makeText(EditLesson.this, "Lesson Updated: " + updatedTitle + " "
+            Toast.makeText(adminEditLesson.this, "Lesson Updated: " + updatedTitle + " "
                     + updatedSubject, Toast.LENGTH_SHORT).show();
 
             //CLOSE activity after save
@@ -80,4 +81,10 @@ public class adminEditLesson extends AppCompatActivity {
         });
 
     }
+
+    // Tambah fungsi ini
+    public void goBack(View view) {
+        finish(); // 'finish()' akan menutup aktiviti semasa dan kembali ke skrin sebelumnya
+    }
+
 }

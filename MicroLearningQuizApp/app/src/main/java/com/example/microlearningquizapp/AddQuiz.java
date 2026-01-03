@@ -100,4 +100,10 @@ public class AddQuiz extends AppCompatActivity {
         // Tutup AddQuiz supaya pengguna tidak boleh kembali ke kuiz yang telah dijawab
         finish();
     }
+
+    // Tambah fungsi ini
+    public void goBack(View view) {
+        finish(); // 'finish()' akan menutup aktiviti semasa dan kembali ke skrin sebelumnya
+    }
+
 }

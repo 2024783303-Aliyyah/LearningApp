@@ -62,7 +62,7 @@ public class MathLessons extends AppCompatActivity {
                 "android.resource://" + getPackageName() + "/" + R.raw.multiply
         ));
 
-        LessonAdapter adapter = new LessonAdapter(this, lessonList);
+        LessonAdapter adapter = new LessonAdapter(this, lessonList, false);
         rvLessons.setAdapter(adapter);
     }
 
