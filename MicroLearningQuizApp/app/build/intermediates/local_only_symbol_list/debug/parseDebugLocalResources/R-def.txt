@@ -39,6 +39,7 @@ drawable profile
 drawable progress_bar
 drawable quiz
 drawable quiznav
+drawable reading
 drawable science
 drawable sciencequiz
 drawable score
@@ -100,6 +101,7 @@ id etVideoUrl
 id etYears
 id finish
 id finishMultiply
+id headerImage
 id imageView2
 id imageView3
 id imageView4

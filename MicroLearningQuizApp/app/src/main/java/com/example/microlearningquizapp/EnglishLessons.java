@@ -40,8 +40,8 @@ public class EnglishLessons extends AppCompatActivity {
                 "Year 1",
                 "Learn alphabet",
                 "alphabet content goes here",
-                "android.resource://" + getPackageName() + "/"
-                //+ R.raw.addition_video
+                "android.resource://" + getPackageName() + "/",
+                R.drawable.reading
         ));
 
         lessonList.add(new Lesson(
@@ -50,8 +50,9 @@ public class EnglishLessons extends AppCompatActivity {
                 "Year 1",
                 "Learn basic synonyms",
                 "Synonyms content goes here",
-                "android.resource://" + getPackageName() + "/"
+                "android.resource://" + getPackageName() + "/",
                 //+ R.raw.subtraction_video
+                R.drawable.reading
         ));
 
 

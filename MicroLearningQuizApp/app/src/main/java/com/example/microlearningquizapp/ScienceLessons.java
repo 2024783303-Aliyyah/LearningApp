@@ -40,8 +40,9 @@ public class ScienceLessons extends AppCompatActivity {
                 "Year 1",
                 "Learn basic living and non living things",
                 "content goes here",
-                "android.resource://" + getPackageName() + "/"
+                "android.resource://" + getPackageName() + "/",
                 //+ R.raw.addition_video
+                R.drawable.reading
         ));
 
         lessonList.add(new Lesson(
@@ -50,8 +51,9 @@ public class ScienceLessons extends AppCompatActivity {
                 "Year 1",
                 "Learn human Senses",
                 "Human Senses content goes here",
-                "android.resource://" + getPackageName() + "/"
+                "android.resource://" + getPackageName() + "/",
                 //+ R.raw.subtraction_video
+                R.drawable.reading
         ));
 
         LessonAdapter adapter = new LessonAdapter(this, lessonList, false);

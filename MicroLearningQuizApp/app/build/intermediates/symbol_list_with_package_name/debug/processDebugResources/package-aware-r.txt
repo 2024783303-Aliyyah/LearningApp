@@ -3701,6 +3701,7 @@ drawable profile
 drawable progress_bar
 drawable quiz
 drawable quiznav
+drawable reading
 drawable science
 drawable sciencequiz
 drawable score
@@ -3981,6 +3982,7 @@ id graph_wrap
 id group_divider
 id grouping
 id groups
+id headerImage
 id header_title
 id hidden
 id hide_ime_id

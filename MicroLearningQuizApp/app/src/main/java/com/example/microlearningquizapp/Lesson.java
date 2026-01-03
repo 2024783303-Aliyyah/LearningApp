@@ -10,19 +10,21 @@ public class Lesson {
     private String description;
     private String content;
     private String videoPath;
+    private int imageResourceId; // <-- 1. MEDAN BARU DITAMBAH (untuk ID imej)
 
     // Constructor kosong diperlukan untuk beberapa operasi seperti Firebase
     public Lesson() {
     }
 
-    // Constructor utama untuk mencipta objek Lesson
-    public Lesson(String title, String subject, String year, String description, String content, String videoPath) {
+    // 2. CONSTRUCTOR UTAMA DIKEMAS KINI untuk menerima ID imej
+    public Lesson(String title, String subject, String year, String description, String content, String videoPath, int imageResourceId) {
         this.title = title;
         this.subject = subject;
         this.year = year;
         this.description = description;
         this.content = content;
         this.videoPath = videoPath;
+        this.imageResourceId = imageResourceId; // <-- Simpan ID imej
     }
 
     // Getter untuk setiap medan (diperlukan oleh Adapter)
@@ -48,5 +50,10 @@ public class Lesson {
 
     public String getVideoPath() {
         return videoPath;
+    }
+
+    // 3. GETTER BARU DITAMBAH untuk mendapatkan ID imej
+    public int getImageResourceId() {
+        return imageResourceId;
     }
 }

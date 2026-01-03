@@ -3700,6 +3700,7 @@ int drawable profile 0x7f070109
 int drawable progress_bar 0x7f07010a
 int drawable quiz 0x7f07010b
 int drawable quiznav 0x7f07010c
+int drawable reading 0x7f070117
 int drawable science 0x7f07010d
 int drawable sciencequiz 0x7f07010e
 int drawable score 0x7f07010f
@@ -3980,6 +3981,7 @@ int id graph_wrap 0x7f08010a
 int id group_divider 0x7f08010b
 int id grouping 0x7f08010c
 int id groups 0x7f08010d
+int id headerImage 0x7f0802ad
 int id header_title 0x7f08010e
 int id hidden 0x7f08010f
 int id hide_ime_id 0x7f080110
