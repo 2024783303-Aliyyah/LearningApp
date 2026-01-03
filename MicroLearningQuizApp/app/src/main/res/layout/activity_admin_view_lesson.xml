@@ -6,6 +6,18 @@
     android:layout_height="match_parent"
     android:background="#FFF7C2">
 
+    <ImageView
+        android:id="@+id/btnBack6"
+        android:layout_width="48dp"
+        android:layout_height="33dp"
+        android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/buttonback"
+        android:onClick="goBack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <!-- Title -->
     <TextView
         android:id="@+id/tvTitle"
@@ -15,8 +27,9 @@
         android:textSize="28sp"
         android:textStyle="bold"
         android:layout_margin="25dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnBack6"/>
 
     <!-- Add Lesson Button -->
     <Button
@@ -28,7 +41,8 @@
         android:textStyle="bold"
         android:layout_marginEnd="25dp"
         app:layout_constraintTop_toTopOf="@id/tvTitle"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/tvTitle"/>
 
     <!-- RecyclerView -->
     <androidx.recyclerview.widget.RecyclerView

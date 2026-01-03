@@ -13,6 +13,16 @@
         android:layout_margin="10dp"
         android:padding="16dp">
 
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="33dp"
+            android:src="@drawable/buttonback"
+            android:onClick="goBack"
+            android:contentDescription="Back Button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <!-- Title -->
         <TextView
             android:id="@+id/textViewEdit"
