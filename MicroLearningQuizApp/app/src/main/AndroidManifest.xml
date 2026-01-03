@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MicroLearningQuizApp">
         <activity
+            android:name=".SubtractQuiz"
+            android:exported="false" />
+        <activity
             android:name=".adminViewLesson"
             android:exported="false" />
         <activity

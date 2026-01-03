@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/subtractquiz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFACD">
+
+    <!-- Header: Butang Back dan Tajuk (Kekal sama) -->
+    <ImageView
+        android:id="@+id/btnBack4"
+        android:layout_width="48dp"
+        android:layout_height="33dp"
+        android:layout_margin="16dp"
+        android:onClick="goBack"
+        android:src="@drawable/buttonback"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:text="Minus mission -"
+        android:textColor="#020202"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+        <!-- FIX 1: Struktur CardView pertama dibetulkan -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/addq1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="#F7C97C"
+            app:cardCornerRadius="20dp">
+
+            <!-- FIX 2: Guna RelativeLayout untuk menyusun item bersebelahan -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp">
+
+                <!-- Gambar soalan di sebelah kiri -->
+                <ImageView
+                    android:id="@+id/question_image_1"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/subtract1" />
+
+                <!-- FIX 3: Guna EditText untuk input jawapan di sebelah kanan -->
+                <EditText
+                    android:id="@+id/answer_input_1"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/answbox"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="12dp"
+                    android:textColor="#000000"
+                    android:textSize="22sp" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <!-- CardView untuk kuiz lain (Kekal sama) -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/addq2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="16dp"
+            android:onClick="Subtractquiz"
+            app:cardBackgroundColor="#F7C97C"
+            app:cardCornerRadius="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp">
+
+                <!-- Gambar soalan di sebelah kiri -->
+                <ImageView
+                    android:id="@+id/question_image_2"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/subtract2" />
+
+                <!-- FIX 3: Guna EditText untuk input jawapan di sebelah kanan -->
+                <EditText
+                    android:id="@+id/answer_input_2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/answbox"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="12dp"
+                    android:textColor="#000000"
+                    android:textSize="22sp" />
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/addq3"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="16dp"
+            android:onClick="Multiplyquiz"
+            app:cardBackgroundColor="#F7C97C"
+            app:cardCornerRadius="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp">
+
+                <!-- Gambar soalan di sebelah kiri -->
+                <ImageView
+                    android:id="@+id/question_image_3"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/subtract3" />
+
+                <!-- FIX 3: Guna EditText untuk input jawapan di sebelah kanan -->
+                <EditText
+                    android:id="@+id/answer_input_3"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/answbox"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="12dp"
+                    android:textColor="#000000"
+                    android:textSize="22sp" />
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/addq4"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="16dp"
+            android:onClick="Multiplyquiz"
+            app:cardBackgroundColor="#F7C97C"
+            app:cardCornerRadius="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp">
+
+                <!-- Gambar soalan di sebelah kiri -->
+                <ImageView
+                    android:id="@+id/question_image_4"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/subtract4" />
+
+                <!-- FIX 3: Guna EditText untuk input jawapan di sebelah kanan -->
+                <EditText
+                    android:id="@+id/answer_input_4"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/answbox"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="12dp"
+                    android:textColor="#000000"
+                    android:textSize="22sp" />
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <Button
+            android:id="@+id/finish"
+            android:layout_width="135dp"
+            android:layout_height="44dp"
+            android:backgroundTint="#4CAF50"
+            android:text="FINISH"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <!-- Bottom Navigation Bar (Kekal sama) -->
+    <LinearLayout
+        android:id="@+id/bottomNavBar"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="#FFEB80"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <!-- Ikon-ikon Navigasi anda -->
+        <ImageView
+            android:id="@+id/navProfile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Prsofile"
+            android:padding="10dp"
+            android:src="@drawable/usernav" />
+        <ImageView
+            android:id="@+id/navLessons"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Lessons"
+            android:padding="10dp"
+            android:src="@drawable/booknav" />
+        <ImageView
+            android:id="@+id/navHome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Home"
+            android:padding="10dp"
+            android:src="@drawable/homenav" />
+        <ImageView
+            android:id="@+id/navQuiz"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Quiz"
+            android:padding="10dp"
+            android:src="@drawable/quiznav" />
+        <ImageView
+            android:id="@+id/navScores"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Scores"
+            android:padding="10dp"
+            android:src="@drawable/trophynav" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
