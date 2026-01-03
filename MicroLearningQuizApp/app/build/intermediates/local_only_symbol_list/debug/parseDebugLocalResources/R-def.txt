@@ -118,6 +118,7 @@ id loginForm
 id main
 id math
 id mathquiz
+id multiplequiz
 id multiply_image_1
 id multiply_image_2
 id multiply_image_3

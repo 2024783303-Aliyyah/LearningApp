@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:2:1-92:12
-INJECTED from C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:2:1-92:12
-INJECTED from C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:2:1-92:12
-INJECTED from C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:2:1-92:12
+ADDED from C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:2:1-94:12
+INJECTED from C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:2:1-94:12
+INJECTED from C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:2:1-94:12
+INJECTED from C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:2:1-94:12
 MERGED from [com.google.android.material:material:1.13.0] C:\Users\ALIYYAH\.gradle\caches\8.13\transforms\e674da648620b2a49a2872bc90c40308\transformed\material-1.13.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\ALIYYAH\.gradle\caches\8.13\transforms\0ed7e002833aa041c7556cab3cc0b7af\transformed\constraintlayout-2.2.1\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.appcompat:appcompat-resources:1.7.1] C:\Users\ALIYYAH\.gradle\caches\8.13\transforms\e4d0bd7c1d2cd7b19c4129b28e9aca33\transformed\appcompat-resources-1.7.1\AndroidManifest.xml:2:1-7:12
@@ -57,8 +57,8 @@ MERGED from [androidx.compose.runtime:runtime-annotation-android:1.9.0] C:\Users
 	xmlns:android
 		ADDED from C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:5:5-90:19
-INJECTED from C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:5:5-90:19
+ADDED from C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:5:5-92:19
+INJECTED from C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:5:5-92:19
 MERGED from [com.google.android.material:material:1.13.0] C:\Users\ALIYYAH\.gradle\caches\8.13\transforms\e674da648620b2a49a2872bc90c40308\transformed\material-1.13.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.13.0] C:\Users\ALIYYAH\.gradle\caches\8.13\transforms\e674da648620b2a49a2872bc90c40308\transformed\material-1.13.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\ALIYYAH\.gradle\caches\8.13\transforms\0ed7e002833aa041c7556cab3cc0b7af\transformed\constraintlayout-2.2.1\AndroidManifest.xml:7:5-20
@@ -227,24 +227,28 @@ ADDED from C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizA
 		ADDED from C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:79:13-37
 	android:name
 		ADDED from C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:78:13-43
+activity#com.example.microlearningquizapp.score
+ADDED from C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:80:9-81:36
+	android:name
+		ADDED from C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:81:13-34
 activity#com.example.microlearningquizapp.SplashActivity
-ADDED from C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:80:9-89:20
+ADDED from C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:82:9-91:20
 	android:exported
-		ADDED from C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:82:13-36
+		ADDED from C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:84:13-36
 	android:theme
-		ADDED from C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:83:13-63
+		ADDED from C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:85:13-63
 	android:name
-		ADDED from C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:81:13-43
+		ADDED from C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:83:13-43
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:84:13-88:29
+ADDED from C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:86:13-90:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:85:17-69
+ADDED from C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:87:17-69
 	android:name
-		ADDED from C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:85:25-66
+		ADDED from C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:87:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:87:17-77
+ADDED from C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:89:17-77
 	android:name
-		ADDED from C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:87:27-74
+		ADDED from C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:89:27-74
 uses-sdk
 INJECTED from C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\ALIYYAH\AndroidStudioProjects\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml

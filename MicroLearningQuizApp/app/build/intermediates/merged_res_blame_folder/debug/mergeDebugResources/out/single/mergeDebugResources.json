@@ -32,12 +32,16 @@
         "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_subtract2.png.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/subtract2.png"
+        "merged": "com.example.microlearningquizapp-debug-37:/layout_activity_multiply_quiz.xml.flat",
+        "source": "com.example.microlearningquizapp-main-39:/layout/activity_multiply_quiz.xml"
     },
     {
         "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_subtract2.png.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\subtract2.png"
     },
     {
         "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_cow.png.flat",
@@ -140,8 +144,8 @@
         "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\layout\\activity_splash.xml"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_subtract1.png.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/subtract1.png"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_subtract3.png.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\subtract3.png"
     },
     {
         "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_quiz.png.flat",
@@ -180,16 +184,16 @@
         "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\layout\\activity_science_lessons.xml"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_subtract4.png.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/subtract4.png"
-    },
-    {
         "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\layout_activity_learningmodules.xml.flat",
         "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\layout\\activity_learningmodules.xml"
     },
     {
         "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_multiply3.png.flat",
         "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\multiply3.png"
+    },
+    {
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\layout_activity_subtract_quiz.xml.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\layout\\activity_subtract_quiz.xml"
     },
     {
         "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_playing.png.flat",
@@ -228,10 +232,6 @@
         "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\layout\\activity_lesson.xml"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/layout_activity_subtract_quiz.xml.flat",
-        "source": "com.example.microlearningquizapp-main-39:/layout/activity_subtract_quiz.xml"
-    },
-    {
         "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_child.png.flat",
         "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\child.png"
     },
@@ -242,10 +242,6 @@
     {
         "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\ic_launcher_background.xml"
-    },
-    {
-        "merged": "com.example.microlearningquizapp-debug-37:/layout_activity_math_quizzes.xml.flat",
-        "source": "com.example.microlearningquizapp-main-39:/layout/activity_math_quizzes.xml"
     },
     {
         "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_profile.png.flat",
@@ -276,8 +272,8 @@
         "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\quiznav.png"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_subtract3.png.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/subtract3.png"
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_subtract4.png.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\subtract4.png"
     },
     {
         "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\layout_activity_english_lessons.xml.flat",
@@ -322,6 +318,10 @@
     {
         "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\layout_activity_science_quizzes.xml.flat",
         "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\layout\\activity_science_quizzes.xml"
+    },
+    {
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_subtract1.png.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\subtract1.png"
     },
     {
         "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_book.png.flat",

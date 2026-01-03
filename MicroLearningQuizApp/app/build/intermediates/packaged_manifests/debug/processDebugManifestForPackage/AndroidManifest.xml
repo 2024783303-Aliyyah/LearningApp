@@ -93,6 +93,7 @@
         <activity
             android:name="com.example.microlearningquizapp.adminDashboard"
             android:exported="false" />
+        <activity android:name="com.example.microlearningquizapp.score" />
         <activity
             android:name="com.example.microlearningquizapp.SplashActivity"
             android:exported="true"

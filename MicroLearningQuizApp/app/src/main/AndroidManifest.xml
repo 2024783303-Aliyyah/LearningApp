@@ -15,6 +15,9 @@
             android:name=".SubtractQuiz"
             android:exported="false" />
         <activity
+            android:name=".MultiplyQuiz"
+            android:exported="false" />
+        <activity
             android:name=".adminViewLesson"
             android:exported="false" />
         <activity

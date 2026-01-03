@@ -47,7 +47,7 @@ public class MultiplyQuiz extends AppCompatActivity {
         btnBack = findViewById(R.id.btnBackMultiply);
 
         // Set system bars padding
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.multiplyquiz), (v, insets) -> {
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.multiplequiz), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
