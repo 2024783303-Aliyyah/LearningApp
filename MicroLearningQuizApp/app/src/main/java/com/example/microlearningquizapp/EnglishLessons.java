@@ -35,8 +35,8 @@ public class EnglishLessons extends AppCompatActivity {
 
         // Add lessons with all fields
         lessonList.add(new Lesson(
-                "English",
                 "Alphabet Adventures",
+                "English",
                 "Year 1",
                 "Learn alphabet",
                 "alphabet content goes here",
@@ -45,8 +45,8 @@ public class EnglishLessons extends AppCompatActivity {
         ));
 
         lessonList.add(new Lesson(
-                "English",
                 "Fun with Synonyms",
+                "English",
                 "Year 1",
                 "Learn basic synonyms",
                 "Synonyms content goes here",

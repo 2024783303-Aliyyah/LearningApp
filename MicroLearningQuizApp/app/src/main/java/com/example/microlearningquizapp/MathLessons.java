@@ -36,8 +36,8 @@ public class MathLessons extends AppCompatActivity {
 
         // Add lessons with all fields
         lessonList.add(new Lesson(
-                "Math",
                 "Addition",
+                "Mathematic",
                 "Year 1",
                 "Learn basic addition",
                 "Addition content goes here",
@@ -45,8 +45,8 @@ public class MathLessons extends AppCompatActivity {
         ));
 
         lessonList.add(new Lesson(
-                "Math",
                 "Subtraction",
+                "Mathematic",
                 "Year 1",
                 "Learn basic subtraction",
                 "Subtraction content goes here",
@@ -54,8 +54,8 @@ public class MathLessons extends AppCompatActivity {
         ));
 
         lessonList.add(new Lesson(
-                "Math",
                 "Multiplication",
+                "Mathematic",
                 "Year 1",
                 "Learn multiplication",
                 "Multiplication content goes here",

@@ -35,8 +35,8 @@ public class ScienceLessons extends AppCompatActivity {
 
         // Add lessons with all fields
         lessonList.add(new Lesson(
-                "Science",
                 "Living vs Non-living",
+                "Science",
                 "Year 1",
                 "Learn basic living and non living things",
                 "content goes here",
@@ -45,8 +45,8 @@ public class ScienceLessons extends AppCompatActivity {
         ));
 
         lessonList.add(new Lesson(
+                "Five Sense",
                 "Science",
-                "Five Senses",
                 "Year 1",
                 "Learn human Senses",
                 "Human Senses content goes here",
