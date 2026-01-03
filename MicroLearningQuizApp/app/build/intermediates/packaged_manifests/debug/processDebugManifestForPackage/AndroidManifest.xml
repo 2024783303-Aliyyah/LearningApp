@@ -31,6 +31,9 @@
             android:name="com.example.microlearningquizapp.SubtractQuiz"
             android:exported="false" />
         <activity
+            android:name="com.example.microlearningquizapp.MultiplyQuiz"
+            android:exported="false" />
+        <activity
             android:name="com.example.microlearningquizapp.adminViewLesson"
             android:exported="false" />
         <activity
