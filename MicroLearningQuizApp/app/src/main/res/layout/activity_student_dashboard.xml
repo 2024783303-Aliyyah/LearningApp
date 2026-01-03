@@ -10,30 +10,19 @@
     tools:context=".StudentDashboardActivity">
 
     <!-- Back button -->
-    <ImageView
-        android:id="@+id/btnBack"
-        android:layout_width="48dp"
-        android:layout_height="33dp"
-        android:layout_margin="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:src="@drawable/buttonback"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Title Hello Student! -->
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
         android:text="Hello Student!"
+        android:textColor="@color/black"
         android:textSize="22sp"
         android:textStyle="bold"
-        android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@+id/btnBack"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="40dp" />
+        tools:layout_editor_absoluteY="89dp" />
 
     <!-- Lessons -->
     <androidx.cardview.widget.CardView

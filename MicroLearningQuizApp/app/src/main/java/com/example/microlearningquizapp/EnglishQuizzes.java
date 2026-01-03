@@ -1,5 +1,6 @@
 package com.example.microlearningquizapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -26,6 +27,20 @@ public class EnglishQuizzes extends AppCompatActivity {
     // Tambah fungsi ini
     public void goBack(View view) {
         finish(); // 'finish()' akan menutup aktiviti semasa dan kembali ke skrin sebelumnya
+    }
+
+    public void openMenu(View view)
+    {
+        int id = view.getId();
+        if (id == R.id.navProfile) {
+            startActivity(new Intent(this, UserProfileActivity.class));
+        } else if (id == R.id.navLessons) {
+            startActivity(new Intent(this, learningmodules.class));
+        } else if (id == R.id.navHome) {
+            startActivity(new Intent(this, MainActivity.class));
+        } else if (id == R.id.navQuiz) {
+            startActivity(new Intent(this, quizzesmodules.class));
+        }
     }
 
 }
