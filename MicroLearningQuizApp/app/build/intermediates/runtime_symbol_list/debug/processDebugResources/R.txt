@@ -3840,11 +3840,11 @@ int id btnBack5 0x7f08007d
 int id btnBack6 0x7f08007e
 int id btnBackAnimalQuiz 0x7f08007f
 int id btnBackMultiply 0x7f080080
-int id btnBrowse 0x7f080081
 int id btnDelete 0x7f080082
 int id btnEdit 0x7f080083
 int id btnEditProfile 0x7f080084
 int id btnLogin 0x7f080085
+int id btnPickVideo 0x7f0802ae
 int id btnSave 0x7f080086
 int id btnSubmit 0x7f080087
 int id btnUploadIllustration 0x7f080088
@@ -3949,7 +3949,6 @@ int id entireSpace 0x7f0800ea
 int id escape 0x7f0800eb
 int id etDescription 0x7f0800ec
 int id etLessonTitle 0x7f0800ed
-int id etVideoUrl 0x7f0800ee
 int id etYears 0x7f0800ef
 int id exitUntilCollapsed 0x7f0800f0
 int id expand_activities_button 0x7f0800f1
@@ -4362,6 +4361,7 @@ int id tvMyName 0x7f080284
 int id tvMyParent 0x7f080285
 int id tvName 0x7f080286
 int id tvPhone 0x7f080287
+int id tvSelectedVideo 0x7f0802af
 int id tvSubject 0x7f080288
 int id tvTitle 0x7f080289
 int id tvUsername 0x7f08028a

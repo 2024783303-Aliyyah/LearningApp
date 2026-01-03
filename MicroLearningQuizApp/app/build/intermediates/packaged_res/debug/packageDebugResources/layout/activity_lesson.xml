@@ -28,6 +28,7 @@
         android:layout_marginTop="24dp"
         android:text="Subject"
         android:textAllCaps="true"
+        android:textColor="#000000"
         android:textSize="23sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -60,6 +61,7 @@
                 android:layout_height="wrap_content"
                 android:paddingBottom="8dp"
                 android:text="Lesson Title"
+                android:textColor="#000000"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -77,6 +79,7 @@
                 android:layout_height="wrap_content"
                 android:paddingBottom="8dp"
                 android:text="Description"
+                android:textColor="#000000"
                 android:textSize="20sp" />
 
             <TextView
@@ -85,6 +88,7 @@
                 android:layout_height="wrap_content"
                 android:paddingBottom="16dp"
                 android:text="Lesson Content"
+                android:textColor="#000000"
                 android:textSize="20sp" />
 
             <!-- ===== KOD UNTUK HEADER IMAGE DITAMBAH DI SINI ===== -->

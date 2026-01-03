@@ -3841,11 +3841,11 @@ id btnBack5
 id btnBack6
 id btnBackAnimalQuiz
 id btnBackMultiply
-id btnBrowse
 id btnDelete
 id btnEdit
 id btnEditProfile
 id btnLogin
+id btnPickVideo
 id btnSave
 id btnSubmit
 id btnUploadIllustration
@@ -3950,7 +3950,6 @@ id entireSpace
 id escape
 id etDescription
 id etLessonTitle
-id etVideoUrl
 id etYears
 id exitUntilCollapsed
 id expand_activities_button
@@ -4363,6 +4362,7 @@ id tvMyName
 id tvMyParent
 id tvName
 id tvPhone
+id tvSelectedVideo
 id tvSubject
 id tvTitle
 id tvUsername
