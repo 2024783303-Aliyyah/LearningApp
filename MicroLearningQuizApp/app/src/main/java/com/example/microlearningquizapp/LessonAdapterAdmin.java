@@ -5,72 +5,90 @@ import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;import android.widget.Button;
+import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
 import java.util.ArrayList;
 
+// Adapter ini direka khas untuk paparan Admin
 public class LessonAdapterAdmin extends RecyclerView.Adapter<LessonAdapterAdmin.LessonAdminViewHolder> {
 
     private Context context;
-    private ArrayList<LessonAdmin> lessonAdminList;
+    private ArrayList<LessonAdmin> lessonList; // Menggunakan model data LessonAdmin
 
-    public LessonAdapterAdmin(Context context, ArrayList<LessonAdmin> lessonAdminList) {
+    public LessonAdapterAdmin(Context context, ArrayList<LessonAdmin> lessonList) {
         this.context = context;
-        this.lessonAdminList = lessonAdminList;
+        this.lessonList = lessonList;
     }
 
     @NonNull
     @Override
     public LessonAdminViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        // Gunakan layout item yang direka khas untuk admin (cth: lesson_item_admin.xml)
-        View view = LayoutInflater.from(context).inflate(R.layout.item_admin_lesson,parent, false);
+        // Menggunakan layout item_admin_lesson.xml
+        View view = LayoutInflater.from(context).inflate(R.layout.item_admin_lesson, parent, false);
         return new LessonAdminViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull LessonAdminViewHolder holder, int position) {
-        LessonAdmin lesson = lessonAdminList.get(position);
+        // Dapatkan data pelajaran untuk item semasa
+        LessonAdmin lesson = lessonList.get(position);
+
+        // Paparkan data ke dalam TextView
         holder.tvLessonTitle.setText(lesson.getTitle());
-        holder.tvLessonSubject.setText(lesson.getSubject() + " - " + lesson.getYear());
+        holder.tvSubject.setText(lesson.getSubject());
+        holder.tvYear.setText(lesson.getYear());
+
+        // --- Logik untuk Butang ---
 
         // Logik untuk butang Edit
         holder.btnEdit.setOnClickListener(v -> {
-            // Cipta Intent untuk membuka adminEditLesson.class
+            // Cipta Intent untuk membuka aktiviti edit (cth: adminEditLesson.class)
             Intent intent = new Intent(context, adminEditLesson.class);
-            // Hantar ID pelajaran yang unik untuk memberitahu aktiviti mana yang perlu diedit
+            // Hantar ID pelajaran yang unik supaya aktiviti edit tahu pelajaran mana yang perlu dimuatkan
             intent.putExtra("LESSON_ID", lesson.getLessonId());
             context.startActivity(intent);
         });
 
         // Logik untuk butang Delete
         holder.btnDelete.setOnClickListener(v -> {
-            // Tambah logik untuk memadam pelajaran di sini
-            // Contoh: Papar dialog pengesahan sebelum memadam
-            String lessonIdToDelete = lesson.getLessonId();
-            // Anda akan panggil fungsi pangkalan data di sini untuk memadam pelajaran dengan ID ini
-            Toast.makeText(context, "Delete lesson: " + lesson.getTitle(), Toast.LENGTH_SHORT).show();
-            // Selepas berjaya padam, kemas kini senarai dan panggil notifyDataSetChanged()
+            // DI SINI: Tambah logik untuk memadam pelajaran
+            // Contoh mudah: Papar Toast untuk pengesahan
+            String lessonTitle = lesson.getTitle();
+            Toast.makeText(context, "Delete: " + lessonTitle, Toast.LENGTH_SHORT).show();
+
+            // Dalam aplikasi sebenar, anda akan:
+            // 1. Papar dialog pengesahan (AlertDialog).
+            // 2. Jika "Ya", panggil fungsi untuk memadam data dari pangkalan data (Firebase/SQLite).
+            // 3. Jika berjaya padam dari pangkalan data:
+            //    lessonList.remove(position);
+            //    notifyItemRemoved(position);
+            //    notifyItemRangeChanged(position, lessonList.size());
         });
     }
 
     @Override
     public int getItemCount() {
-        return lessonAdminList.size();
+        return lessonList.size();
     }
 
-    // ViewHolder untuk item admin
+    // ViewHolder yang memegang view untuk setiap item admin
     public static class LessonAdminViewHolder extends RecyclerView.ViewHolder {
-        TextView tvLessonTitle, tvLessonSubject;
+        // Deklarasi semua view dari item_admin_lesson.xml
+        TextView tvLessonTitle, tvSubject, tvYear;
         Button btnEdit, btnDelete;
 
         public LessonAdminViewHolder(@NonNull View itemView) {
             super(itemView);
-            // Pautkan view dari lesson_item_admin.xml
+            // Pautkan view dari ID dalam XML
             tvLessonTitle = itemView.findViewById(R.id.tvLessonTitle);
-            tvLessonSubject = itemView.findViewById(R.id.tvSubject);
+            tvSubject = itemView.findViewById(R.id.tvSubject);
+            tvYear = itemView.findViewById(R.id.tvYear);
             btnEdit = itemView.findViewById(R.id.btnEdit);
             btnDelete = itemView.findViewById(R.id.btnDelete);
         }
