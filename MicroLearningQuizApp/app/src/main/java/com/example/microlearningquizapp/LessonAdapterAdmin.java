@@ -45,15 +45,25 @@ public class LessonAdapterAdmin extends RecyclerView.Adapter<LessonAdapterAdmin.
         holder.tvYear.setText(lesson.getYear());
 
         // --- Logik untuk Butang ---
-
-        // Logik untuk butang Edit
+// Logik untuk butang Edit
         holder.btnEdit.setOnClickListener(v -> {
-            // Cipta Intent untuk membuka aktiviti edit (cth: adminEditLesson.class)
+            // Cipta Intent untuk membuka aktiviti edit (adminEditLesson.class)
             Intent intent = new Intent(context, adminEditLesson.class);
-            // Hantar ID pelajaran yang unik supaya aktiviti edit tahu pelajaran mana yang perlu dimuatkan
+
+            // --- HANTAR SEMUA DATA PELAJARAN ---
             intent.putExtra("LESSON_ID", lesson.getLessonId());
+            intent.putExtra("LESSON_TITLE", lesson.getTitle());
+            intent.putExtra("LESSON_SUBJECT", lesson.getSubject());
+            intent.putExtra("LESSON_YEAR", lesson.getYear());
+            intent.putExtra("LESSON_DESCRIPTION", lesson.getDescription());
+            intent.putExtra("LESSON_CONTENT", lesson.getContent());
+            intent.putExtra("LESSON_VIDEO_PATH", lesson.getVideoPath());
+            intent.putExtra("LESSON_IMAGE_ID", lesson.getImageResourceId()); // Jika anda guna ID imej
+
+            // Mulakan aktiviti edit dengan membawa semua data ini
             context.startActivity(intent);
         });
+
 
         // Logik untuk butang Delete
         holder.btnDelete.setOnClickListener(v -> {

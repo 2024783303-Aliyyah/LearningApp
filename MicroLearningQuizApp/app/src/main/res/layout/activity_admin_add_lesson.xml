@@ -76,11 +76,12 @@
             android:id="@+id/etLessonTitle"
             android:layout_width="0dp"
             android:layout_height="48dp"
-            android:hint="Type lesson title"
             android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@id/tvLesson"
+            android:hint="Type lesson title"
+            android:textColor="#3F51B5"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintTop_toBottomOf="@id/tvLesson" />
 
         <!-- Years -->
         <TextView
@@ -98,12 +99,13 @@
             android:id="@+id/etYears"
             android:layout_width="0dp"
             android:layout_height="48dp"
+            android:layout_marginTop="8dp"
             android:hint="Example: Year 1"
             android:inputType="text"
-            android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@id/tvYears"
+            android:textColor="#3F51B5"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintTop_toBottomOf="@id/tvYears" />
 
         <!-- Description -->
         <TextView
@@ -121,13 +123,14 @@
             android:id="@+id/etDescription"
             android:layout_width="0dp"
             android:layout_height="100dp"
-            android:hint="This lesson is about..."
-            android:gravity="top"
-            android:inputType="textMultiLine"
             android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@id/tvDescription"
+            android:gravity="top"
+            android:hint="This lesson is about..."
+            android:inputType="textMultiLine"
+            android:textColor="#3F51B5"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintTop_toBottomOf="@id/tvDescription" />
 
         <!-- Header Image -->
         <TextView

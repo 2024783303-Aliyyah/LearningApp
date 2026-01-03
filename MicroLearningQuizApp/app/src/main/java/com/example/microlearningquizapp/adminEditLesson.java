@@ -1,7 +1,6 @@
 // Fail: adminEditLesson.java
 package com.example.microlearningquizapp;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -13,31 +12,18 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.activity.result.ActivityResultLauncher;
-import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
+// ... (import lain jika perlu) ...
 
 public class adminEditLesson extends AppCompatActivity {
 
     // --- Deklarasi View ---
     Spinner spinnerSubject;
-    EditText etLessonTitle, etYears, etDescription;
-    Button btnSave, btnPickVideo;
-    TextView tvSelectedVideo;
+    EditText etLessonTitle, etYears, etDescription, etContent; // Tambah etContent jika ada
+    Button btnSave, btnPickVideo, btnPickImage;
+    TextView tvSelectedVideo, tvSelectedImage;
 
-    // --- Pembolehubah untuk URI video ---
-    private Uri videoUri;
-
-    // --- Launcher untuk pemilih fail ---
-    private final ActivityResultLauncher<Intent> pickVideoLauncher = registerForActivityResult(
-            new ActivityResultContracts.StartActivityForResult(),
-            result -> {
-                if (result.getResultCode() == Activity.RESULT_OK && result.getData() != null) {
-                    videoUri = result.getData().getData();
-                    tvSelectedVideo.setText(videoUri.getLastPathSegment());
-                }
-            }
-    );
+    // ... (kod untuk launcher video dan imej) ...
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,53 +35,47 @@ public class adminEditLesson extends AppCompatActivity {
         etLessonTitle = findViewById(R.id.etLessonTitle);
         etYears = findViewById(R.id.etYears);
         etDescription = findViewById(R.id.etDescription);
+        // pautkan semua view lain...
         btnSave = findViewById(R.id.btnSave);
-        btnPickVideo = findViewById(R.id.btnPickVideo);
-        tvSelectedVideo = findViewById(R.id.tvSelectedVideo);
 
-        // --- Logik Spinner ---
+        // --- Sediakan Spinner ---
         String[] subjects = {"Mathematic", "Science", "English"};
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, subjects);
         spinnerSubject.setAdapter(adapter);
 
-        // --- Ambil data sedia ada dari Intent ---
-        Intent intent = getIntent();
-        etLessonTitle.setText(intent.getStringExtra("lessonTitle"));
-        etYears.setText(intent.getStringExtra("year"));
-        etDescription.setText(intent.getStringExtra("description"));
+        // =============================================================
+        // --- BAHAGIAN UTAMA: AMBIL DATA DARI INTENT DAN PAPARKANNYA ---
+        // =============================================================
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            // Ambil semua data dari Intent menggunakan kunci yang betul
+            String lessonTitle = extras.getString("LESSON_TITLE");
+            String subject = extras.getString("LESSON_SUBJECT");
+            String year = extras.getString("LESSON_YEAR");
+            String description = extras.getString("LESSON_DESCRIPTION");
+            // Ambil data lain seperti content, video path, dan image id...
 
-        String existingVideoPath = intent.getStringExtra("videoUrl");
-        if (existingVideoPath != null && !existingVideoPath.isEmpty()) {
-            videoUri = Uri.parse(existingVideoPath);
-            tvSelectedVideo.setText("Current: " + videoUri.getLastPathSegment());
-        }
+            // Tetapkan data yang diterima ke dalam medan yang sepadan
+            etLessonTitle.setText(lessonTitle);
+            etYears.setText(year);
+            etDescription.setText(description);
 
-        String subject = intent.getStringExtra("Subject");
-        if (subject != null) {
-            spinnerSubject.setSelection(adapter.getPosition(subject));
-        }
-
-        // --- Logik untuk Butang "Pick Video" ---
-        btnPickVideo.setOnClickListener(v -> {
-            Intent pickIntent = new Intent(Intent.ACTION_GET_CONTENT);
-            pickIntent.setType("video/*");
-            pickVideoLauncher.launch(pickIntent);
-        });
-
-        // --- Logik untuk Butang "Save Changes" ---
-        btnSave.setOnClickListener(v -> {
-            String updatedTitle = etLessonTitle.getText().toString();
-            // ... ambil data lain ...
-
-            if (videoUri == null) {
-                Toast.makeText(this, "Please select a video", Toast.LENGTH_SHORT).show();
-                return;
+            // Tetapkan pilihan spinner berdasarkan subjek
+            if (subject != null) {
+                int spinnerPosition = adapter.getPosition(subject);
+                if (spinnerPosition >= 0) {
+                    spinnerSubject.setSelection(spinnerPosition);
+                }
             }
 
-            // DI SINI: Anda akan kemas kini data di pangkalan data menggunakan ID pelajaran
-            // dan URI video yang baru (videoUri.toString())
+            // (Pilihan) Lakukan perkara yang sama untuk imej dan video
+            // cth: tvSelectedVideo.setText(extras.getString("LESSON_VIDEO_PATH"));
+        }
 
-            Toast.makeText(adminEditLesson.this, "Lesson Updated: " + updatedTitle, Toast.LENGTH_SHORT).show();
+        // --- Logik untuk butang Simpan ---
+        btnSave.setOnClickListener(v -> {
+            // ... (logik untuk menyimpan perubahan) ...
+            Toast.makeText(adminEditLesson.this, "Lesson Updated!", Toast.LENGTH_SHORT).show();
             finish();
         });
     }

@@ -1,4 +1,3 @@
-// Fail: adminViewLesson.java
 package com.example.microlearningquizapp;
 
 import android.content.Intent;
@@ -17,9 +16,8 @@ public class adminViewLesson extends AppCompatActivity {
     RecyclerView rvLessons;
     Button btnAddLesson;
 
-    // Gunakan jenis data yang betul
     ArrayList<LessonAdmin> lessonList;
-    LessonAdapterAdmin adapter; // Gunakan adapter yang betul
+    LessonAdapterAdmin adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,10 +27,8 @@ public class adminViewLesson extends AppCompatActivity {
         rvLessons = findViewById(R.id.rvLessons);
         btnAddLesson = findViewById(R.id.btnAddLesson);
 
-        // Muatkan data pelajaran untuk admin
         loadAllLessonsForAdmin();
 
-        // Cipta dan tetapkan adapter yang betul
         adapter = new LessonAdapterAdmin(this, lessonList);
         rvLessons.setLayoutManager(new LinearLayoutManager(this));
         rvLessons.setAdapter(adapter);
@@ -43,24 +39,21 @@ public class adminViewLesson extends AppCompatActivity {
         });
     }
 
-
-    // KOD BARU YANG BETUL
     private void loadAllLessonsForAdmin() {
         lessonList = new ArrayList<>();
 
-        // Panggil constructor dengan 7 argumen. Guna "" jika data belum ada.
-        // Format: (id, title, subject, year, description, content, videoPath)
+        // FIX: Added the 8th argument (an integer) to each constructor call.
+        // Assuming '0' is a suitable default value.
+        // Format: (id, title, subject, year, description, content, videoPath, someNumber)
 
-        lessonList.add(new LessonAdmin("math001", "Addition", "Mathematics", "Year 1", "Learn addition...", "Content here", ""));
-        lessonList.add(new LessonAdmin("math002", "Subtraction", "Mathematics", "Year 1", "Learn subtraction...", "Content here", ""));
-        lessonList.add(new LessonAdmin("sci001", "Living Things", "Science", "Year 2", "About living things...", "Content here", ""));
-        lessonList.add(new LessonAdmin("sci002", "The Solar System", "Science", "Year 3", "About planets...", "Content here", ""));
-        lessonList.add(new LessonAdmin("eng001", "Nouns", "English", "Year 1", "About nouns...", "Content here", ""));
-        lessonList.add(new LessonAdmin("eng002", "Verbs", "English", "Year 2", "About verbs...", "Content here", ""));
+        lessonList.add(new LessonAdmin("math001", "Addition", "Mathematics", "Year 1", "Learn addition...", "Content here", "", 0));
+        lessonList.add(new LessonAdmin("math002", "Subtraction", "Mathematics", "Year 1", "Learn subtraction...", "Content here", "", 0));
+        lessonList.add(new LessonAdmin("sci001", "Living Things", "Science", "Year 2", "About living things...", "Content here", "", 0));
+        lessonList.add(new LessonAdmin("sci002", "The Solar System", "Science", "Year 3", "About planets...", "Content here", "", 0));
+        lessonList.add(new LessonAdmin("eng001", "Nouns", "English", "Year 1", "About nouns...", "Content here", "", 0));
+        lessonList.add(new LessonAdmin("eng002", "Verbs", "English", "Year 2", "About verbs...", "Content here", "", 0));
     }
 
-
-    // Fungsi untuk butang kembali (jika ada dalam XML anda)
     public void goBack(View view) {
         finish();
     }
