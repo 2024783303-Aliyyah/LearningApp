@@ -12,12 +12,12 @@
         "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\layout\\activity_report.xml"
     },
     {
-        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_buttonback.xml.flat",
-        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\buttonback.xml"
-    },
-    {
         "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\mipmap-xhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_buttonback.xml.flat",
+        "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\buttonback.xml"
     },
     {
         "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_add3.png.flat",
@@ -30,6 +30,10 @@
     {
         "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.microlearningquizapp-debug-37:/drawable_subtract2.png.flat",
+        "source": "com.example.microlearningquizapp-main-39:/drawable/subtract2.png"
     },
     {
         "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
@@ -50,10 +54,6 @@
     {
         "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\layout_item_admin_lesson.xml.flat",
         "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\layout\\item_admin_lesson.xml"
-    },
-    {
-        "merged": "com.example.microlearningquizapp-debug-37:/layout_activity_admin_add_lesson.xml.flat",
-        "source": "com.example.microlearningquizapp-main-39:/layout/activity_admin_add_lesson.xml"
     },
     {
         "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\xml_backup_rules.xml.flat",
@@ -140,6 +140,10 @@
         "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\layout\\activity_splash.xml"
     },
     {
+        "merged": "com.example.microlearningquizapp-debug-37:/drawable_subtract1.png.flat",
+        "source": "com.example.microlearningquizapp-main-39:/drawable/subtract1.png"
+    },
+    {
         "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_quiz.png.flat",
         "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\quiz.png"
     },
@@ -174,6 +178,10 @@
     {
         "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\layout_activity_science_lessons.xml.flat",
         "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\layout\\activity_science_lessons.xml"
+    },
+    {
+        "merged": "com.example.microlearningquizapp-debug-37:/drawable_subtract4.png.flat",
+        "source": "com.example.microlearningquizapp-main-39:/drawable/subtract4.png"
     },
     {
         "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\layout_activity_learningmodules.xml.flat",
@@ -220,6 +228,10 @@
         "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\layout\\activity_lesson.xml"
     },
     {
+        "merged": "com.example.microlearningquizapp-debug-37:/layout_activity_subtract_quiz.xml.flat",
+        "source": "com.example.microlearningquizapp-main-39:/layout/activity_subtract_quiz.xml"
+    },
+    {
         "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_child.png.flat",
         "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\child.png"
     },
@@ -230,6 +242,10 @@
     {
         "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.microlearningquizapp-debug-37:/layout_activity_math_quizzes.xml.flat",
+        "source": "com.example.microlearningquizapp-main-39:/layout/activity_math_quizzes.xml"
     },
     {
         "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_profile.png.flat",
@@ -258,6 +274,10 @@
     {
         "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_quiznav.png.flat",
         "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\drawable\\quiznav.png"
+    },
+    {
+        "merged": "com.example.microlearningquizapp-debug-37:/drawable_subtract3.png.flat",
+        "source": "com.example.microlearningquizapp-main-39:/drawable/subtract3.png"
     },
     {
         "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\layout_activity_english_lessons.xml.flat",
@@ -342,10 +362,6 @@
     {
         "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\layout_activity_score.xml.flat",
         "source": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-main-39:\\layout\\activity_score.xml"
-    },
-    {
-        "merged": "com.example.microlearningquizapp-debug-37:/layout_activity_admin_edit_lesson.xml.flat",
-        "source": "com.example.microlearningquizapp-main-39:/layout/activity_admin_edit_lesson.xml"
     },
     {
         "merged": "C:\\Users\\ALIYYAH\\.gradle\\daemon\\8.13\\com.example.microlearningquizapp-debug-37:\\drawable_maths.png.flat",

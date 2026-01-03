@@ -30,7 +30,7 @@ public class MathQuizzes extends AppCompatActivity {
 
     public void openmathquiz(View view) {
         int id = view.getId();
-        if (id == R.id.addquiz) {
+        if (id == R.id.additionquiz) {
             startActivity(new Intent(this, AddQuiz.class));
         } else if (id == R.id.subtractionquiz) {
             startActivity(new Intent(this, SubtractQuiz.class));

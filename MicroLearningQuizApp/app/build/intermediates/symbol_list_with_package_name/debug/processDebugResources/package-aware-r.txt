@@ -3705,6 +3705,10 @@ drawable reading
 drawable science
 drawable sciencequiz
 drawable score
+drawable subtract1
+drawable subtract2
+drawable subtract3
+drawable subtract4
 drawable teacher
 drawable teacher2
 drawable test_level_drawable
@@ -4277,6 +4281,7 @@ id stretch
 id submenuarrow
 id submit_area
 id subtractionquiz
+id subtractquiz
 id supportScrollUp
 id tabMode
 id tag_accessibility_actions
@@ -4537,6 +4542,7 @@ layout activity_science_quizzes
 layout activity_score
 layout activity_splash
 layout activity_student_dashboard
+layout activity_subtract_quiz
 layout activity_user_profile
 layout admin_profile
 layout custom_dialog

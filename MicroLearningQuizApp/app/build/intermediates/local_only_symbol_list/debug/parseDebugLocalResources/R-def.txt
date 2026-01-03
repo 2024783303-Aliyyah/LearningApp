@@ -43,6 +43,10 @@ drawable reading
 drawable science
 drawable sciencequiz
 drawable score
+drawable subtract1
+drawable subtract2
+drawable subtract3
+drawable subtract4
 drawable teacher
 drawable teacher2
 drawable trophynav
@@ -168,6 +172,7 @@ id scrollView
 id spinnerSubject
 id spinnerToday
 id subtractionquiz
+id subtractquiz
 id textContent
 id textDescription
 id textFinalScore
@@ -231,6 +236,7 @@ layout activity_science_quizzes
 layout activity_score
 layout activity_splash
 layout activity_student_dashboard
+layout activity_subtract_quiz
 layout activity_user_profile
 layout admin_profile
 layout item_admin_lesson
