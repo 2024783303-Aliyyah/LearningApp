@@ -48,7 +48,7 @@
             android:layout_marginBottom="16dp"
             app:cardBackgroundColor="#F7C97C"
             app:cardCornerRadius="20dp"
-            android:onClick="Addquiz">
+            android:onClick="openmathquiz">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -67,7 +67,7 @@
             android:layout_marginBottom="16dp"
             app:cardBackgroundColor="#F7C97C"
             app:cardCornerRadius="20dp"
-            android:onClick="Subtractquiz">
+            android:onClick="openmathquiz">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -86,7 +86,7 @@
             android:layout_marginBottom="16dp"
             app:cardBackgroundColor="#F7C97C"
             app:cardCornerRadius="20dp"
-            android:onClick="Multiplyquiz">
+            android:onClick="openmathquiz">
 
             <TextView
                 android:layout_width="wrap_content"

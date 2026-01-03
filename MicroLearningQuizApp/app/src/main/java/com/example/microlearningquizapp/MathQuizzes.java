@@ -28,19 +28,14 @@ public class MathQuizzes extends AppCompatActivity {
         finish();
     }
 
-    public void Addquiz(View view) {
-        Intent intent = new Intent(this, AddQuiz.class);
-        startActivity(intent);
-
-    }
-/*
-    public void Subtractquiz(View view) {
-        Intent intent = new Intent(this, SubtractQuiz.class);
-        startActivity(intent);
-    }
-*/
-    public void Multiplyquiz(View view) {
-        Intent intent = new Intent(this, MultiplyQuiz.class);
-        startActivity(intent);
+    public void openmathquiz(View view) {
+        int id = view.getId();
+        if (id == R.id.addquiz) {
+            startActivity(new Intent(this, AddQuiz.class));
+        } else if (id == R.id.subtractionquiz) {
+            startActivity(new Intent(this, SubtractQuiz.class));
+        } else if (id == R.id.multiplyquiz) {
+            startActivity(new Intent(this, MultiplyQuiz.class));
+        }
     }
 }
