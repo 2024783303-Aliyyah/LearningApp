@@ -32,7 +32,7 @@ public class ScienceQuizzes extends AppCompatActivity {
         } else if (id == R.id.navLessons) {
             startActivity(new Intent(this, learningmodules.class));
         } else if (id == R.id.navHome) {
-            startActivity(new Intent(this, MainActivity.class));
+            startActivity(new Intent(this, StudentDashboardActivity.class));
         } else if (id == R.id.navQuiz) {
             startActivity(new Intent(this, quizzesmodules.class));
         }

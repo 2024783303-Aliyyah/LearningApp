@@ -57,4 +57,16 @@ public class adminViewLesson extends AppCompatActivity {
     public void goBack(View view) {
         finish();
     }
+
+    public void openadminMenu(View view)
+    {
+        int id = view.getId();
+        if (id == R.id.adminnavProfile) {
+            startActivity(new Intent(this, AdminProfile.class));
+        } else if (id == R.id.adminnavHome) {
+            startActivity(new Intent(this, adminDashboard.class));
+        } else if (id == R.id.adminnavScores) {
+            startActivity(new Intent(this, score.class));
+        }
+    }
 }

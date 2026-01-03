@@ -65,7 +65,17 @@
           <theme>@style/Theme.MicroLearningQuizApp</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_quizzesmodules.xml">
+        <config>
+          <theme>@style/Theme.MicroLearningQuizApp</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_report.xml">
+        <config>
+          <theme>@style/Theme.MicroLearningQuizApp</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_science_lessons.xml">
         <config>
           <theme>@style/Theme.MicroLearningQuizApp</theme>
         </config>
@@ -111,7 +121,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="baf82009-5c32-41d4-9b88-56dc752f5d8a" name="Changes" comment="delete menu bar in activity_student_dashboard.xml" />
+    <list default="true" id="baf82009-5c32-41d4-9b88-56dc752f5d8a" name="Changes" comment="delete back button in admin dashboard" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -613,7 +623,23 @@
       <option name="project" value="LOCAL" />
       <updated>1767433485353</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="activate menu bar for student page">
+      <option name="closed" value="true" />
+      <created>1767435292284</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1767435292285</updated>
+    </task>
+    <task id="LOCAL-00040" summary="delete back button in admin dashboard">
+      <option name="closed" value="true" />
+      <created>1767435704690</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1767435704692</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -629,8 +655,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CODE_SMELLS_PROFILE" value="Project Default" />
-    <MESSAGE value="Delete file" />
-    <MESSAGE value="Add .SplashActivity at AndroidManifest.xml" />
     <MESSAGE value="add activity_admin file" />
     <MESSAGE value="add admin_dashboard file" />
     <MESSAGE value="delete file" />
@@ -654,7 +678,9 @@
     <MESSAGE value="update AndroidManifest.xml" />
     <MESSAGE value="edit multiplyquiz and add into AndroidManifest.xml" />
     <MESSAGE value="delete menu bar in activity_student_dashboard.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete menu bar in activity_student_dashboard.xml" />
+    <MESSAGE value="activate menu bar for student page" />
+    <MESSAGE value="delete back button in admin dashboard" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete back button in admin dashboard" />
   </component>
   <component name="play_dynamic_filters_status">
     <option name="appIdToCheckInfo">

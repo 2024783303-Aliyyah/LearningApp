@@ -6,6 +6,49 @@
     android:layout_height="match_parent"
     android:background="#FFF7C2">
 
+    <LinearLayout
+        android:id="@+id/bottomNavBar"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="#FFEB80"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/adminnavProfile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Profile"
+            android:padding="10dp"
+            android:src="@drawable/usernav"
+            android:onClick="openadminMenu"/>
+
+        <ImageView
+            android:id="@+id/adminnavHome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Home"
+            android:padding="10dp"
+            android:src="@drawable/homenav"
+            android:onClick="openadminMenu"/>
+
+        <ImageView
+            android:id="@+id/adminnavScores"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Scores"
+            android:padding="10dp"
+            android:src="@drawable/trophynav"
+            android:onClick="openadminMenu"/>
+
+    </LinearLayout>
+
     <ImageView
         android:id="@+id/btnBack6"
         android:layout_width="48dp"
