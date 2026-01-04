@@ -54,10 +54,6 @@ public class adminViewLesson extends AppCompatActivity {
         lessonList.add(new LessonAdmin("eng002", "Verbs", "English", "Year 2", "About verbs...", "Content here", "", 0));
     }
 
-    public void goBack(View view) {
-        finish();
-    }
-
     public void openadminMenu(View view)
     {
         int id = view.getId();
@@ -68,5 +64,10 @@ public class adminViewLesson extends AppCompatActivity {
         } else if (id == R.id.adminnavScores) {
             startActivity(new Intent(this, score.class));
         }
+    }
+
+    public void goBack (View view)
+    {
+        finish();
     }
 }
