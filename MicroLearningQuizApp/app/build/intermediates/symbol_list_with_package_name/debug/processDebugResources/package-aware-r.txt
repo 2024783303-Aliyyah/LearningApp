@@ -3558,8 +3558,10 @@ drawable add2
 drawable add3
 drawable add4
 drawable answbox
+drawable apple
 drawable avd_hide_password
 drawable avd_show_password
+drawable bicycle
 drawable book
 drawable booknav
 drawable boy
@@ -3585,6 +3587,7 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable dog
+drawable doggie
 drawable english
 drawable englishquiz
 drawable homenav
@@ -3705,6 +3708,7 @@ drawable reading
 drawable science
 drawable sciencequiz
 drawable score
+drawable smartphone
 drawable subtract1
 drawable subtract2
 drawable subtract3
@@ -3714,6 +3718,7 @@ drawable teacher2
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable train
 drawable trophynav
 drawable usernav
 id ALT
@@ -3795,6 +3800,9 @@ id addq3
 id addq4
 id addquiz
 id adminDashboard
+id adminnavHome
+id adminnavProfile
+id adminnavScores
 id advance
 id alertTitle
 id aligned
@@ -3843,6 +3851,7 @@ id btnBack3
 id btnBack4
 id btnBack5
 id btnBack6
+id btnBack7
 id btnBackAnimalQuiz
 id btnBackMultiply
 id btnDelete
@@ -3959,6 +3968,7 @@ id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
 id fade
+id feedback_text
 id fill
 id fill_horizontal
 id fill_vertical
@@ -4135,6 +4145,7 @@ id navigation_menu_subheader_label
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
+id next_question_button
 id noScroll
 id noState
 id none
@@ -4167,6 +4178,10 @@ id option1
 id option2
 id option3
 id option4
+id option_1_button
+id option_2_button
+id option_3_button
+id options_container
 id outline
 id outward
 id overshoot
@@ -4191,13 +4206,16 @@ id progress_circular
 id progress_horizontal
 id questionContainer
 id questionText
+id question_image
 id question_image_1
 id question_image_2
 id question_image_3
 id question_image_4
+id question_text
 id quiz1
 id quiz2
 id quiz3
+id quiz_title
 id quizzesmodules
 id radio
 id ratio
@@ -4527,6 +4545,7 @@ layout activity_admin_add_lesson
 layout activity_admin_dashboard
 layout activity_admin_edit_lesson
 layout activity_admin_view_lesson
+layout activity_alphabet_quiz
 layout activity_animal_quiz
 layout activity_english_lessons
 layout activity_english_quizzes

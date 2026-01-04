@@ -142,7 +142,26 @@ public class AlphabetQuiz extends AppCompatActivity {
         option3Button.setEnabled(enabled);
     }
 
+    // Di dalam AlphabetQuiz.java
+
+// ... (kod anda yang lain)
+
+    // FUNGSI goBack() YANG TELAH DIKEMAS KINI
     public void goBack(View view) {
-        finish();
+        // Semak sama ada kita BUKAN di soalan pertama
+        if (currentQuestionIndex > 0) {
+            // Jika ya, pergi ke soalan sebelumnya
+            currentQuestionIndex--; // Kurangkan indeks untuk kembali ke soalan sebelumnya
+            loadQuestion(currentQuestionIndex); // Muatkan data soalan sebelumnya
+
+            // PENTING: Semak semula skor jika pengguna kembali ke soalan sebelumnya
+            // Pendekatan paling mudah: Anggap pengguna belum menjawab soalan ini semula.
+            // Anda boleh tambah logik yang lebih kompleks jika perlu, tetapi ini sudah mencukupi.
+
+        } else {
+            // Jika kita SUDAH di soalan pertama (indeks 0), barulah keluar dari aktiviti kuiz
+            super.onBackPressed(); // Ini sama seperti memanggil finish(), tetapi lebih standard
+        }
     }
+
 }
