@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFACD"
+    tools:context=".SynonymQuiz">
+
+    <!-- Header: Butang Back dan Tajuk -->
+    <LinearLayout
+        android:id="@+id/bottomNavBar"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="#FFEB80"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <!-- Ikon-ikon Navigasi anda -->
+        <ImageView
+            android:id="@+id/navProfile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Prsofile"
+            android:onClick="openMenu"
+            android:padding="10dp"
+            android:src="@drawable/usernav" />
+
+        <ImageView
+            android:id="@+id/navLessons"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Lessons"
+            android:onClick="openMenu"
+            android:padding="10dp"
+            android:src="@drawable/booknav" />
+
+        <ImageView
+            android:id="@+id/navHome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Home"
+            android:onClick="openMenu"
+            android:padding="10dp"
+            android:src="@drawable/homenav" />
+
+        <ImageView
+            android:id="@+id/navQuiz"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Quiz"
+            android:onClick="openMenu"
+            android:padding="10dp"
+            android:src="@drawable/quiznav" />
+
+        <ImageView
+            android:id="@+id/navScores"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Scores"
+            android:onClick="openMenu"
+            android:padding="10dp"
+            android:src="@drawable/trophynav" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="48dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="goBack"
+        android:src="@drawable/buttonback"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/quiz_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Match The Synonyms"
+        android:textColor="@android:color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/instructions_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Tap a word on the left, then tap its synonym on the right."
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quiz_title" />
+
+    <!-- Bekas utama untuk dua lajur -->
+    <LinearLayout
+        android:id="@+id/matching_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/feedback_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instructions_text">
+
+        <!-- Lajur Kiri untuk Perkataan -->
+
+        <!-- Lajur Kanan untuk Sinonim -->
+        <LinearLayout
+            android:id="@+id/column_left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/word_1_left"
+                style="@style/WordMatchingBox"
+                android:text="Big" />
+
+            <TextView
+                android:id="@+id/word_2_left"
+                style="@style/WordMatchingBox"
+                android:text="Happy" />
+
+            <TextView
+                android:id="@+id/word_3_left"
+                style="@style/WordMatchingBox"
+                android:text="Fast" />
+
+            <TextView
+                android:id="@+id/word_4_left"
+                style="@style/WordMatchingBox"
+                android:text="Pretty" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/column_right"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/word_1_right"
+                style="@style/WordMatchingBox"
+                android:text="Beautiful" />
+
+            <TextView
+                android:id="@+id/word_2_right"
+                style="@style/WordMatchingBox"
+                android:text="Speed" />
+
+            <TextView
+                android:id="@+id/word_3_right"
+                style="@style/WordMatchingBox"
+                android:text="Wide" />
+
+            <TextView
+                android:id="@+id/word_4_right"
+                style="@style/WordMatchingBox"
+                android:text="Cheerful" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- TextView untuk Maklum Balas -->
+    <TextView
+        android:id="@+id/feedback_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="618dp"
+        tools:text="Correct!" />
+
+
+    <!-- Bar Navigasi Bawah -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

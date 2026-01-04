@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MicroLearningQuizApp">
         <activity
+            android:name=".SynonymQuiz"
+            android:exported="false" />
+        <activity
             android:name=".AlphabetQuiz"
             android:exported="false" />
         <activity
