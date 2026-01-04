@@ -56,4 +56,6 @@ public class Lesson {
     public int getImageResourceId() {
         return imageResourceId;
     }
+
+
 }
