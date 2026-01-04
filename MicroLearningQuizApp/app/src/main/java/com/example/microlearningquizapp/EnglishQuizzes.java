@@ -29,6 +29,13 @@ public class EnglishQuizzes extends AppCompatActivity {
         finish(); // 'finish()' akan menutup aktiviti semasa dan kembali ke skrin sebelumnya
     }
 
+    public void openenglishquiz(View view)
+    {
+        int id = view.getId();
+        if (id == R.id.quiz1) {
+            startActivity(new Intent(this, AlphabetQuiz.class));
+        }
+    }
     public void openMenu(View view)
     {
         int id = view.getId();

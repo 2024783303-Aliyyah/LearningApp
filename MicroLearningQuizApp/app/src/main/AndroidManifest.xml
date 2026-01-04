@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MicroLearningQuizApp">
         <activity
+            android:name=".AlphabetQuiz"
+            android:exported="false" />
+        <activity
             android:name=".SubtractQuiz"
             android:exported="false" />
         <activity
@@ -80,8 +83,7 @@
         <activity
             android:name=".adminDashboard"
             android:exported="false" />
-        <activity
-            android:name=".score"/>
+        <activity android:name=".score" />
         <activity
             android:name=".SplashActivity"
             android:exported="true"
