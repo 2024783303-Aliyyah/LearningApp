@@ -121,7 +121,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="baf82009-5c32-41d4-9b88-56dc752f5d8a" name="Changes" comment="delete back button in admin dashboard" />
+    <list default="true" id="baf82009-5c32-41d4-9b88-56dc752f5d8a" name="Changes" comment="update menu bar">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -130,7 +132,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=PhysicalDevice, isTemplate=false, identifier=serial=R9YR20GQTXJ)]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=C:\Users\ALIYYAH\.android\avd\Pixel_8.avd)]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -639,7 +641,15 @@
       <option name="project" value="LOCAL" />
       <updated>1767435704692</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="update menu bar">
+      <option name="closed" value="true" />
+      <created>1767436767321</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1767436767330</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -655,7 +665,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CODE_SMELLS_PROFILE" value="Project Default" />
-    <MESSAGE value="add activity_admin file" />
     <MESSAGE value="add admin_dashboard file" />
     <MESSAGE value="delete file" />
     <MESSAGE value="add Student Score design" />
@@ -680,7 +689,8 @@
     <MESSAGE value="delete menu bar in activity_student_dashboard.xml" />
     <MESSAGE value="activate menu bar for student page" />
     <MESSAGE value="delete back button in admin dashboard" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete back button in admin dashboard" />
+    <MESSAGE value="update menu bar" />
+    <option name="LAST_COMMIT_MESSAGE" value="update menu bar" />
   </component>
   <component name="play_dynamic_filters_status">
     <option name="appIdToCheckInfo">
