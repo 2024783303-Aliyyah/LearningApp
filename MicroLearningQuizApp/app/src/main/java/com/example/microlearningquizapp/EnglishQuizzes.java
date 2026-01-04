@@ -35,6 +35,10 @@ public class EnglishQuizzes extends AppCompatActivity {
         if (id == R.id.quiz1) {
             startActivity(new Intent(this, AlphabetQuiz.class));
         }
+        else if (id == R.id.quiz2) {
+            startActivity(new Intent(this, SynonymQuiz.class));
+        }
+
     }
     public void openMenu(View view)
     {
