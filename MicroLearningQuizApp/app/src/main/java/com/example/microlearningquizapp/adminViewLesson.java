@@ -4,6 +4,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.content.Context;
+import android.print.PrintManager; // <-- TAMBAH IMPORT
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -14,7 +17,7 @@ import java.util.ArrayList;
 public class adminViewLesson extends AppCompatActivity {
 
     RecyclerView rvLessons;
-    Button btnAddLesson;
+    Button btnAddLesson, btnPrint;
 
     ArrayList<LessonAdmin> lessonList;
     LessonAdapterAdmin adapter;
@@ -26,6 +29,7 @@ public class adminViewLesson extends AppCompatActivity {
 
         rvLessons = findViewById(R.id.rvLessons);
         btnAddLesson = findViewById(R.id.btnAddLesson);
+        btnPrint = findViewById(R.id.btnPrint);
 
         loadAllLessonsForAdmin();
 
@@ -37,6 +41,21 @@ public class adminViewLesson extends AppCompatActivity {
             Intent intent = new Intent(adminViewLesson.this, adminAddLesson.class);
             startActivity(intent);
         });
+
+        btnPrint.setOnClickListener(v -> {
+            doPrint();
+        });
+    }
+
+    // FUNGSI BARU UNTUK MEMULAKAN PROSES CETAKAN
+    private void doPrint() {
+        // Dapatkan perkhidmatan PrintManager sistem
+        PrintManager printManager = (PrintManager) getSystemService(Context.PRINT_SERVICE);
+
+        String jobName = getString(R.string.app_name) + " Document";
+
+        // Mula proses cetakan dengan adapter yang telah kita cipta
+        printManager.print(jobName, new LessonPrintAdapter(this, lessonList), null);
     }
 
     private void loadAllLessonsForAdmin() {

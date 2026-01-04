@@ -3858,6 +3858,7 @@ int id btnEdit 0x7f080086
 int id btnEditProfile 0x7f080087
 int id btnLogin 0x7f080088
 int id btnPickVideo 0x7f080089
+int id btnPrint 0x7f0802c9
 int id btnSave 0x7f08008a
 int id btnSubmit 0x7f08008b
 int id btnUploadIllustration 0x7f08008c

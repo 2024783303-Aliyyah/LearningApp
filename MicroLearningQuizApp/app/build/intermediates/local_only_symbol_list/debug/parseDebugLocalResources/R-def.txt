@@ -89,6 +89,7 @@ id btnEdit
 id btnEditProfile
 id btnLogin
 id btnPickVideo
+id btnPrint
 id btnSave
 id btnSubmit
 id btnUploadIllustration

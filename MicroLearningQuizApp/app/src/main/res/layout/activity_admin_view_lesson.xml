@@ -38,7 +38,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnBack6" />
 
+    <!-- 3. Butang "Print" BARU -->
+
     <!-- 3. Butang "+ Add Lesson" (di sebelah kanan tajuk) -->
+
+    <Button
+        android:id="@+id/btnPrint"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Print"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddLesson"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btnAddLesson"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/btnAddLesson"
         android:layout_width="wrap_content"
