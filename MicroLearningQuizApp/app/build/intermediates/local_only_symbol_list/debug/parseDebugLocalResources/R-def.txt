@@ -102,6 +102,8 @@ id cardQuiz
 id cardReport
 id cardScores
 id cbRemember
+id column_left
+id column_right
 id correctionsContainer
 id correctionsHeader
 id edtPassword
@@ -121,11 +123,13 @@ id imageView4
 id imgAvatar
 id imgChildren
 id imgLogo
+id instructions_text
 id learningmodules
 id lessonactivity
 id login
 id loginForm
 id main
+id matching_container
 id math
 id mathquiz
 id multiplequiz
@@ -234,6 +238,14 @@ id tvYears
 id txtTitle
 id videoContainer
 id videoView
+id word_1_left
+id word_1_right
+id word_2_left
+id word_2_right
+id word_3_left
+id word_3_right
+id word_4_left
+id word_4_right
 layout activity_add_quiz
 layout activity_admin_add_lesson
 layout activity_admin_dashboard
@@ -257,6 +269,7 @@ layout activity_score
 layout activity_splash
 layout activity_student_dashboard
 layout activity_subtract_quiz
+layout activity_synonym_quiz
 layout activity_user_profile
 layout admin_profile
 layout item_admin_lesson
@@ -270,5 +283,6 @@ string app_name
 style Base.Theme.MicroLearningQuizApp
 style Theme.MicroLearningQuizApp
 style Theme.MicroLearningQuizApp.Splash
+style WordMatchingBox
 xml backup_rules
 xml data_extraction_rules

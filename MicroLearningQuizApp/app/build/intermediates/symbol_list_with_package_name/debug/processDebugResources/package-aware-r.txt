@@ -3895,6 +3895,8 @@ id clip_vertical
 id clockwise
 id closest
 id collapseActionView
+id column_left
+id column_right
 id compress
 id confirm_button
 id constraint
@@ -4021,6 +4023,7 @@ id immediateStop
 id included
 id indeterminate
 id info
+id instructions_text
 id invisible
 id inward
 id italic
@@ -4047,6 +4050,7 @@ id marquee
 id masked
 id match_constraint
 id match_parent
+id matching_container
 id material_clock_display
 id material_clock_display_and_toggle
 id material_clock_face
@@ -4417,6 +4421,14 @@ id west
 id withText
 id with_icon
 id withinBounds
+id word_1_left
+id word_1_right
+id word_2_left
+id word_2_right
+id word_3_left
+id word_3_right
+id word_4_left
+id word_4_right
 id wrap
 id wrap_content
 id wrap_content_constrained
@@ -4563,6 +4575,7 @@ layout activity_score
 layout activity_splash
 layout activity_student_dashboard
 layout activity_subtract_quiz
+layout activity_synonym_quiz
 layout activity_user_profile
 layout admin_profile
 layout custom_dialog
@@ -6070,6 +6083,7 @@ style Widget_MaterialComponents_Toolbar_PrimarySurface
 style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
 style Widget_Support_CoordinatorLayout
+style WordMatchingBox
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth

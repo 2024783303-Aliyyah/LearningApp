@@ -188,12 +188,14 @@
         android:id="@+id/feedback_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="618dp"
-        tools:text="Correct!" />
+        android:layout_marginBottom="16dp"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toTopOf="@id/bottomNavBar"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:text="Correct!" />
+
 
 
     <!-- Bar Navigasi Bawah -->
