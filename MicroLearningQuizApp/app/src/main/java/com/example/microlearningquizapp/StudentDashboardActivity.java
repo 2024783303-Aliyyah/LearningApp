@@ -37,5 +37,15 @@ public class StudentDashboardActivity extends AppCompatActivity {
             startActivity(new Intent(this, quizzesmodules.class));
         }
 
+        else if(id == R.id.cardScores)
+        {
+            startActivity(new Intent(this, MyScore.class));
+        }
+
+        else if(id == R.id.cardProfile)
+        {
+            startActivity(new Intent(this, UserProfileActivity.class));
+        }
+
     }
 }
