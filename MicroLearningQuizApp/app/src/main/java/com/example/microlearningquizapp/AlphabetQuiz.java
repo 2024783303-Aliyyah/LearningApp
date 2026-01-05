@@ -73,7 +73,7 @@ public class AlphabetQuiz extends AppCompatActivity {
 
                 // Gunakan nama kelas 'score.class' yang sebenar dari fail anda
                 // Saya andaikan nama fail anda ialah score.java dan nama kelasnya ialah 'score'
-                Intent intent = new Intent(AlphabetQuiz.this, score.class);
+                Intent intent = new Intent(AlphabetQuiz.this, Score.class);
 
                 // Hantar data mengikut format yang diperlukan oleh score.java anda
                 intent.putExtra("USER_SCORE", score);

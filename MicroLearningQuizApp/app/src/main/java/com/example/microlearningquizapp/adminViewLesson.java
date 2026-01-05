@@ -6,7 +6,6 @@ import android.view.View;
 import android.widget.Button;
 import android.content.Context;
 import android.print.PrintManager; // <-- TAMBAH IMPORT
-import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -81,7 +80,7 @@ public class adminViewLesson extends AppCompatActivity {
         } else if (id == R.id.adminnavHome) {
             startActivity(new Intent(this, adminDashboard.class));
         } else if (id == R.id.adminnavScores) {
-            startActivity(new Intent(this, score.class));
+            startActivity(new Intent(this, Score.class));
         }
     }
 

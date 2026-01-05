@@ -33,7 +33,7 @@ public class adminDashboard extends AppCompatActivity {
        }
        else if(id == R.id.cardScores) //kena edit balik link ke view score
        {
-           startActivity(new Intent(this, score.class));
+           startActivity(new Intent(this, Score.class));
        }
        else if(id == R.id.cardReport) {
            startActivity(new Intent(this, Report.class));

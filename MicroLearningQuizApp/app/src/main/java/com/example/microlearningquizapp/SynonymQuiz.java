@@ -151,7 +151,7 @@ public class SynonymQuiz extends AppCompatActivity {
                 // supaya pengguna sempat melihat mesej "Quiz Complete!"
                 new Handler(Looper.getMainLooper()).postDelayed(() -> {
                     // Cipta Intent untuk pergi ke 'score.class'
-                    Intent intent = new Intent(SynonymQuiz.this, score.class);
+                    Intent intent = new Intent(SynonymQuiz.this, Score.class);
 
                     // Hantar data skor. Untuk kuiz ini, skor sentiasa penuh jika ia tamat.
                     intent.putExtra("USER_SCORE", synonymPairs.size());
