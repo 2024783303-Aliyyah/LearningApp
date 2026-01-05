@@ -24,7 +24,7 @@ public class SubtractQuiz extends AppCompatActivity {
             " 6 - 2 ?",
             " 5 - 3 ?"
     };
-    private final int[] correctAnswers = {2, 2, 4, 1};
+    private final int[] correctAnswers = {2, 2, 4, 2};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,7 +82,7 @@ public class SubtractQuiz extends AppCompatActivity {
 
     private void goToScoreActivity(int finalScore, ArrayList<Integer> userAnswers) {
 
-        Intent intent = new Intent(SubtractQuiz.this, score.class);
+        Intent intent = new Intent(SubtractQuiz.this, Score.class);
 
         // 1. Skor akhir pengguna
         intent.putExtra("USER_SCORE", finalScore);
