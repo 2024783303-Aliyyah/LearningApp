@@ -1,6 +1,7 @@
 package com.example.microlearningquizapp;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -18,18 +19,30 @@ public class AnimalQuiz extends AppCompatActivity {
     private MaterialCardView[] optionCards;
     private ImageButton[] optionButtons;
     private Button btnSubmit;
+    // Questions
 
     private String[] questions = {
-            "Which animal says 'Meow'?",
-
+            "Which animal says \"Meow\"?",
+            "Which animal lives in water?",
+            "Which animal lays eggs?",
+            "Which animal is the biggest?"
     };
 
+    // option answers
     private int[][] options = {
-            {R.drawable.dog, R.drawable.cat, R.drawable.cow, R.drawable.chicken},
-
+            {R.drawable.dog, R.drawable.cat, R.drawable.cow, R.drawable.chicken},   // Q1
+            { R.drawable.fish, R.drawable.dog, R.drawable.lion, R.drawable.cow },   // Q2
+            { R.drawable.chicken, R.drawable.dog, R.drawable.cow, R.drawable.cat }, // Q3
+            { R.drawable.elephant, R.drawable.monkey, R.drawable.rabbit, R.drawable.dog } // Q4
     };
 
-    private int[] correctAnswers = {1, 1, 0}; // index of correct option per question
+    // correct answer indices
+    private int[] correctAnswers = {    // index of correct option per question
+            1,  // cat
+            1,  // fish
+            0,  // chicken
+            0   // elephant
+    };
 
     private int currentQuestion = 0;
     private int selectedOption = -1; // -1 means no selection yet
@@ -76,10 +89,17 @@ public class AnimalQuiz extends AppCompatActivity {
         selectedOption = -1; // reset selection
         questionText.setText(questions[currentQuestion]);
 
-        // Set images
+        // load / set images
         for (int i = 0; i < 4; i++) {
             optionButtons[i].setImageResource(options[currentQuestion][i]);
-            optionCards[i].setStrokeWidth(0); // reset border
+            optionCards[i].setStrokeWidth(0); // reset selection highlight
+        }
+
+        // button text
+        if (currentQuestion == questions.length - 1) {
+            btnSubmit.setText("Finish");
+        } else {
+            btnSubmit.setText("Next");
         }
     }
 
@@ -102,6 +122,7 @@ public class AnimalQuiz extends AppCompatActivity {
             return;
         }
 
+        // check answer
         if (selectedOption == correctAnswers[currentQuestion]) {
             score++;
         }
@@ -111,10 +132,15 @@ public class AnimalQuiz extends AppCompatActivity {
         if (currentQuestion < questions.length) {
             loadQuestion();
         } else {
-            // Quiz finished, go to score page
-            Intent intent = new Intent(AnimalQuiz.this, Score.class);
-            intent.putExtra("USER_SCORE", score);
-            intent.putExtra("TOTAL_QUESTIONS", questions.length);
+            // save score to SharedPreferences once quiz finished
+            SharedPreferences prefs = getSharedPreferences("QUIZ_SCORES", MODE_PRIVATE);
+            SharedPreferences.Editor editor = prefs.edit();
+            editor.putInt("SCIENCE_ANIMALS_SCORE", score);
+            editor.putInt("SCIENCE_ANIMALS_TOTAL", questions.length);
+            editor.apply();
+
+            // go to MyScore page
+            Intent intent = new Intent(AnimalQuiz.this, MyScore.class);
             startActivity(intent);
             finish();
         }
