@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MicroLearningQuizApp">
         <activity
+            android:name=".SpaceQuiz"
+            android:exported="false" />
+        <activity
+            android:name=".BodyQuiz"
+            android:exported="false" />
+        <activity
             android:name=".MyScore"
             android:exported="false" />
         <activity
