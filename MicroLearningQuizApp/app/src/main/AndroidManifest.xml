@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MicroLearningQuizApp">
         <activity
+            android:name=".MyScore"
+            android:exported="false" />
+        <activity
             android:name=".SynonymQuiz"
             android:exported="false" />
         <activity
@@ -86,7 +89,7 @@
         <activity
             android:name=".adminDashboard"
             android:exported="false" />
-        <activity android:name=".score" />
+        <activity android:name=".Score" />
         <activity
             android:name=".SplashActivity"
             android:exported="true"
