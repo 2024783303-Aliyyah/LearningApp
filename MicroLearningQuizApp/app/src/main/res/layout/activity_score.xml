@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="#FFFACD"
     android:id="@+id/score"
-    tools:context=".score">
+    tools:context=".Score">
 
     <!-- Butang Kembali -->
     <ImageView
