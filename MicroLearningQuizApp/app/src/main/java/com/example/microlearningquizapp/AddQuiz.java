@@ -82,7 +82,7 @@ public class AddQuiz extends AppCompatActivity {
 
     private void goToScoreActivity(int finalScore, ArrayList<Integer> userAnswers) {
 
-        Intent intent = new Intent(AddQuiz.this, score.class);
+        Intent intent = new Intent(AddQuiz.this, Score.class);
 
         // 1. Skor akhir pengguna
         intent.putExtra("USER_SCORE", finalScore);
