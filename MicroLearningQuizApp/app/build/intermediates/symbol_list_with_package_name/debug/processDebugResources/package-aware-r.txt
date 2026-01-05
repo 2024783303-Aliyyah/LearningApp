@@ -4198,6 +4198,7 @@ id south
 id spacer
 id special_effects_controller_view_tag
 id spinnerSubject
+id spinnerToday
 id splashscreen_icon_view
 id spline
 id split_action_bar
@@ -4287,6 +4288,7 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id tvAboutMe
+id tvAge
 id tvDescription
 id tvEmail
 id tvForgetPassword
@@ -4460,12 +4462,14 @@ layout activity_login
 layout activity_math_lessons
 layout activity_math_quizzes
 layout activity_quizzesmodules
+layout activity_report
 layout activity_science_lessons
 layout activity_science_quizzes
 layout activity_splash
 layout activity_student_dashboard
 layout activity_user_profile
 layout activity_view_lesson
+layout admin_profile
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -4552,9 +4556,9 @@ layout support_simple_spinner_dropdown_item
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
-raw mathaddition
-raw mathmultiplication
-raw mathsubtraction
+raw addition
+raw multiply
+raw subtract
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

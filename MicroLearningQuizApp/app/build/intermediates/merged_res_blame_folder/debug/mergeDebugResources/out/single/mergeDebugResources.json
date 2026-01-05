@@ -8,10 +8,6 @@
         "source": "com.example.microlearningquizapp-main-39:/layout/activity_science_lessons.xml"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/raw_mathsubtraction.mp4.flat",
-        "source": "com.example.microlearningquizapp-main-39:/raw/mathsubtraction.mp4"
-    },
-    {
         "merged": "com.example.microlearningquizapp-debug-37:/drawable_logoteacher.png.flat",
         "source": "com.example.microlearningquizapp-main-39:/drawable/logoteacher.png"
     },
@@ -84,6 +80,10 @@
         "source": "com.example.microlearningquizapp-main-39:/drawable/login_style.xml"
     },
     {
+        "merged": "com.example.microlearningquizapp-debug-37:/raw_subtract.mp4.flat",
+        "source": "com.example.microlearningquizapp-main-39:/raw/subtract.mp4"
+    },
+    {
         "merged": "com.example.microlearningquizapp-debug-37:/drawable_ic_launcher_background.xml.flat",
         "source": "com.example.microlearningquizapp-main-39:/drawable/ic_launcher_background.xml"
     },
@@ -96,12 +96,12 @@
         "source": "com.example.microlearningquizapp-main-39:/layout/activity_lesson.xml"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/drawable_answbox.png.flat",
-        "source": "com.example.microlearningquizapp-main-39:/drawable/answbox.png"
-    },
-    {
         "merged": "com.example.microlearningquizapp-debug-37:/layout_activity_login.xml.flat",
         "source": "com.example.microlearningquizapp-main-39:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.example.microlearningquizapp-debug-37:/drawable_answbox.png.flat",
+        "source": "com.example.microlearningquizapp-main-39:/drawable/answbox.png"
     },
     {
         "merged": "com.example.microlearningquizapp-debug-37:/drawable_score.png.flat",
@@ -204,6 +204,10 @@
         "source": "com.example.microlearningquizapp-main-39:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
+        "merged": "com.example.microlearningquizapp-debug-37:/layout_activity_report.xml.flat",
+        "source": "com.example.microlearningquizapp-main-39:/layout/activity_report.xml"
+    },
+    {
         "merged": "com.example.microlearningquizapp-debug-37:/drawable_quiznav.png.flat",
         "source": "com.example.microlearningquizapp-main-39:/drawable/quiznav.png"
     },
@@ -230,6 +234,10 @@
     {
         "merged": "com.example.microlearningquizapp-debug-37:/drawable_children.jpg.flat",
         "source": "com.example.microlearningquizapp-main-39:/drawable/children.jpg"
+    },
+    {
+        "merged": "com.example.microlearningquizapp-debug-37:/raw_multiply.mp4.flat",
+        "source": "com.example.microlearningquizapp-main-39:/raw/multiply.mp4"
     },
     {
         "merged": "com.example.microlearningquizapp-debug-37:/layout_activity_student_dashboard.xml.flat",
@@ -268,16 +276,16 @@
         "source": "com.example.microlearningquizapp-main-39:/drawable/kid.png"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/raw_mathmultiplication.mp4.flat",
-        "source": "com.example.microlearningquizapp-main-39:/raw/mathmultiplication.mp4"
+        "merged": "com.example.microlearningquizapp-debug-37:/raw_addition.mp4.flat",
+        "source": "com.example.microlearningquizapp-main-39:/raw/addition.mp4"
     },
     {
         "merged": "com.example.microlearningquizapp-debug-37:/drawable_add4.png.flat",
         "source": "com.example.microlearningquizapp-main-39:/drawable/add4.png"
     },
     {
-        "merged": "com.example.microlearningquizapp-debug-37:/raw_mathaddition.mp4.flat",
-        "source": "com.example.microlearningquizapp-main-39:/raw/mathaddition.mp4"
+        "merged": "com.example.microlearningquizapp-debug-37:/layout_admin_profile.xml.flat",
+        "source": "com.example.microlearningquizapp-main-39:/layout/admin_profile.xml"
     },
     {
         "merged": "com.example.microlearningquizapp-debug-37:/mipmap-xxxhdpi_ic_launcher.webp.flat",
