@@ -47,7 +47,7 @@ public class MultiplyQuiz extends AppCompatActivity {
         btnBack = findViewById(R.id.btnBackMultiply);
 
         // Set system bars padding
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.multiplequiz), (v, insets) -> {
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.multiplyquiz), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
@@ -94,7 +94,7 @@ public class MultiplyQuiz extends AppCompatActivity {
 
     private void goToScoreActivity(int finalScore, ArrayList<Integer> userAnswers) {
 
-        Intent intent = new Intent(MultiplyQuiz.this, score.class);
+        Intent intent = new Intent(MultiplyQuiz.this, Score.class);
 
         intent.putExtra("USER_SCORE", finalScore);
         intent.putExtra("TOTAL_QUESTIONS", correctAnswers.length);
