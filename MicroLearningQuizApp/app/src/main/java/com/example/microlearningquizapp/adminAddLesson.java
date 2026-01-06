@@ -76,7 +76,8 @@ public class adminAddLesson extends AppCompatActivity {
         spinnerSubject.setAdapter(adapter);
 
         // --- Logik untuk Butang "Pick Image" ---
-        btnUploadIllustration.setOnClickListener(v -> {
+        btnUploadIllustration.setOnClickListener(v ->
+        {
             Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
             intent.setType("image/*"); // Hanya tunjukkan fail imej
             pickImageLauncher.launch(intent);
