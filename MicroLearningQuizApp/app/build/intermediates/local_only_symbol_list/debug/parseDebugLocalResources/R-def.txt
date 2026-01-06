@@ -99,6 +99,7 @@ id btnEditProfile
 id btnLogin
 id btnPickVideo
 id btnPrint
+id btnPrintReport
 id btnSave
 id btnSubmit
 id btnUploadIllustration
@@ -110,7 +111,6 @@ id cardOption3
 id cardOption4
 id cardProfile
 id cardQuiz
-id cardReport
 id cardScores
 id cbRemember
 id column_left
@@ -193,9 +193,11 @@ id question_text
 id quiz1
 id quiz2
 id quiz_title
+id quizzes_container
 id quizzesmodules
 id report
 id rvLessons
+id rvStudentScores
 id science
 id sciencequiz
 id score
@@ -204,6 +206,7 @@ id scoreScroll
 id scrollView
 id spinnerSubject
 id spinnerToday
+id subjects_container
 id subtractionquiz
 id subtractquiz
 id textContent
@@ -247,7 +250,9 @@ id tvScienceTopic1
 id tvScienceTopic2
 id tvScienceTopic3
 id tvSelectedVideo
+id tvStudentUsername
 id tvSubject
+id tvSubjectName
 id tvTitle
 id tvUsername
 id tvVideo
@@ -268,6 +273,7 @@ layout activity_add_quiz
 layout activity_admin_add_lesson
 layout activity_admin_dashboard
 layout activity_admin_edit_lesson
+layout activity_admin_report
 layout activity_admin_view_lesson
 layout activity_alphabet_quiz
 layout activity_animal_quiz
@@ -295,6 +301,8 @@ layout activity_user_profile
 layout admin_profile
 layout item_admin_lesson
 layout item_lessons
+layout item_student_overall_card
+layout item_subject_score
 mipmap ic_launcher
 mipmap ic_launcher_round
 raw addition

@@ -31,12 +31,9 @@ public class adminDashboard extends AppCompatActivity {
        {
            startActivity(new Intent(this, adminViewLesson.class));
        }
-       else if(id == R.id.cardScores) //kena edit balik link ke view score
+       else if(id == R.id.cardScores)
        {
-           startActivity(new Intent(this, Score.class));
-       }
-       else if(id == R.id.cardReport) {
-           startActivity(new Intent(this, Report.class));
+           startActivity(new Intent(this, AdminReportActivity.class));
        }
 
 
