@@ -96,4 +96,19 @@ public class adminAddLesson extends AppCompatActivity {
     public void goBack(View view) {
         finish();
     }
+
+    public void openAdminActivity(View view)
+    {
+        int id = view.getId();
+        if(id == R.id.cardLessons)
+        {
+            startActivity(new Intent(this, adminViewLesson.class));
+        }
+        else if(id == R.id.cardScores)
+        {
+            startActivity(new Intent(this, AdminReportActivity.class));
+        }
+
+
+    }
 }
