@@ -80,7 +80,7 @@ public class adminViewLesson extends AppCompatActivity {
         } else if (id == R.id.adminnavHome) {
             startActivity(new Intent(this, adminDashboard.class));
         } else if (id == R.id.adminnavScores) {
-            startActivity(new Intent(this, Score.class));
+            startActivity(new Intent(this, AdminReportActivity.class));
         }
     }
 
