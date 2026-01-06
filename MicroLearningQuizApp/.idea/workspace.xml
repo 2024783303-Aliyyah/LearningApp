@@ -161,9 +161,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="baf82009-5c32-41d4-9b88-56dc752f5d8a" name="Changes" comment="activate button upload image in add lesson and edit lesson">
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/microlearningquizapp/adminEditLesson.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/microlearningquizapp/adminEditLesson.java" afterDir="false" />
-    </list>
+    <list default="true" id="baf82009-5c32-41d4-9b88-56dc752f5d8a" name="Changes" comment="activate button upload image in add lesson and edit lesson" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -367,14 +365,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1766383688470</updated>
-    </task>
-    <task id="LOCAL-00012" summary="delete file">
-      <option name="closed" value="true" />
-      <created>1766479998812</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1766479998812</updated>
     </task>
     <task id="LOCAL-00013" summary="add Student Score design">
       <option name="closed" value="true" />
@@ -760,7 +750,15 @@
       <option name="project" value="LOCAL" />
       <updated>1767694045515</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="activate button upload image in add lesson and edit lesson">
+      <option name="closed" value="true" />
+      <created>1767695281148</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1767695281148</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

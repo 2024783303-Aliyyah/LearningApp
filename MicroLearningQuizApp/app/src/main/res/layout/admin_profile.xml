@@ -10,18 +10,19 @@
     tools:context=".UserProfileActivity">
 
     <!-- Back button -->
+
+    <!-- User Profile Title -->
     <ImageView
         android:id="@+id/btnBack"
         android:layout_width="48dp"
         android:layout_height="33dp"
         android:layout_margin="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
         android:src="@drawable/buttonback"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- User Profile Title -->
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
@@ -157,61 +158,48 @@
     </LinearLayout>
 
     <!-- Bottom Navigation Bar -->
+    <!-- 5. Bar Navigasi Bawah (kekal di bawah sekali) -->
     <LinearLayout
         android:id="@+id/bottomNavBar"
         android:layout_width="0dp"
         android:layout_height="70dp"
         android:background="#FFEB80"
-        android:orientation="horizontal"
         android:gravity="center"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
+        <!-- Ikon-ikon navigasi anda -->
         <ImageView
-            android:id="@+id/navProfile"
+            android:id="@+id/adminnavProfile"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/usernav"
             android:contentDescription="Profile"
-            android:padding="10dp"/>
+            android:onClick="openadminMenu"
+            android:padding="10dp"
+            android:src="@drawable/usernav" />
 
         <ImageView
-            android:id="@+id/navLessons"
+            android:id="@+id/adminnavHome"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/booknav"
-            android:contentDescription="Lessons"
-            android:padding="10dp"/>
-
-        <ImageView
-            android:id="@+id/navHome"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/homenav"
             android:contentDescription="Home"
-            android:padding="10dp"/>
+            android:onClick="openadminMenu"
+            android:padding="10dp"
+            android:src="@drawable/homenav" />
 
         <ImageView
-            android:id="@+id/navQuiz"
+            android:id="@+id/adminnavScores"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/quiznav"
-            android:contentDescription="Quiz"
-            android:padding="10dp"/>
-
-        <ImageView
-            android:id="@+id/navScores"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:src="@drawable/trophynav"
             android:contentDescription="Scores"
-            android:padding="10dp"/>
+            android:onClick="openadminMenu"
+            android:padding="10dp"
+            android:src="@drawable/trophynav" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
