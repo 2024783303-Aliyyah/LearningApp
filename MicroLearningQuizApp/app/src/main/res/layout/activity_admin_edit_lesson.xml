@@ -142,7 +142,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"/>
 
-            <!-- Header Image -->
+            <!-- Header Image (KOD BARU) -->
             <TextView
                 android:id="@+id/tvImage"
                 android:layout_width="wrap_content"
@@ -162,6 +162,20 @@
                 android:layout_marginTop="8dp"
                 app:layout_constraintTop_toBottomOf="@id/tvImage"
                 app:layout_constraintStart_toStartOf="parent"/>
+
+            <ImageView
+                android:id="@+id/ivImagePreview"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="16dp"
+                android:scaleType="centerCrop"
+                android:src="@android:drawable/ic_menu_gallery"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintTop_toTopOf="@id/btnUploadIllustration"
+                app:layout_constraintBottom_toBottomOf="@id/btnUploadIllustration"
+                app:layout_constraintStart_toEndOf="@id/btnUploadIllustration"
+                android:contentDescription="Image Preview"/>
+
 
             <!-- Video -->
             <TextView
@@ -230,7 +244,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:contentDescription="Profile"
-            android:onClick="openAdminActivity"
+            android:onClick="openadminMenu"
             android:padding="10dp"
             android:src="@drawable/usernav" />
 
@@ -240,7 +254,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:contentDescription="Home"
-            android:onClick="openAdminActivity"
+            android:onClick="openadminMenu"
             android:padding="10dp"
             android:src="@drawable/homenav" />
 
@@ -250,7 +264,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:contentDescription="Scores"
-            android:onClick="openAdminActivity"
+            android:onClick="openadminMenu"
             android:padding="10dp"
             android:src="@drawable/trophynav" />
     </LinearLayout>

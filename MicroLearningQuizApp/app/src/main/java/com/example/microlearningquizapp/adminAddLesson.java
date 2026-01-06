@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView; // <-- Import ImageView
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -24,20 +25,31 @@ public class adminAddLesson extends AppCompatActivity {
     EditText etLessonTitle, etYears, etDescription;
     Button btnSave, btnUploadIllustration, btnPickVideo;
     TextView tvSelectedVideo;
+    ImageView ivImagePreview; // <-- Deklarasi ImageView
 
-    // --- Pembolehubah untuk menyimpan URI video ---
-    private Uri videoUri; // Untuk menyimpan path video yang dipilih
+    // --- Pembolehubah untuk menyimpan URI ---
+    private Uri videoUri;
+    private Uri imageUri; // <-- Deklarasi URI untuk imej
 
-    // --- Launcher untuk mendapatkan hasil dari pemilih fail ---
+    // --- Launcher untuk video ---
     private final ActivityResultLauncher<Intent> pickVideoLauncher = registerForActivityResult(
             new ActivityResultContracts.StartActivityForResult(),
             result -> {
                 if (result.getResultCode() == Activity.RESULT_OK && result.getData() != null) {
-                    // Dapatkan URI video yang dipilih
                     videoUri = result.getData().getData();
-                    // Paparkan nama fail (atau URI) pada TextView
                     tvSelectedVideo.setText(videoUri.getLastPathSegment());
-                    Toast.makeText(this, "Video selected", Toast.LENGTH_SHORT).show();
+                }
+            }
+    );
+
+    // --- Launcher BARU untuk imej ---
+    private final ActivityResultLauncher<Intent> pickImageLauncher = registerForActivityResult(
+            new ActivityResultContracts.StartActivityForResult(),
+            result -> {
+                if (result.getResultCode() == Activity.RESULT_OK && result.getData() != null) {
+                    imageUri = result.getData().getData();
+                    // Paparkan imej yang dipilih dalam ImageView
+                    ivImagePreview.setImageURI(imageUri);
                 }
             }
     );
@@ -54,41 +66,48 @@ public class adminAddLesson extends AppCompatActivity {
         etDescription = findViewById(R.id.etDescription);
         btnSave = findViewById(R.id.btnSave);
         btnUploadIllustration = findViewById(R.id.btnUploadIllustration);
-        // Pautkan View baru untuk video
         btnPickVideo = findViewById(R.id.btnPickVideo);
         tvSelectedVideo = findViewById(R.id.tvSelectedVideo);
+        ivImagePreview = findViewById(R.id.ivImagePreview); // <-- Pautkan ImageView
 
-        // --- Logik Spinner (kekal sama) ---
+        // --- Logik Spinner ---
         String[] subjects = {"Mathematic", "Science", "English"};
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, subjects);
         spinnerSubject.setAdapter(adapter);
 
+        // --- Logik untuk Butang "Pick Image" ---
+        btnUploadIllustration.setOnClickListener(v -> {
+            Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+            intent.setType("image/*"); // Hanya tunjukkan fail imej
+            pickImageLauncher.launch(intent);
+        });
+
         // --- Logik untuk Butang "Pick Video" ---
         btnPickVideo.setOnClickListener(v -> {
-            // Cipta Intent untuk membuka pemilih fail video
             Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
-            intent.setType("video/*"); // Hanya tunjukkan fail video
+            intent.setType("video/*");
             pickVideoLauncher.launch(intent);
         });
 
         // --- Logik untuk Butang "Save" ---
         btnSave.setOnClickListener(v -> {
-            String subject = spinnerSubject.getSelectedItem().toString();
-            String title = etLessonTitle.getText().toString();
-            String year = etYears.getText().toString();
-            String description = etDescription.getText().toString();
+            // ... (logik anda sedia ada) ...
 
-            // Semak jika video telah dipilih
+            // Semak jika imej dan video telah dipilih
+            if (imageUri == null) {
+                Toast.makeText(this, "Please pick a header image", Toast.LENGTH_SHORT).show();
+                return;
+            }
             if (videoUri == null) {
-                Toast.makeText(this, "Please select a video", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Please pick a lesson video", Toast.LENGTH_SHORT).show();
                 return;
             }
 
-            // DI SINI: Anda akan simpan semua data, termasuk videoUri.toString() ke pangkalan data
-            // Contoh: Lesson newLesson = new Lesson(..., ..., videoUri.toString(), ...);
+            // DI SINI: Anda akan simpan semua data, termasuk imageUri.toString() dan videoUri.toString()
+            // Contoh: Lesson newLesson = new Lesson(..., ..., videoUri.toString(), imageUri.toString());
             //         databaseReference.push().setValue(newLesson);
 
-            Toast.makeText(this, "Lesson Added: " + title, Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Lesson Added!", Toast.LENGTH_SHORT).show();
             finish();
         });
     }
@@ -96,19 +115,15 @@ public class adminAddLesson extends AppCompatActivity {
     public void goBack(View view) {
         finish();
     }
-
-    public void openAdminActivity(View view)
+    public void openadminMenu(View view)
     {
         int id = view.getId();
-        if(id == R.id.cardLessons)
-        {
-            startActivity(new Intent(this, adminViewLesson.class));
-        }
-        else if(id == R.id.cardScores)
-        {
+        if (id == R.id.adminnavProfile) {
+            startActivity(new Intent(this, AdminProfile.class));
+        } else if (id == R.id.adminnavHome) {
+            startActivity(new Intent(this, adminDashboard.class));
+        } else if (id == R.id.adminnavScores) {
             startActivity(new Intent(this, AdminReportActivity.class));
         }
-
-
     }
 }

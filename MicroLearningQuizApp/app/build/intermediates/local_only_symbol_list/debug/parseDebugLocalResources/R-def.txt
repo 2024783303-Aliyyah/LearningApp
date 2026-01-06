@@ -135,6 +135,7 @@ id imgAvatar
 id imgChildren
 id imgLogo
 id instructions_text
+id ivImagePreview
 id learningmodules
 id lessonactivity
 id login
