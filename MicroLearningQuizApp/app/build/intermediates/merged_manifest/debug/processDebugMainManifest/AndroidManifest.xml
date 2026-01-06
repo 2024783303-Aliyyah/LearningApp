@@ -28,6 +28,15 @@
         android:testOnly="true"
         android:theme="@style/Theme.MicroLearningQuizApp" >
         <activity
+            android:name="com.example.microlearningquizapp.SpaceQuiz"
+            android:exported="false" />
+        <activity
+            android:name="com.example.microlearningquizapp.BodyQuiz"
+            android:exported="false" />
+        <activity
+            android:name="com.example.microlearningquizapp.MyScore"
+            android:exported="false" />
+        <activity
             android:name="com.example.microlearningquizapp.SynonymQuiz"
             android:exported="false" />
         <activity
@@ -102,7 +111,7 @@
         <activity
             android:name="com.example.microlearningquizapp.adminDashboard"
             android:exported="false" />
-        <activity android:name="com.example.microlearningquizapp.score" />
+        <activity android:name="com.example.microlearningquizapp.Score" />
         <activity
             android:name="com.example.microlearningquizapp.SplashActivity"
             android:exported="true"
