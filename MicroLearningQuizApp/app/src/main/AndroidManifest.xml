@@ -21,6 +21,9 @@
             android:name=".BodyQuiz"
             android:exported="false" />
         <activity
+            android:name=".AnimalQuiz"
+            android:exported="false" />
+        <activity
             android:name=".MyScore"
             android:exported="false" />
         <activity
