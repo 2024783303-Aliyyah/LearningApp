@@ -32,16 +32,16 @@ public class AnimalQuiz extends AppCompatActivity {
     private int[][] options = {
             {R.drawable.dog, R.drawable.cat, R.drawable.cow, R.drawable.chicken},   // Q1
             { R.drawable.fish, R.drawable.dog, R.drawable.lion, R.drawable.cow },   // Q2
-            { R.drawable.chicken, R.drawable.dog, R.drawable.cow, R.drawable.cat }, // Q3
-            { R.drawable.elephant, R.drawable.monkey, R.drawable.rabbit, R.drawable.dog } // Q4
+            { R.drawable.cow, R.drawable.dog, R.drawable.chicken, R.drawable.cat }, // Q3
+            { R.drawable.dog, R.drawable.monkey, R.drawable.rabbit, R.drawable.elephant } // Q4
     };
 
     // correct answer indices
     private int[] correctAnswers = {    // index of correct option per question
             1,  // cat
-            1,  // fish
-            0,  // chicken
-            0   // elephant
+            0,  // fish
+            2,  // chicken
+            3   // elephant
     };
 
     private int currentQuestion = 0;
