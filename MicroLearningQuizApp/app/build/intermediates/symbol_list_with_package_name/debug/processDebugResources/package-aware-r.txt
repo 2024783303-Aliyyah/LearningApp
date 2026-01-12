@@ -3588,10 +3588,13 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable dog
 drawable doggie
+drawable ear
 drawable elephant
 drawable english
 drawable englishquiz
+drawable eye
 drawable fish
+drawable hand
 drawable homenav
 drawable ic_arrow_back_black_24
 drawable ic_call_answer
@@ -3618,6 +3621,7 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
 drawable icon_background
 drawable kid
+drawable leg
 drawable lion
 drawable login_style
 drawable logo
@@ -3648,6 +3652,7 @@ drawable math_book
 drawable mathquiz
 drawable maths
 drawable monkey
+drawable mouth
 drawable mtrl_bottomsheet_drag_handle
 drawable mtrl_checkbox_button
 drawable mtrl_checkbox_button_checked_unchecked
@@ -3690,6 +3695,7 @@ drawable multiply2
 drawable multiply3
 drawable multiply4
 drawable navigation_empty_icon
+drawable nose
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -3845,10 +3851,12 @@ id beginning
 id below
 id bestChoice
 id blocking
+id bodyQuiz
 id bottom
 id bottomNavBar
 id bottomNavBarAnimal
 id bottomNavBarMultiply
+id bottomNavBarSpace
 id bounce
 id bounceBoth
 id bounceEnd
@@ -3862,7 +3870,9 @@ id btnBack5
 id btnBack6
 id btnBack7
 id btnBackAnimalQuiz
+id btnBackBodyQuiz
 id btnBackMultiply
+id btnBackSpaceQuiz
 id btnDelete
 id btnEdit
 id btnEditProfile
@@ -4233,6 +4243,9 @@ id quiz_title
 id quizzes_container
 id quizzesmodules
 id radio
+id radioFalse
+id radioGroupTF
+id radioTrue
 id ratio
 id rectangles
 id report
@@ -4389,6 +4402,7 @@ id triangle
 id tvAboutMe
 id tvAge
 id tvAnimalQuizTitle
+id tvBodyQuizTitle
 id tvDescription
 id tvEmail
 id tvEnglishTopic1
@@ -4413,6 +4427,7 @@ id tvScienceTopic1
 id tvScienceTopic2
 id tvScienceTopic3
 id tvSelectedVideo
+id tvSpaceQuizTitle
 id tvStudentUsername
 id tvSubject
 id tvSubjectName
