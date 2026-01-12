@@ -8,233 +8,231 @@
 8        android:minSdkVersion="24"
 9        android:targetSdkVersion="36" />
 10
-11    <permission
-11-->[androidx.core:core:1.16.0] C:\Users\User\.gradle\caches\8.13\transforms\2a28f9fe7553e0069360a2ae9cfff29e\transformed\core-1.16.0\AndroidManifest.xml:22:5-24:47
-12        android:name="com.example.microlearningquizapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-12-->[androidx.core:core:1.16.0] C:\Users\User\.gradle\caches\8.13\transforms\2a28f9fe7553e0069360a2ae9cfff29e\transformed\core-1.16.0\AndroidManifest.xml:23:9-81
-13        android:protectionLevel="signature" />
-13-->[androidx.core:core:1.16.0] C:\Users\User\.gradle\caches\8.13\transforms\2a28f9fe7553e0069360a2ae9cfff29e\transformed\core-1.16.0\AndroidManifest.xml:24:9-44
-14
-15    <uses-permission android:name="com.example.microlearningquizapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-15-->[androidx.core:core:1.16.0] C:\Users\User\.gradle\caches\8.13\transforms\2a28f9fe7553e0069360a2ae9cfff29e\transformed\core-1.16.0\AndroidManifest.xml:26:5-97
-15-->[androidx.core:core:1.16.0] C:\Users\User\.gradle\caches\8.13\transforms\2a28f9fe7553e0069360a2ae9cfff29e\transformed\core-1.16.0\AndroidManifest.xml:26:22-94
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:5:5-66
+11-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:5:22-64
+12
+13    <permission
+13-->[androidx.core:core:1.16.0] C:\Users\User\.gradle\caches\8.13\transforms\2a28f9fe7553e0069360a2ae9cfff29e\transformed\core-1.16.0\AndroidManifest.xml:22:5-24:47
+14        android:name="com.example.microlearningquizapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+14-->[androidx.core:core:1.16.0] C:\Users\User\.gradle\caches\8.13\transforms\2a28f9fe7553e0069360a2ae9cfff29e\transformed\core-1.16.0\AndroidManifest.xml:23:9-81
+15        android:protectionLevel="signature" />
+15-->[androidx.core:core:1.16.0] C:\Users\User\.gradle\caches\8.13\transforms\2a28f9fe7553e0069360a2ae9cfff29e\transformed\core-1.16.0\AndroidManifest.xml:24:9-44
 16
-17    <application
-17-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:5:5-78:19
-18        android:allowBackup="true"
-18-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:6:9-35
-19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-19-->[androidx.core:core:1.16.0] C:\Users\User\.gradle\caches\8.13\transforms\2a28f9fe7553e0069360a2ae9cfff29e\transformed\core-1.16.0\AndroidManifest.xml:28:18-86
-20        android:dataExtractionRules="@xml/data_extraction_rules"
-20-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:7:9-65
-21        android:debuggable="true"
-22        android:extractNativeLibs="false"
-23        android:fullBackupContent="@xml/backup_rules"
-23-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:8:9-54
-24        android:icon="@drawable/logo"
-24-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:9:9-38
-25        android:label="@string/app_name"
-25-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:10:9-41
-26        android:roundIcon="@drawable/logo"
-26-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:11:9-43
-27        android:supportsRtl="true"
-27-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:12:9-35
-28        android:testOnly="true"
-29        android:theme="@style/Theme.MicroLearningQuizApp" >
-29-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:13:9-58
-30        <activity
-30-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:14:9-16:40
-31            android:name="com.example.microlearningquizapp.Report"
-31-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:15:13-35
-32            android:exported="false" />
-32-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:16:13-37
-33        <activity
-33-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:17:9-19:40
-34            android:name="com.example.microlearningquizapp.AdminProfile"
-34-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:18:13-41
-35            android:exported="false" />
-35-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:19:13-37
-36        <activity
-36-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:20:9-22:40
-37            android:name="com.example.microlearningquizapp.LoginActivity"
-37-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:21:13-42
-38            android:exported="false" />
-38-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:22:13-37
-39        <activity
-39-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:23:9-25:40
-40            android:name="com.example.microlearningquizapp.ScienceQuizzes"
-40-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:24:13-43
-41            android:exported="false" />
-41-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:25:13-37
-42        <activity
-42-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:26:9-28:40
-43            android:name="com.example.microlearningquizapp.EnglishQuizzes"
-43-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:27:13-43
-44            android:exported="false" />
-44-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:28:13-37
-45        <activity
-45-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:29:9-31:40
-46            android:name="com.example.microlearningquizapp.AddQuiz"
-46-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:30:13-36
-47            android:exported="false" />
-47-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:31:13-37
-48        <activity
-48-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:32:9-34:40
-49            android:name="com.example.microlearningquizapp.MathQuizzes"
-49-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:33:13-40
-50            android:exported="false" />
-50-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:34:13-37
-51        <activity
-51-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:35:9-37:40
-52            android:name="com.example.microlearningquizapp.quizzesmodules"
-52-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:36:13-43
-53            android:exported="false" />
-53-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:37:13-37
-54        <activity
-54-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:38:9-40:40
-55            android:name="com.example.microlearningquizapp.ViewLesson"
-55-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:39:13-39
-56            android:exported="false" />
-56-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:40:13-37
-57        <activity
-57-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:41:9-43:40
-58            android:name="com.example.microlearningquizapp.EditLesson"
-58-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:42:13-39
-59            android:exported="false" />
-59-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:43:13-37
-60        <activity
-60-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:44:9-46:40
-61            android:name="com.example.microlearningquizapp.learningmodules"
-61-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:45:13-44
-62            android:exported="false" />
-62-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:46:13-37
-63        <activity
-63-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:47:9-49:40
-64            android:name="com.example.microlearningquizapp.lessonActivity"
-64-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:48:13-43
-65            android:exported="false" />
-65-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:49:13-37
-66        <activity
-66-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:50:9-52:40
-67            android:name="com.example.microlearningquizapp.StudentDashboardActivity"
-67-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:51:13-53
-68            android:exported="false" />
-68-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:52:13-37
-69        <activity
-69-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:53:9-55:40
-70            android:name="com.example.microlearningquizapp.UserProfileActivity"
-70-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:54:13-48
-71            android:exported="false" />
-71-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:55:13-37
-72        <activity
-72-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:56:9-58:40
-73            android:name="com.example.microlearningquizapp.MathLessons"
-73-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:57:13-40
-74            android:exported="false" />
-74-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:58:13-37
-75        <activity
-75-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:59:9-61:40
-76            android:name="com.example.microlearningquizapp.ScienceLessons"
-76-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:60:13-43
-77            android:exported="false" />
-77-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:61:13-37
-78        <activity
-78-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:62:9-64:40
-79            android:name="com.example.microlearningquizapp.EnglishLessons"
-79-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:63:13-43
-80            android:exported="false" />
-80-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:64:13-37
-81        <activity
-81-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:65:9-67:40
-82            android:name="com.example.microlearningquizapp.adminDashboard"
-82-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:66:13-43
-83            android:exported="false" />
-83-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:67:13-37
-84        <activity
-84-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:68:9-77:20
-85            android:name="com.example.microlearningquizapp.SplashActivity"
-85-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:69:13-43
-86            android:exported="true"
-86-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:70:13-36
-87            android:theme="@style/Theme.AppCompat.NoActionBar" >
-87-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:71:13-63
-88            <intent-filter>
-88-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:72:13-76:29
-89                <action android:name="android.intent.action.MAIN" />
-89-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:73:17-69
-89-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:73:25-66
-90
-91                <category android:name="android.intent.category.LAUNCHER" />
-91-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:75:17-77
-91-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:75:27-74
-92            </intent-filter>
-93        </activity>
-94
-95        <provider
-95-->[androidx.emoji2:emoji2:1.3.0] C:\Users\User\.gradle\caches\8.13\transforms\f58f9c39c8f68c88716f9462b09325ca\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
-96            android:name="androidx.startup.InitializationProvider"
-96-->[androidx.emoji2:emoji2:1.3.0] C:\Users\User\.gradle\caches\8.13\transforms\f58f9c39c8f68c88716f9462b09325ca\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
-97            android:authorities="com.example.microlearningquizapp.androidx-startup"
-97-->[androidx.emoji2:emoji2:1.3.0] C:\Users\User\.gradle\caches\8.13\transforms\f58f9c39c8f68c88716f9462b09325ca\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
-98            android:exported="false" >
-98-->[androidx.emoji2:emoji2:1.3.0] C:\Users\User\.gradle\caches\8.13\transforms\f58f9c39c8f68c88716f9462b09325ca\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
-99            <meta-data
-99-->[androidx.emoji2:emoji2:1.3.0] C:\Users\User\.gradle\caches\8.13\transforms\f58f9c39c8f68c88716f9462b09325ca\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
-100                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-100-->[androidx.emoji2:emoji2:1.3.0] C:\Users\User\.gradle\caches\8.13\transforms\f58f9c39c8f68c88716f9462b09325ca\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
-101                android:value="androidx.startup" />
-101-->[androidx.emoji2:emoji2:1.3.0] C:\Users\User\.gradle\caches\8.13\transforms\f58f9c39c8f68c88716f9462b09325ca\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
-102            <meta-data
-102-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\User\.gradle\caches\8.13\transforms\b2d7c4f050ed5b6e9de969a844ca4ccd\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
-103                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-103-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\User\.gradle\caches\8.13\transforms\b2d7c4f050ed5b6e9de969a844ca4ccd\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
-104                android:value="androidx.startup" />
-104-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\User\.gradle\caches\8.13\transforms\b2d7c4f050ed5b6e9de969a844ca4ccd\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
-105            <meta-data
-105-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
-106                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-106-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
-107                android:value="androidx.startup" />
-107-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
-108        </provider>
-109
-110        <receiver
-110-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
-111            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-111-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
-112            android:directBootAware="false"
-112-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
-113            android:enabled="true"
-113-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
-114            android:exported="true"
-114-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
-115            android:permission="android.permission.DUMP" >
-115-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
-116            <intent-filter>
-116-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
-117                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-117-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
-117-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
-118            </intent-filter>
-119            <intent-filter>
-119-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
-120                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-120-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
-120-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
-121            </intent-filter>
-122            <intent-filter>
-122-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
-123                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-123-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
-123-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
-124            </intent-filter>
-125            <intent-filter>
-125-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
-126                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-126-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
-126-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
-127            </intent-filter>
-128        </receiver>
-129    </application>
-130
-131</manifest>
+17    <uses-permission android:name="com.example.microlearningquizapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+17-->[androidx.core:core:1.16.0] C:\Users\User\.gradle\caches\8.13\transforms\2a28f9fe7553e0069360a2ae9cfff29e\transformed\core-1.16.0\AndroidManifest.xml:26:5-97
+17-->[androidx.core:core:1.16.0] C:\Users\User\.gradle\caches\8.13\transforms\2a28f9fe7553e0069360a2ae9cfff29e\transformed\core-1.16.0\AndroidManifest.xml:26:22-94
+18
+19    <application
+19-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:7:5-79:19
+20        android:allowBackup="true"
+20-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:8:9-35
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.16.0] C:\Users\User\.gradle\caches\8.13\transforms\2a28f9fe7553e0069360a2ae9cfff29e\transformed\core-1.16.0\AndroidManifest.xml:28:18-86
+22        android:dataExtractionRules="@xml/data_extraction_rules"
+22-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:9:9-65
+23        android:debuggable="true"
+24        android:extractNativeLibs="false"
+25        android:fullBackupContent="@xml/backup_rules"
+25-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:10:9-54
+26        android:icon="@drawable/logo"
+26-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:11:9-38
+27        android:label="@string/app_name"
+27-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:12:9-41
+28        android:roundIcon="@drawable/logo"
+28-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:13:9-43
+29        android:supportsRtl="true"
+29-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:14:9-35
+30        android:testOnly="true"
+31        android:theme="@style/Theme.MicroLearningQuizApp" >
+31-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:15:9-58
+32        <activity
+32-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:18:9-20:40
+33            android:name="com.example.microlearningquizapp.AdminProfile"
+33-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:19:13-41
+34            android:exported="false" />
+34-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:20:13-37
+35        <activity
+35-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:21:9-23:40
+36            android:name="com.example.microlearningquizapp.LoginActivity"
+36-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:22:13-42
+37            android:exported="false" />
+37-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:23:13-37
+38        <activity
+38-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:24:9-26:40
+39            android:name="com.example.microlearningquizapp.ScienceQuizzes"
+39-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:25:13-43
+40            android:exported="false" />
+40-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:26:13-37
+41        <activity
+41-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:27:9-29:40
+42            android:name="com.example.microlearningquizapp.EnglishQuizzes"
+42-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:28:13-43
+43            android:exported="false" />
+43-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:29:13-37
+44        <activity
+44-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:30:9-32:40
+45            android:name="com.example.microlearningquizapp.AddQuiz"
+45-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:31:13-36
+46            android:exported="false" />
+46-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:32:13-37
+47        <activity
+47-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:33:9-35:40
+48            android:name="com.example.microlearningquizapp.MathQuizzes"
+48-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:34:13-40
+49            android:exported="false" />
+49-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:35:13-37
+50        <activity
+50-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:36:9-38:40
+51            android:name="com.example.microlearningquizapp.quizzesmodules"
+51-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:37:13-43
+52            android:exported="false" />
+52-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:38:13-37
+53        <activity
+53-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:39:9-41:40
+54            android:name="com.example.microlearningquizapp.ViewLesson"
+54-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:40:13-39
+55            android:exported="false" />
+55-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:41:13-37
+56        <activity
+56-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:42:9-44:40
+57            android:name="com.example.microlearningquizapp.EditLesson"
+57-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:43:13-39
+58            android:exported="false" />
+58-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:44:13-37
+59        <activity
+59-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:45:9-47:40
+60            android:name="com.example.microlearningquizapp.learningmodules"
+60-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:46:13-44
+61            android:exported="false" />
+61-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:47:13-37
+62        <activity
+62-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:48:9-50:40
+63            android:name="com.example.microlearningquizapp.lessonActivity"
+63-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:49:13-43
+64            android:exported="false" />
+64-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:50:13-37
+65        <activity
+65-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:51:9-53:40
+66            android:name="com.example.microlearningquizapp.StudentDashboardActivity"
+66-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:52:13-53
+67            android:exported="false" />
+67-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:53:13-37
+68        <activity
+68-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:54:9-56:40
+69            android:name="com.example.microlearningquizapp.UserProfileActivity"
+69-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:55:13-48
+70            android:exported="false" />
+70-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:56:13-37
+71        <activity
+71-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:57:9-59:40
+72            android:name="com.example.microlearningquizapp.MathLessons"
+72-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:58:13-40
+73            android:exported="false" />
+73-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:59:13-37
+74        <activity
+74-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:60:9-62:40
+75            android:name="com.example.microlearningquizapp.ScienceLessons"
+75-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:61:13-43
+76            android:exported="false" />
+76-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:62:13-37
+77        <activity
+77-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:63:9-65:40
+78            android:name="com.example.microlearningquizapp.EnglishLessons"
+78-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:64:13-43
+79            android:exported="false" />
+79-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:65:13-37
+80        <activity
+80-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:66:9-68:40
+81            android:name="com.example.microlearningquizapp.adminDashboard"
+81-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:67:13-43
+82            android:exported="false" />
+82-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:68:13-37
+83        <activity
+83-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:69:9-78:20
+84            android:name="com.example.microlearningquizapp.SplashActivity"
+84-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:70:13-43
+85            android:exported="true"
+85-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:71:13-36
+86            android:theme="@style/Theme.AppCompat.NoActionBar" >
+86-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:72:13-63
+87            <intent-filter>
+87-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:73:13-77:29
+88                <action android:name="android.intent.action.MAIN" />
+88-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:74:17-69
+88-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:74:25-66
+89
+90                <category android:name="android.intent.category.LAUNCHER" />
+90-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:76:17-77
+90-->C:\Users\User\Documents\ANDROID STUDIO\LearningApp\MicroLearningQuizApp\app\src\main\AndroidManifest.xml:76:27-74
+91            </intent-filter>
+92        </activity>
+93
+94        <provider
+94-->[androidx.emoji2:emoji2:1.3.0] C:\Users\User\.gradle\caches\8.13\transforms\f58f9c39c8f68c88716f9462b09325ca\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+95            android:name="androidx.startup.InitializationProvider"
+95-->[androidx.emoji2:emoji2:1.3.0] C:\Users\User\.gradle\caches\8.13\transforms\f58f9c39c8f68c88716f9462b09325ca\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+96            android:authorities="com.example.microlearningquizapp.androidx-startup"
+96-->[androidx.emoji2:emoji2:1.3.0] C:\Users\User\.gradle\caches\8.13\transforms\f58f9c39c8f68c88716f9462b09325ca\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+97            android:exported="false" >
+97-->[androidx.emoji2:emoji2:1.3.0] C:\Users\User\.gradle\caches\8.13\transforms\f58f9c39c8f68c88716f9462b09325ca\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+98            <meta-data
+98-->[androidx.emoji2:emoji2:1.3.0] C:\Users\User\.gradle\caches\8.13\transforms\f58f9c39c8f68c88716f9462b09325ca\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+99                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+99-->[androidx.emoji2:emoji2:1.3.0] C:\Users\User\.gradle\caches\8.13\transforms\f58f9c39c8f68c88716f9462b09325ca\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+100                android:value="androidx.startup" />
+100-->[androidx.emoji2:emoji2:1.3.0] C:\Users\User\.gradle\caches\8.13\transforms\f58f9c39c8f68c88716f9462b09325ca\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+101            <meta-data
+101-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\User\.gradle\caches\8.13\transforms\b2d7c4f050ed5b6e9de969a844ca4ccd\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+102                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+102-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\User\.gradle\caches\8.13\transforms\b2d7c4f050ed5b6e9de969a844ca4ccd\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+103                android:value="androidx.startup" />
+103-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\User\.gradle\caches\8.13\transforms\b2d7c4f050ed5b6e9de969a844ca4ccd\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+104            <meta-data
+104-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+105                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+105-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+106                android:value="androidx.startup" />
+106-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+107        </provider>
+108
+109        <receiver
+109-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+110            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+110-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+111            android:directBootAware="false"
+111-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+112            android:enabled="true"
+112-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+113            android:exported="true"
+113-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+114            android:permission="android.permission.DUMP" >
+114-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+115            <intent-filter>
+115-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+116                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+116-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+116-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+117            </intent-filter>
+118            <intent-filter>
+118-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+119                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+119-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+119-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+120            </intent-filter>
+121            <intent-filter>
+121-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+122                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+122-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+122-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+123            </intent-filter>
+124            <intent-filter>
+124-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+125                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+125-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+125-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\User\.gradle\caches\8.13\transforms\fdad34dda70f3c6ce757ca1d4d603da8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+126            </intent-filter>
+127        </receiver>
+128    </application>
+129
+130</manifest>

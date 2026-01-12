@@ -8,6 +8,8 @@
         android:minSdkVersion="24"
         android:targetSdkVersion="36" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <permission
         android:name="com.example.microlearningquizapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
@@ -27,9 +29,6 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.MicroLearningQuizApp" >
-        <activity
-            android:name="com.example.microlearningquizapp.Report"
-            android:exported="false" />
         <activity
             android:name="com.example.microlearningquizapp.AdminProfile"
             android:exported="false" />

@@ -1,6 +1,8 @@
 package com.example.microlearningquizapp;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -13,12 +15,16 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import android.content.Intent;
-
+import com.example.microlearningquizapp.model.FailLogin;
+import com.example.microlearningquizapp.model.User;
+import com.example.microlearningquizapp.remote.ApiUtils;
+import com.example.microlearningquizapp.remote.UserService;
 import com.google.android.material.button.MaterialButton;
+import com.google.gson.Gson;
 
-import java.util.ArrayList;
-import java.util.List;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -28,48 +34,51 @@ public class LoginActivity extends AppCompatActivity {
     ProgressBar progressBar;
     LinearLayout loginForm;
 
-    List<UserVO> users;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_login);
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.login), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            v.setPadding(systemBars.left, systemBars.top,
+                    systemBars.right, systemBars.bottom);
             return insets;
         });
 
-    // Connect UI
-    edtUsername = findViewById(R.id.edtUsername);
-    edtPassword = findViewById(R.id.edtPassword);
-    btnLogin = findViewById(R.id.btnLogin);
-    progressBar = findViewById(R.id.progressBar);
-    loginForm = findViewById(R.id.loginForm);
+        // connect UI
+        edtUsername = findViewById(R.id.edtUsername);
+        edtPassword = findViewById(R.id.edtPassword);
+        btnLogin = findViewById(R.id.btnLogin);
+        progressBar = findViewById(R.id.progressBar);
+        loginForm = findViewById(R.id.loginForm);
 
-    // prepare dummy users
-    users = fetchAllUsers();
+        // loading awal
+        progressBar.setVisibility(View.VISIBLE);
+        loginForm.setVisibility(View.GONE);
 
-    // app loading
-    progressBar.setVisibility(View.VISIBLE);
-    loginForm.setVisibility(View.GONE);
-
-    loginForm.postDelayed(() -> {
-        progressBar.setVisibility(View.GONE);
-        loginForm.setVisibility(View.VISIBLE);
-        }, 2000);
+        loginForm.postDelayed(() -> {
+            progressBar.setVisibility(View.GONE);
+            loginForm.setVisibility(View.VISIBLE);
+        }, 1500);
 
         // login button
-        btnLogin.setOnClickListener(v -> loginUser());
+        btnLogin.setOnClickListener(v -> doLogin());
     }
 
-    private void loginUser() {
+    /**
+     * Call REST API to login
+     */
+    private void doLogin() {
+
         String username = edtUsername.getText().toString().trim();
         String password = edtPassword.getText().toString().trim();
 
+        // validation
         if (username.isEmpty() || password.isEmpty()) {
-            Toast.makeText(this, "Please enter username and password",
+            Toast.makeText(this,
+                    "Please enter username and password",
                     Toast.LENGTH_SHORT).show();
             return;
         }
@@ -77,43 +86,80 @@ public class LoginActivity extends AppCompatActivity {
         progressBar.setVisibility(View.VISIBLE);
         loginForm.setVisibility(View.GONE);
 
-        edtUsername.postDelayed(() -> {
-            progressBar.setVisibility(View.GONE);
-            loginForm.setVisibility(View.VISIBLE);
+        // get retrofit service
+        UserService userService = ApiUtils.getUserService();
 
-            boolean isLoginSuccess = false;
+        // prepare API call
+        Call<User> call = userService.login(username, password);
 
-            // check dummy data list
-            for (int i = 0; i < users.size(); i++) {
-                UserVO user = users.get(i);
+        // execute API
+        call.enqueue(new Callback<User>() {
 
-                if (user.getUsername().equals(username)
-                && user.getPassword().equals(password)) {
-                    isLoginSuccess = true;
+            @Override
+            public void onResponse(Call<User> call,
+                                   Response<User> response) {
 
-                    // navigate to StudentDashboardActivity
-                    Intent intent = new Intent(LoginActivity.this, StudentDashboardActivity.class);
-                    startActivity(intent);
-                    finish();
+                progressBar.setVisibility(View.GONE);
+                loginForm.setVisibility(View.VISIBLE);
 
-                    break;
+                if (response.isSuccessful()) {
+
+                    User user = response.body();
+
+                    if (user != null && user.getToken() != null) {
+
+                        Toast.makeText(LoginActivity.this,
+                                "Login successful",
+                                Toast.LENGTH_SHORT).show();
+
+                        // go to dashboard
+                        Intent intent = new Intent(
+                                LoginActivity.this,
+                                StudentDashboardActivity.class);
+                        startActivity(intent);
+                        finish();
+                    } else {
+                        Toast.makeText(LoginActivity.this,
+                                "Login error",
+                                Toast.LENGTH_SHORT).show();
+                    }
+
+                } else {
+                    // login failed (401 etc)
+                    try {
+                        String errorBody =
+                                response.errorBody().string();
+
+                        FailLogin failLogin =
+                                new Gson().fromJson(
+                                        errorBody,
+                                        FailLogin.class);
+
+                        Toast.makeText(LoginActivity.this,
+                                failLogin.getError().getMessage(),
+                                Toast.LENGTH_SHORT).show();
+
+                    } catch (Exception e) {
+                        Toast.makeText(LoginActivity.this,
+                                "Login failed",
+                                Toast.LENGTH_SHORT).show();
+                        Log.e("LOGIN_ERROR", e.toString());
+                    }
                 }
             }
 
-            if (!isLoginSuccess) {
-                Toast.makeText(this, "Invalid username or password",
+            @Override
+            public void onFailure(Call<User> call, Throwable t) {
+
+                progressBar.setVisibility(View.GONE);
+                loginForm.setVisibility(View.VISIBLE);
+
+                Toast.makeText(LoginActivity.this,
+                        "Error connecting to server",
                         Toast.LENGTH_SHORT).show();
+
+                Log.e("LOGIN_ERROR", t.getMessage());
             }
-
-        }, 1500);
-    }
-
-    public List<UserVO> fetchAllUsers() {
-        List<UserVO> users = new ArrayList<>();
-
-        users.add(new UserVO("admin", "1234", "Admin"));
-        users.add(new UserVO("student", "1111", "Student"));
-
-        return users;
+        });
     }
 }

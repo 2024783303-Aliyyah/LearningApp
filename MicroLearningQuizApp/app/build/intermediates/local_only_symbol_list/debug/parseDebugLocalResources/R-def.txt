@@ -111,7 +111,6 @@ id science
 id sciencequiz
 id scrollView
 id spinnerSubject
-id spinnerToday
 id subtractionquiz
 id textContent
 id textDescription
@@ -156,7 +155,6 @@ layout activity_login
 layout activity_math_lessons
 layout activity_math_quizzes
 layout activity_quizzesmodules
-layout activity_report
 layout activity_science_lessons
 layout activity_science_quizzes
 layout activity_splash

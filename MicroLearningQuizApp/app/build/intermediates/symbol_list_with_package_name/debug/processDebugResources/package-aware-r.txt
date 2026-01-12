@@ -4198,7 +4198,6 @@ id south
 id spacer
 id special_effects_controller_view_tag
 id spinnerSubject
-id spinnerToday
 id splashscreen_icon_view
 id spline
 id split_action_bar
@@ -4462,7 +4461,6 @@ layout activity_login
 layout activity_math_lessons
 layout activity_math_quizzes
 layout activity_quizzesmodules
-layout activity_report
 layout activity_science_lessons
 layout activity_science_quizzes
 layout activity_splash
