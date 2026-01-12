@@ -174,7 +174,7 @@
             <TextView
                 android:id="@+id/word_3_right"
                 style="@style/WordMatchingBox"
-                android:text="Wide" />
+                android:text="Large" />
 
             <TextView
                 android:id="@+id/word_4_right"

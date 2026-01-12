@@ -37,6 +37,9 @@
             android:name="com.example.microlearningquizapp.BodyQuiz"
             android:exported="false" />
         <activity
+            android:name="com.example.microlearningquizapp.AnimalQuiz"
+            android:exported="false" />
+        <activity
             android:name="com.example.microlearningquizapp.MyScore"
             android:exported="false" />
         <activity
