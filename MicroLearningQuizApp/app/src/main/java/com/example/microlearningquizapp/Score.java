@@ -104,10 +104,10 @@ public class Score extends AppCompatActivity {
         editor.apply(); // save changes
     }
 
-    // show corrections if any
+        // show corrections if any
     private void showCorrections() {
         if (questions == null || userAnswers == null || correctAnswers == null)
-        return;
+            return;
 
         boolean hasWrongAnswer = false;
 
