@@ -67,13 +67,13 @@ public class SynonymQuiz extends AppCompatActivity {
     private void setupQuiz() {
         // ... (Fungsi setupQuiz() kekal sama, tetapi kita boleh padamkan baris terakhir)
         synonymPairs = new HashMap<>();
-        synonymPairs.put("Besar", "Luas");
-        synonymPairs.put("Gembira", "Suka");
-        synonymPairs.put("Cepat", "Laju");
-        synonymPairs.put("Cantik", "Ayu");
+        synonymPairs.put("Big", "Large");
+        synonymPairs.put("Happy", "Cheerful");
+        synonymPairs.put("Fast", "Speed");
+        synonymPairs.put("Pretty", "Beautiful");
 
-        List<String> leftWords = Arrays.asList("Besar", "Gembira", "Cepat", "Cantik");
-        List<String> rightWords = Arrays.asList("Luas", "Suka", "Laju", "Ayu");
+        List<String> leftWords = Arrays.asList("Big", "Happy", "Fast", "Pretty");
+        List<String> rightWords = Arrays.asList("Large", "Cheerful", "Speed", "Beautiful");
 
         Collections.shuffle(leftWords);
         Collections.shuffle(rightWords);
