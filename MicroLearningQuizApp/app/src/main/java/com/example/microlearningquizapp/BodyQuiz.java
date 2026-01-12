@@ -1,7 +1,6 @@
 package com.example.microlearningquizapp;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,9 +9,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.google.android.material.card.MaterialCardView;
 
+import java.util.ArrayList;
+
+// Science - Body Quiz (Image-based MCQ)
 public class BodyQuiz extends AppCompatActivity {
 
     private TextView questionText;
@@ -44,9 +45,24 @@ public class BodyQuiz extends AppCompatActivity {
             1   // Hand
     };
 
+    // Correct answers as text (for Score activity)
+    private final String[] correctAnswersText = {"Eye", "Ear", "Nose", "Hand"};
+
+    // Text for each option (for Score corrections)
+    private final String[][] optionTexts = {
+            {"Ear", "Eye", "Nose", "Hand"},
+            {"Eye", "Nose", "Ear", "Leg"},
+            {"Nose", "Mouth", "Hand", "Ear"},
+            {"Eye", "Hand", "Ear", "Nose"}
+    };
+
     private int currentQuestion = 0;
     private int selectedOption = -1;
     private int score = 0;
+
+    // Lists for Score.java
+    private ArrayList<String> questionsList = new ArrayList<>();
+    private ArrayList<String> userAnswers = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,6 +86,10 @@ public class BodyQuiz extends AppCompatActivity {
                 findViewById(R.id.option4)
         };
 
+        // Copy questions into ArrayList
+        for (String q : questions) questionsList.add(q);
+
+        // option click listeners
         for (int i = 0; i < 4; i++) {
             final int index = i;
             optionCards[i].setOnClickListener(v -> selectOption(index));
@@ -114,6 +134,10 @@ public class BodyQuiz extends AppCompatActivity {
             return;
         }
 
+        // Save user's selected answer as text
+        userAnswers.add(getOptionText(currentQuestion, selectedOption));
+
+        // check correct answer
         if (selectedOption == correctAnswers[currentQuestion]) {
             score++;
         }
@@ -123,15 +147,24 @@ public class BodyQuiz extends AppCompatActivity {
         if (currentQuestion < questions.length) {
             loadQuestion();
         } else {
-            SharedPreferences prefs = getSharedPreferences("QUIZ_SCORES", MODE_PRIVATE);
-            SharedPreferences.Editor editor = prefs.edit();
-            editor.putInt("SCIENCE_BODY_SCORE", score);
-            editor.putInt("SCIENCE_BODY_TOTAL", questions.length);
-            editor.apply();
-
-            startActivity(new Intent(this, MyScore.class));
-            finish();
+            goToScoreActivity();
         }
+    }
+
+    private String getOptionText(int questionIndex, int optionIndex) {
+        return optionTexts[questionIndex][optionIndex];
+    }
+
+    private void goToScoreActivity() {
+        Intent intent = new Intent(this, Score.class);
+        intent.putExtra("USER_SCORE", score);
+        intent.putExtra("TOTAL_QUESTIONS", questions.length);
+        intent.putStringArrayListExtra("QUESTIONS", questionsList);
+        intent.putStringArrayListExtra("USER_ANSWERS", userAnswers);
+        intent.putExtra("CORRECT_ANSWERS", correctAnswersText);
+
+        startActivity(intent);
+        finish();
     }
 
     public void goBack(View view) {
