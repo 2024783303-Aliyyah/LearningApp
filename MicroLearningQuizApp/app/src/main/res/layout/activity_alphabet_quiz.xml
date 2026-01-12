@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFACD"
+    tools:context=".AlphabetQuiz">
+
+    <!-- Butang Back -->
+
+    <!-- Tajuk Kuiz -->
+    <ImageView
+        android:id="@+id/btnBack7"
+        android:layout_width="48dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="goBack"
+        android:src="@drawable/buttonback"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/quiz_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Guess The Letter !"
+        android:textColor="#090909"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Gambar Soalan -->
+    <ImageView
+        android:id="@+id/question_image"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="32dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toBottomOf="@+id/quiz_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:src="@drawable/apple" />
+
+    <!-- TextView untuk Teks Soalan -->
+    <TextView
+        android:id="@+id/question_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="What letter does this object start with?"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@+id/question_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- TextView untuk Maklum Balas (Betul/Salah) -->
+    <TextView
+        android:id="@+id/feedback_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/question_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <!-- Bekas untuk Butang-butang Jawapan -->
+    <LinearLayout
+        android:id="@+id/options_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/feedback_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Butang Jawapan 1 -->
+        <Button
+            android:id="@+id/option_1_button"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#F7C97C"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            tools:text="A" />
+
+        <!-- Butang Jawapan 2 -->
+        <Button
+            android:id="@+id/option_2_button"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#F7C97C"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            tools:text="B" />
+
+        <!-- Butang Jawapan 3 -->
+        <Button
+            android:id="@+id/option_3_button"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:backgroundTint="#F7C97C"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            tools:text="C" />
+    </LinearLayout>
+
+    <!-- Butang untuk Soalan Seterusnya -->
+    <Button
+        android:id="@+id/next_question_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Question"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/options_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
+
+    <LinearLayout
+        android:id="@+id/bottomNavBar"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="#FFEB80"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/navProfile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Profile"
+            android:padding="10dp"
+            android:src="@drawable/usernav"
+            android:onClick="openMenu"/>
+
+        <ImageView
+            android:id="@+id/navLessons"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Lessons"
+            android:padding="10dp"
+            android:src="@drawable/booknav"
+            android:onClick="openMenu"/>
+
+        <ImageView
+            android:id="@+id/navHome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Home"
+            android:padding="10dp"
+            android:src="@drawable/homenav"
+            android:onClick="openMenu"/>
+
+        <ImageView
+            android:id="@+id/navQuiz"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Quiz"
+            android:padding="10dp"
+            android:src="@drawable/quiznav"
+            android:onClick="openMenu"/>
+
+        <ImageView
+            android:id="@+id/navScores"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Scores"
+            android:padding="10dp"
+            android:src="@drawable/trophynav"
+            android:onClick="openMenu"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

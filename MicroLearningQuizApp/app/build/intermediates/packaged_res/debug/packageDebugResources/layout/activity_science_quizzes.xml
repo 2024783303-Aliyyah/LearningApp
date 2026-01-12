@@ -23,6 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="96dp"
         android:text="SCIENCE QUIZZES"
+        android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,54 +42,56 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <com.google.android.material.card.MaterialCardView
-            android:id="@+id/quiz1"
+            android:id="@+id/AnimalQuiz"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_marginBottom="16dp"
             app:cardBackgroundColor="#F7C97C"
             app:cardCornerRadius="20dp"
-            android:onClick="quiz1">
+            android:onClick="opensciencequiz">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="quiz 1"
+                android:layout_gravity="center"
+                android:text="Animals Around Us"
+                android:textColor="#000000"
                 android:textSize="22sp"
-                android:textStyle="bold"
-                android:layout_gravity="center"/>
+                android:textStyle="bold" />
         </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView
-            android:id="@+id/quiz2"
+            android:id="@+id/BodyQuiz"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_marginBottom="16dp"
             app:cardBackgroundColor="#F7C97C"
             app:cardCornerRadius="20dp"
-            android:onClick="quiz2">
+            android:onClick="opensciencequiz">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="quiz 2"
+                android:layout_gravity="center"
+                android:text="Parts of the Body"
+                android:textColor="#000000"
                 android:textSize="22sp"
-                android:textStyle="bold"
-                android:layout_gravity="center"/>
+                android:textStyle="bold" />
         </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView
-            android:id="@+id/quiz3"
+            android:id="@+id/SpaceQuiz"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_marginBottom="16dp"
             app:cardBackgroundColor="#F7C97C"
             app:cardCornerRadius="20dp"
-            android:onClick="quiz3">
+            android:onClick="opensciencequiz">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="quiz 3"
+                android:text="Space &amp; Sky"
                 android:textSize="22sp"
                 android:textStyle="bold"
                 android:layout_gravity="center"/>
@@ -114,7 +117,8 @@
             android:layout_weight="1"
             android:contentDescription="Profile"
             android:padding="10dp"
-            android:src="@drawable/usernav" />
+            android:src="@drawable/usernav"
+            android:onClick="openMenu"/>
 
         <ImageView
             android:id="@+id/navLessons"
@@ -123,7 +127,8 @@
             android:layout_weight="1"
             android:contentDescription="Lessons"
             android:padding="10dp"
-            android:src="@drawable/booknav" />
+            android:src="@drawable/booknav"
+            android:onClick="openMenu"/>
 
         <ImageView
             android:id="@+id/navHome"
@@ -132,7 +137,8 @@
             android:layout_weight="1"
             android:contentDescription="Home"
             android:padding="10dp"
-            android:src="@drawable/homenav" />
+            android:src="@drawable/homenav"
+            android:onClick="openMenu"/>
 
         <ImageView
             android:id="@+id/navQuiz"
@@ -141,7 +147,8 @@
             android:layout_weight="1"
             android:contentDescription="Quiz"
             android:padding="10dp"
-            android:src="@drawable/quiznav" />
+            android:src="@drawable/quiznav"
+            android:onClick="openMenu"/>
 
         <ImageView
             android:id="@+id/navScores"
@@ -150,7 +157,8 @@
             android:layout_weight="1"
             android:contentDescription="Scores"
             android:padding="10dp"
-            android:src="@drawable/trophynav" />
+            android:src="@drawable/trophynav"
+            android:onClick="openMenu"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

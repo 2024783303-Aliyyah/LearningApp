@@ -1,25 +1,41 @@
+<!-- Fail: item_lessons.xml (Telah Dibetulkan) -->
 <com.google.android.material.card.MaterialCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="80dp"
+    android:layout_height="wrap_content"
     android:layout_margin="8dp"
     app:cardCornerRadius="16dp"
     app:cardElevation="4dp"
     app:cardBackgroundColor="#F7C97C">
 
-    <FrameLayout
+    <!-- Gunakan LinearLayout untuk menyusun TextView secara menegak -->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
 
+        <!-- TextView untuk Tajuk Pelajaran -->
         <TextView
-            android:id="@+id/textTitle"
+            android:id="@+id/tvLessonTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Lesson Name"
-            android:textSize="22sp"
-            android:textStyle="bold"/>
-    </FrameLayout>
+            android:text="Lesson Title"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"/>
+
+        <!-- TextView untuk Subjek dan Tahun -->
+        <TextView
+            android:id="@+id/tvLessonSubject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Subject - Year"
+            android:textSize="16sp"
+            android:textColor="@android:color/darker_gray"/>
+
+    </LinearLayout>
 
 </com.google.android.material.card.MaterialCardView>

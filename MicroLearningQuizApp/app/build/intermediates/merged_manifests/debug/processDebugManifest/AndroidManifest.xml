@@ -8,8 +8,6 @@
         android:minSdkVersion="24"
         android:targetSdkVersion="36" />
 
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <permission
         android:name="com.example.microlearningquizapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
@@ -29,6 +27,45 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.MicroLearningQuizApp" >
+        <activity
+            android:name="com.example.microlearningquizapp.AdminReportActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.microlearningquizapp.SpaceQuiz"
+            android:exported="false" />
+        <activity
+            android:name="com.example.microlearningquizapp.BodyQuiz"
+            android:exported="false" />
+        <activity
+            android:name="com.example.microlearningquizapp.AnimalQuiz"
+            android:exported="false" />
+        <activity
+            android:name="com.example.microlearningquizapp.MyScore"
+            android:exported="false" />
+        <activity
+            android:name="com.example.microlearningquizapp.SynonymQuiz"
+            android:exported="false" />
+        <activity
+            android:name="com.example.microlearningquizapp.AlphabetQuiz"
+            android:exported="false" />
+        <activity
+            android:name="com.example.microlearningquizapp.SubtractQuiz"
+            android:exported="false" />
+        <activity
+            android:name="com.example.microlearningquizapp.MultiplyQuiz"
+            android:exported="false" />
+        <activity
+            android:name="com.example.microlearningquizapp.adminViewLesson"
+            android:exported="false" />
+        <activity
+            android:name="com.example.microlearningquizapp.adminEditLesson"
+            android:exported="false" />
+        <activity
+            android:name="com.example.microlearningquizapp.adminAddLesson"
+            android:exported="false" />
+        <activity
+            android:name="com.example.microlearningquizapp.Report"
+            android:exported="false" />
         <activity
             android:name="com.example.microlearningquizapp.AdminProfile"
             android:exported="false" />
@@ -80,6 +117,7 @@
         <activity
             android:name="com.example.microlearningquizapp.adminDashboard"
             android:exported="false" />
+        <activity android:name="com.example.microlearningquizapp.Score" />
         <activity
             android:name="com.example.microlearningquizapp.SplashActivity"
             android:exported="true"

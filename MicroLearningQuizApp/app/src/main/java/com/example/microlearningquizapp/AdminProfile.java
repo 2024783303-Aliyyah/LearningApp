@@ -1,6 +1,8 @@
 package com.example.microlearningquizapp;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,4 +23,25 @@ public class AdminProfile extends AppCompatActivity {
             return insets;
         });
     }
+
+    public void openadminMenu(View view)
+    {
+        int id = view.getId();
+        if (id == R.id.adminnavProfile) {
+            startActivity(new Intent(this, AdminProfile.class));
+        }
+        else if (id == R.id.adminnavHome) {
+            startActivity(new Intent(this, adminDashboard.class));
+        }
+        else if (id == R.id.adminnavScores) {
+            startActivity(new Intent(this, AdminReportActivity.class));
+        }
+    }
+
+
+    // Tambah fungsi ini
+    public void goBack(View view) {
+        finish(); // 'finish()' akan menutup aktiviti semasa dan kembali ke skrin sebelumnya
+    }
+
 }

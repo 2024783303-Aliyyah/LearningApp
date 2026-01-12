@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF7C2"
+    android:fitsSystemWindows="true"
+    tools:context=".adminViewLesson">
+
+    <!-- 1. Butang Kembali (di atas sekali, sudut kiri) -->
+    <ImageView
+        android:id="@+id/btnBack6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="goBack"
+        android:padding="8dp"
+        android:src="@drawable/buttonback"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="Back Button"/>
+
+    <!-- 2. Tajuk "Manage Lessons" (di bawah butang kembali) -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="Manage Lessons"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/btnBack6"
+        app:layout_constraintTop_toTopOf="@id/btnBack6"
+        app:layout_constraintBottom_toBottomOf="@id/btnBack6" />
+
+    <!-- 3. Butang "Print" BARU -->
+
+    <!-- 3. Butang "+ Add Lesson" (di sebelah kanan tajuk) -->
+
+    <Button
+        android:id="@+id/btnPrint"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Print"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/btnAddLesson"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <Button
+        android:id="@+id/btnAddLesson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#81C784"
+        android:text="+ Add Lesson"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        app:layout_constraintEnd_toEndOf="parent"  />
+
+    <!-- 4. RecyclerView (mengisi ruang yang tinggal di tengah) -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvLessons"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnPrint" />
+
+    <!-- 5. Bar Navigasi Bawah (kekal di bawah sekali) -->
+    <LinearLayout
+        android:id="@+id/bottomNavBar"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="#FFEB80"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- Ikon-ikon navigasi anda -->
+        <ImageView
+            android:id="@+id/adminnavProfile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Profile"
+            android:onClick="openadminMenu"
+            android:padding="10dp"
+            android:src="@drawable/usernav" />
+
+        <ImageView
+            android:id="@+id/adminnavHome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Home"
+            android:onClick="openadminMenu"
+            android:padding="10dp"
+            android:src="@drawable/homenav" />
+
+        <ImageView
+            android:id="@+id/adminnavScores"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Scores"
+            android:onClick="openadminMenu"
+            android:padding="10dp"
+            android:src="@drawable/trophynav" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

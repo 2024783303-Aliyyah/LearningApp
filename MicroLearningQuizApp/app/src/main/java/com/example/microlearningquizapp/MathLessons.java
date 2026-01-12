@@ -1,5 +1,6 @@
 package com.example.microlearningquizapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -36,34 +37,51 @@ public class MathLessons extends AppCompatActivity {
 
         // Add lessons with all fields
         lessonList.add(new Lesson(
-                "Math",
                 "Addition",
+                "Mathematic",
                 "Year 1",
                 "Learn basic addition",
                 "Addition content goes here",
-                "android.resource://" + getPackageName() + "/" + R.raw.addition
+                "android.resource://" + getPackageName() + "/" + R.raw.addition,
+                R.drawable.reading
         ));
 
         lessonList.add(new Lesson(
-                "Math",
                 "Subtraction",
+                "Mathematic",
                 "Year 1",
                 "Learn basic subtraction",
                 "Subtraction content goes here",
-                "android.resource://" + getPackageName() + "/" + R.raw.subtract
+                "android.resource://" + getPackageName() + "/" + R.raw.subtract,
+                R.drawable.reading
         ));
 
         lessonList.add(new Lesson(
-                "Math",
                 "Multiplication",
+                "Mathematic",
                 "Year 1",
                 "Learn multiplication",
                 "Multiplication content goes here",
-                "android.resource://" + getPackageName() + "/" + R.raw.multiply
+                "android.resource://" + getPackageName() + "/" + R.raw.multiply,
+                R.drawable.reading
         ));
 
-        LessonAdapter adapter = new LessonAdapter(this, lessonList);
+        LessonAdapter adapter = new LessonAdapter(this, lessonList, false);
         rvLessons.setAdapter(adapter);
+    }
+
+    public void openMenu(View view)
+    {
+        int id = view.getId();
+        if (id == R.id.navProfile) {
+            startActivity(new Intent(this, UserProfileActivity.class));
+        } else if (id == R.id.navLessons) {
+            startActivity(new Intent(this, learningmodules.class));
+        } else if (id == R.id.navHome) {
+            startActivity(new Intent(this, StudentDashboardActivity.class));
+        } else if (id == R.id.navQuiz) {
+            startActivity(new Intent(this, quizzesmodules.class));
+        }
     }
 
     public void goBack(View view)
@@ -71,4 +89,6 @@ public class MathLessons extends AppCompatActivity {
         finish();
     }
 }
+
+
 

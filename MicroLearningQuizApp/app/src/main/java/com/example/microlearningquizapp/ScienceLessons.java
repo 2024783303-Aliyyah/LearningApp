@@ -1,5 +1,6 @@
 package com.example.microlearningquizapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -35,27 +36,43 @@ public class ScienceLessons extends AppCompatActivity {
 
         // Add lessons with all fields
         lessonList.add(new Lesson(
-                "Science",
                 "Living vs Non-living",
+                "Science",
                 "Year 1",
                 "Learn basic living and non living things",
                 "content goes here",
-                "android.resource://" + getPackageName() + "/"
+                "android.resource://" + getPackageName() + "/",
                 //+ R.raw.addition_video
+                R.drawable.reading
         ));
 
         lessonList.add(new Lesson(
+                "Five Sense",
                 "Science",
-                "Five Senses",
                 "Year 1",
                 "Learn human Senses",
                 "Human Senses content goes here",
-                "android.resource://" + getPackageName() + "/"
+                "android.resource://" + getPackageName() + "/",
                 //+ R.raw.subtraction_video
+                R.drawable.reading
         ));
 
-        LessonAdapter adapter = new LessonAdapter(this, lessonList);
+        LessonAdapter adapter = new LessonAdapter(this, lessonList, false);
         rvLessons.setAdapter(adapter);
+    }
+
+    public void openMenu(View view)
+    {
+        int id = view.getId();
+        if (id == R.id.navProfile) {
+            startActivity(new Intent(this, UserProfileActivity.class));
+        } else if (id == R.id.navLessons) {
+            startActivity(new Intent(this, learningmodules.class));
+        } else if (id == R.id.navHome) {
+            startActivity(new Intent(this, StudentDashboardActivity.class));
+        } else if (id == R.id.navQuiz) {
+            startActivity(new Intent(this, quizzesmodules.class));
+        }
     }
 
     public void goBack(View view)

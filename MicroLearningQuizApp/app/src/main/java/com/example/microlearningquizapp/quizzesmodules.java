@@ -39,6 +39,20 @@ public class quizzesmodules extends AppCompatActivity {
         }
     }
 
+    public void openMenu(View view)
+    {
+        int id = view.getId();
+        if (id == R.id.navProfile) {
+            startActivity(new Intent(this, UserProfileActivity.class));
+        } else if (id == R.id.navLessons) {
+            startActivity(new Intent(this, learningmodules.class));
+        } else if (id == R.id.navHome) {
+            startActivity(new Intent(this, StudentDashboardActivity.class));
+        } else if (id == R.id.navQuiz) {
+            startActivity(new Intent(this, quizzesmodules.class));
+        }
+    }
+
     public void goBack(View view)
     {
         finish();

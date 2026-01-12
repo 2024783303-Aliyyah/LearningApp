@@ -28,19 +28,28 @@ public class MathQuizzes extends AppCompatActivity {
         finish();
     }
 
-    public void Addquiz(View view) {
-        Intent intent = new Intent(this, AddQuiz.class);
-        startActivity(intent);
-
+    public void openmathquiz(View view) {
+        int id = view.getId();
+        if (id == R.id.additionquiz) {
+            startActivity(new Intent(this, AddQuiz.class));
+        } else if (id == R.id.subtractionquiz) {
+            startActivity(new Intent(this, SubtractQuiz.class));
+        } else if (id == R.id.multiplyquiz) {
+            startActivity(new Intent(this, MultiplyQuiz.class));
+        }
     }
-/*
-    public void Subtractquiz(View view) {
-        Intent intent = new Intent(this, SubtractQuiz.class);
-        startActivity(intent);
-    }
 
-    public void Multiplyquiz(View view) {
-        Intent intent = new Intent(this, MultiplyQuiz.class);
-        startActivity(intent);
-    }*/
+    public void openMenu(View view)
+    {
+        int id = view.getId();
+        if (id == R.id.navProfile) {
+            startActivity(new Intent(this, UserProfileActivity.class));
+        } else if (id == R.id.navLessons) {
+            startActivity(new Intent(this, learningmodules.class));
+        } else if (id == R.id.navHome) {
+            startActivity(new Intent(this, StudentDashboardActivity.class));
+        } else if (id == R.id.navQuiz) {
+            startActivity(new Intent(this, quizzesmodules.class));
+        }
+    }
 }

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFACD"
+    tools:context=".AdminReportActivity">
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@drawable/buttonback"
+        android:onClick="goBack"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="Back Button"/>
+
+    <!-- ===== BUTANG PRINT DITAMBAH DI SINI ===== -->
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All Student Scores"
+        android:textColor="@android:color/black"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/btnBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btnBack"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!-- ============================================== -->
+
+
+    <Button
+        android:id="@+id/btnPrintReport"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="Print"
+        app:layout_constraintBottom_toTopOf="@+id/rvStudentScores"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.962" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvStudentScores"
+        android:layout_width="407dp"
+        android:layout_height="573dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintVertical_bias="0.368"
+        tools:listitem="@layout/item_student_overall_card" />
+
+    <!-- 5. Bar Navigasi Bawah (kekal di bawah sekali) -->
+    <LinearLayout
+        android:id="@+id/bottomNavBar"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="#FFEB80"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- Ikon-ikon navigasi anda -->
+        <ImageView
+            android:id="@+id/adminnavProfile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Profile"
+            android:onClick="openadminMenu"
+            android:padding="10dp"
+            android:src="@drawable/usernav" />
+
+        <ImageView
+            android:id="@+id/adminnavHome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Home"
+            android:onClick="openadminMenu"
+            android:padding="10dp"
+            android:src="@drawable/homenav" />
+
+        <ImageView
+            android:id="@+id/adminnavScores"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="Scores"
+            android:onClick="openadminMenu"
+            android:padding="10dp"
+            android:src="@drawable/trophynav" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

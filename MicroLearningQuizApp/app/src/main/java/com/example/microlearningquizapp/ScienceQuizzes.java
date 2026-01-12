@@ -24,21 +24,33 @@ public class ScienceQuizzes extends AppCompatActivity {
         });
     }
 
+    public void opensciencequiz(View view) {
+        int id = view.getId();
+        if (id == R.id.AnimalQuiz) {
+            startActivity(new Intent(this, AnimalQuiz.class));
+        } else if (id == R.id.BodyQuiz) {
+            startActivity(new Intent(this, BodyQuiz.class));
+        } else if (id == R.id.SpaceQuiz) {
+            startActivity(new Intent(this, SpaceQuiz.class));
+        }
+    }
+
+    public void openMenu(View view)
+    {
+        int id = view.getId();
+        if (id == R.id.navProfile) {
+            startActivity(new Intent(this, UserProfileActivity.class));
+        } else if (id == R.id.navLessons) {
+            startActivity(new Intent(this, learningmodules.class));
+        } else if (id == R.id.navHome) {
+            startActivity(new Intent(this, StudentDashboardActivity.class));
+        } else if (id == R.id.navQuiz) {
+            startActivity(new Intent(this, quizzesmodules.class));
+        }
+    }
+
     public void goBack(View view) {
         finish();
     }
 
-    /*public void quiz1(View view) {
-        Intent intent = new Intent(this, Quiz1.class);
-        startActivity(intent);
-
-    }
-    public void quiz2(View view) {
-        Intent intent = new Intent(this, Quiz2.class);
-        startActivity(intent);
-    }
-    public void quiz3(View view) {
-        Intent intent = new Intent(this, Quiz3.class);
-        startActivity(intent);
-    }*/
 }

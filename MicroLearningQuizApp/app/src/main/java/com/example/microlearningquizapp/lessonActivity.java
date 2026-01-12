@@ -1,67 +1,86 @@
+// Fail: lessonActivity.java
 package com.example.microlearningquizapp;
 
-
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.MediaController;
 import android.widget.TextView;
 import android.widget.VideoView;
-import android.widget.MediaController;
-import android.widget.FrameLayout;
-
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
+// Tidak perlu import Glide
 public class lessonActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_lesson);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.lessonactivity), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
 
+        // 1. Pautkan semua view termasuk ImageView
         TextView textSubject = findViewById(R.id.textSubject);
         TextView textTitle = findViewById(R.id.textTitle);
         TextView textYear = findViewById(R.id.textYear);
         TextView textDescription = findViewById(R.id.textDescription);
         TextView textContent = findViewById(R.id.textContent);
+        ImageView headerImageView = findViewById(R.id.headerImage); // Pastikan ID ini wujud dalam XML
         VideoView videoView = findViewById(R.id.videoView);
 
-        textSubject.setText(getIntent().getStringExtra("subject"));
-        textTitle.setText(getIntent().getStringExtra("title"));
-        textYear.setText(getIntent().getStringExtra("year"));
-        textDescription.setText(getIntent().getStringExtra("description"));
-        textContent.setText(getIntent().getStringExtra("content"));
-        String videoPath = getIntent().getStringExtra("video");
-        if (videoPath != null && !videoPath.isEmpty()) {
-            Uri videoUri = Uri.parse(videoPath);
-            videoView.setVideoURI(videoUri);
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            // Tetapkan data teks
+            textSubject.setText(extras.getString("subject"));
+            textTitle.setText(extras.getString("title"));
+            textYear.setText(extras.getString("year"));
+            textDescription.setText(extras.getString("description"));
+            textContent.setText(extras.getString("content"));
 
-            android.widget.MediaController mediaController = new android.widget.MediaController(this);
-            mediaController.setAnchorView(videoView);
-            videoView.setMediaController(mediaController);
+            // --- 2. LOGIK BARU UNTUK IMEJ DARI DRAWABLE ---
+            // Dapatkan ID imej dari Intent. Guna 0 sebagai nilai lalai jika tiada ID.
+            int imageResId = extras.getInt("image_resource_id", 0);
 
-            videoView.setOnPreparedListener(new android.media.MediaPlayer.OnPreparedListener() {
-                @Override
-                public void onPrepared(android.media.MediaPlayer mp) {
-                    mp.setLooping(true);
-                    videoView.start();
-                }
-            });
+            if (imageResId != 0) { // Semak jika ada ID yang sah (bukan 0)
+                headerImageView.setVisibility(View.VISIBLE);
+                // Terus tetapkan imej menggunakan ID sumbernya
+                headerImageView.setImageResource(imageResId);
+            } else {
+                // Jika tiada ID imej, pastikan ImageView disembunyikan
+                headerImageView.setVisibility(View.GONE);
+            }
+            // ----------------------------------------------------
+
+            // Logik untuk video (kekal sama)
+            String videoPath = extras.getString("video");
+            if (videoPath != null && !videoPath.isEmpty()) {
+                videoView.setVisibility(View.VISIBLE);
+                Uri videoUri = Uri.parse(videoPath);
+                videoView.setVideoURI(videoUri);
+                MediaController mediaController = new MediaController(this);
+                mediaController.setAnchorView(videoView);
+                videoView.setMediaController(mediaController);
+                videoView.start();
+            } else {
+                videoView.setVisibility(View.GONE);
+            }
         }
-
     }
 
-    public void goBack(View view)
-    {
+    public void goBack(View view) {
         finish();
+    }
+    public void openMenu(View view)
+    {
+        int id = view.getId();
+        if (id == R.id.navProfile) {
+            startActivity(new Intent(this, UserProfileActivity.class));
+        } else if (id == R.id.navLessons) {
+            startActivity(new Intent(this, learningmodules.class));
+        } else if (id == R.id.navHome) {
+            startActivity(new Intent(this, StudentDashboardActivity.class));
+        } else if (id == R.id.navQuiz) {
+            startActivity(new Intent(this, quizzesmodules.class));
+        }
     }
 }

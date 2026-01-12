@@ -37,7 +37,8 @@
             android:layout_weight="1"
             android:contentDescription="Profile"
             android:padding="10dp"
-            android:src="@drawable/usernav" />
+            android:src="@drawable/usernav"
+            android:onClick="openMenu"/>
 
         <ImageView
             android:id="@+id/navLessons"
@@ -46,7 +47,8 @@
             android:layout_weight="1"
             android:contentDescription="Lessons"
             android:padding="10dp"
-            android:src="@drawable/booknav" />
+            android:src="@drawable/booknav"
+            android:onClick="openMenu"/>
 
         <ImageView
             android:id="@+id/navHome"
@@ -55,7 +57,8 @@
             android:layout_weight="1"
             android:contentDescription="Home"
             android:padding="10dp"
-            android:src="@drawable/homenav" />
+            android:src="@drawable/homenav"
+            android:onClick="openMenu"/>
 
         <ImageView
             android:id="@+id/navQuiz"
@@ -64,7 +67,8 @@
             android:layout_weight="1"
             android:contentDescription="Quiz"
             android:padding="10dp"
-            android:src="@drawable/quiznav" />
+            android:src="@drawable/quiznav"
+            android:onClick="openMenu"/>
 
         <ImageView
             android:id="@+id/navScores"
@@ -73,7 +77,8 @@
             android:layout_weight="1"
             android:contentDescription="Scores"
             android:padding="10dp"
-            android:src="@drawable/trophynav" />
+            android:src="@drawable/trophynav"
+            android:onClick="openMenu"/>
 
     </LinearLayout>
 
