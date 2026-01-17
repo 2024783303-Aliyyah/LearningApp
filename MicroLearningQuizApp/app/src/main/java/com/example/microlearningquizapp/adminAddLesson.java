@@ -1,4 +1,3 @@
-// Fail: adminAddLesson.java
 package com.example.microlearningquizapp;
 
 import android.app.Activity;
@@ -9,7 +8,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView; // <-- Import ImageView
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -18,20 +17,25 @@ import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.microlearningquizapp.model.ApiResponse;
+import com.example.microlearningquizapp.remote.LessonService;
+import com.example.microlearningquizapp.remote.RetrofitClient;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+
 public class adminAddLesson extends AppCompatActivity {
 
-    // --- Deklarasi View ---
     Spinner spinnerSubject;
     EditText etLessonTitle, etYears, etDescription;
     Button btnSave, btnUploadIllustration, btnPickVideo;
     TextView tvSelectedVideo;
-    ImageView ivImagePreview; // <-- Deklarasi ImageView
+    ImageView ivImagePreview;
 
-    // --- Pembolehubah untuk menyimpan URI ---
     private Uri videoUri;
-    private Uri imageUri; // <-- Deklarasi URI untuk imej
+    private Uri imageUri;
 
-    // --- Launcher untuk video ---
     private final ActivityResultLauncher<Intent> pickVideoLauncher = registerForActivityResult(
             new ActivityResultContracts.StartActivityForResult(),
             result -> {
@@ -42,13 +46,11 @@ public class adminAddLesson extends AppCompatActivity {
             }
     );
 
-    // --- Launcher BARU untuk imej ---
     private final ActivityResultLauncher<Intent> pickImageLauncher = registerForActivityResult(
             new ActivityResultContracts.StartActivityForResult(),
             result -> {
                 if (result.getResultCode() == Activity.RESULT_OK && result.getData() != null) {
                     imageUri = result.getData().getData();
-                    // Paparkan imej yang dipilih dalam ImageView
                     ivImagePreview.setImageURI(imageUri);
                 }
             }
@@ -59,7 +61,6 @@ public class adminAddLesson extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_add_lesson);
 
-        // --- Pautkan View ---
         spinnerSubject = findViewById(R.id.spinnerSubject);
         etLessonTitle = findViewById(R.id.etLessonTitle);
         etYears = findViewById(R.id.etYears);
@@ -68,63 +69,83 @@ public class adminAddLesson extends AppCompatActivity {
         btnUploadIllustration = findViewById(R.id.btnUploadIllustration);
         btnPickVideo = findViewById(R.id.btnPickVideo);
         tvSelectedVideo = findViewById(R.id.tvSelectedVideo);
-        ivImagePreview = findViewById(R.id.ivImagePreview); // <-- Pautkan ImageView
+        ivImagePreview = findViewById(R.id.ivImagePreview);
 
-        // --- Logik Spinner ---
-        String[] subjects = {"Mathematic", "Science", "English"};
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, subjects);
-        spinnerSubject.setAdapter(adapter);
+        String[] subjects = {"Mathematics", "Science", "English"};
+        ArrayAdapter<String> adapterSpinner = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, subjects);
+        spinnerSubject.setAdapter(adapterSpinner);
 
-        // --- Logik untuk Butang "Pick Image" ---
-        btnUploadIllustration.setOnClickListener(v ->
-        {
+        btnUploadIllustration.setOnClickListener(v -> {
             Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
-            intent.setType("image/*"); // Hanya tunjukkan fail imej
+            intent.setType("image/*");
             pickImageLauncher.launch(intent);
         });
 
-        // --- Logik untuk Butang "Pick Video" ---
         btnPickVideo.setOnClickListener(v -> {
             Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
             intent.setType("video/*");
             pickVideoLauncher.launch(intent);
         });
 
-        // --- Logik untuk Butang "Save" ---
-        btnSave.setOnClickListener(v -> {
-            // ... (logik anda sedia ada) ...
+        btnSave.setOnClickListener(v -> saveLesson());
+    }
 
-            // Semak jika imej dan video telah dipilih
-            if (imageUri == null) {
-                Toast.makeText(this, "Please pick a header image", Toast.LENGTH_SHORT).show();
-                return;
+    private void saveLesson() {
+        if (imageUri == null) {
+            Toast.makeText(this, "Please pick a header image", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        if (videoUri == null) {
+            Toast.makeText(this, "Please pick a lesson video", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        String title = etLessonTitle.getText().toString().trim();
+        String years = etYears.getText().toString().trim();
+        String description = etDescription.getText().toString().trim();
+        String subject = spinnerSubject.getSelectedItem().toString();
+
+        if (title.isEmpty() || years.isEmpty() || description.isEmpty()) {
+            Toast.makeText(this, "Please fill all fields", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        LessonService service = RetrofitClient.getRetrofitInstance().create(LessonService.class);
+        Call<ApiResponse> call = service.addLesson(
+                "1",
+                subject,
+                title,
+                years,
+                description,
+                imageUri.toString(),
+                videoUri.toString()
+        );
+
+        call.enqueue(new Callback<ApiResponse>() {
+            @Override
+            public void onResponse(Call<ApiResponse> call, Response<ApiResponse> response) {
+                if (response.isSuccessful() && response.body() != null) {
+                    if (response.body().getStatus().equals("success")) {
+                        Toast.makeText(adminAddLesson.this, "Lesson Added!", Toast.LENGTH_SHORT).show();
+                        finish();
+                    } else {
+                        Toast.makeText(adminAddLesson.this, "Failed: " + response.body().getMessage(), Toast.LENGTH_SHORT).show();
+                    }
+                } else {
+                    Toast.makeText(adminAddLesson.this, "Server Error", Toast.LENGTH_SHORT).show();
+                }
             }
-            if (videoUri == null) {
-                Toast.makeText(this, "Please pick a lesson video", Toast.LENGTH_SHORT).show();
-                return;
+
+            @Override
+            public void onFailure(Call<ApiResponse> call, Throwable t) {
+                Toast.makeText(adminAddLesson.this, "Error: " + t.getMessage(), Toast.LENGTH_SHORT).show();
             }
-
-            // DI SINI: Anda akan simpan semua data, termasuk imageUri.toString() dan videoUri.toString()
-            // Contoh: Lesson newLesson = new Lesson(..., ..., videoUri.toString(), imageUri.toString());
-            //         databaseReference.push().setValue(newLesson);
-
-            Toast.makeText(this, "Lesson Added!", Toast.LENGTH_SHORT).show();
-            finish();
         });
     }
 
     public void goBack(View view) {
         finish();
     }
-    public void openadminMenu(View view)
-    {
-        int id = view.getId();
-        if (id == R.id.adminnavProfile) {
-            startActivity(new Intent(this, AdminProfile.class));
-        } else if (id == R.id.adminnavHome) {
-            startActivity(new Intent(this, adminDashboard.class));
-        } else if (id == R.id.adminnavScores) {
-            startActivity(new Intent(this, AdminReportActivity.class));
-        }
-    }
 }
+
+
