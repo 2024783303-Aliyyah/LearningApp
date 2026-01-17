@@ -89,10 +89,9 @@ public class LoginActivity extends AppCompatActivity {
         // get retrofit service
         UserService userService = ApiUtils.getUserService();
 
-        // prepare API call
+        // API call
         Call<User> call = userService.login(username, password);
 
-        // execute API
         call.enqueue(new Callback<User>() {
 
             @Override
@@ -108,16 +107,31 @@ public class LoginActivity extends AppCompatActivity {
 
                     if (user != null && user.getToken() != null) {
 
+                        // DEBUG ROLE
+                        Log.d("LOGIN_DEBUG", "ROLE = " + user.getRole());
+
                         Toast.makeText(LoginActivity.this,
                                 "Login successful",
                                 Toast.LENGTH_SHORT).show();
 
-                        // go to dashboard
-                        Intent intent = new Intent(
-                                LoginActivity.this,
-                                StudentDashboardActivity.class);
+                        Intent intent;
+
+                        // ROLE CHECK
+                        if ("admin".equalsIgnoreCase(user.getRole())) {
+                            // ADMIN
+                            intent = new Intent(
+                                    LoginActivity.this,
+                                    adminDashboard.class);
+                        } else {
+                            // STUDENT (default)
+                            intent = new Intent(
+                                    LoginActivity.this,
+                                    StudentDashboardActivity.class);
+                        }
+
                         startActivity(intent);
                         finish();
+
                     } else {
                         Toast.makeText(LoginActivity.this,
                                 "Login error",
@@ -125,7 +139,7 @@ public class LoginActivity extends AppCompatActivity {
                     }
 
                 } else {
-                    // login failed (401 etc)
+                    // login failed (401, 403, etc)
                     try {
                         String errorBody =
                                 response.errorBody().string();
@@ -163,3 +177,4 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 }
+
