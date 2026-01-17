@@ -3,29 +3,22 @@ package com.example.microlearningquizapp;
 
 import android.content.Context;
 import android.graphics.Canvas;
-import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.pdf.PdfDocument;
-import android.os.Bundle;
 import android.os.CancellationSignal;
-import android.os.ParcelFileDescriptor;
-import android.print.PageRange;
 import android.print.PrintAttributes;
 import android.print.PrintDocumentAdapter;
 import android.print.PrintDocumentInfo;
 
-import java.io.FileOutputStream;
-import java.io.IOException;
+import com.example.microlearningquizapp.model.LessonAdmin;
+
 import java.util.ArrayList;
 
 public class LessonPrintAdapter extends PrintDocumentAdapter {
 
     private Context context;
     private ArrayList<LessonAdmin> lessonList;
-    private int pageHeight;
-    private int pageWidth;
-    private PdfDocument myPdfDocument;
-    private int totalpages = 1; // Andaikan semua muat dalam satu mukasurat pada mulanya
+    private PdfDocument pdfDocument;
 
     public LessonPrintAdapter(Context context, ArrayList<LessonAdmin> lessonList) {
         this.context = context;
@@ -33,92 +26,75 @@ public class LessonPrintAdapter extends PrintDocumentAdapter {
     }
 
     @Override
-    public void onLayout(PrintAttributes oldAttributes, PrintAttributes newAttributes, CancellationSignal cancellationSignal, LayoutResultCallback callback, Bundle extras) {
-        // Simpan atribut cetakan
-        myPdfDocument = new PdfDocument();
-        pageHeight = newAttributes.getMediaSize().getHeightMils() * 72 / 1000;
-        pageWidth = newAttributes.getMediaSize().getWidthMils() * 72 / 1000;
+    public void onLayout(PrintAttributes oldAttributes, PrintAttributes newAttributes,
+                         CancellationSignal cancellationSignal,
+                         LayoutResultCallback callback, android.os.Bundle extras) {
 
-        if (cancellationSignal.isCanceled()) {
-            callback.onLayoutCancelled();
-            return;
-        }
+        pdfDocument = new PdfDocument();
 
-        // Bina maklumat dokumen untuk dihantar ke print preview
-        PrintDocumentInfo.Builder builder = new PrintDocumentInfo
-                .Builder("lessons_report.pdf")
+        PrintDocumentInfo info = new PrintDocumentInfo
+                .Builder("lessons.pdf")
                 .setContentType(PrintDocumentInfo.CONTENT_TYPE_DOCUMENT)
-                .setPageCount(totalpages);
+                .setPageCount(PrintDocumentInfo.PAGE_COUNT_UNKNOWN)
+                .build();
 
-        PrintDocumentInfo info = builder.build();
         callback.onLayoutFinished(info, true);
     }
 
     @Override
-    public void onWrite(PageRange[] pageRanges, ParcelFileDescriptor destination, CancellationSignal cancellationSignal, WriteResultCallback callback) {
-        // Mula melukis kandungan ke halaman PDF
-        PdfDocument.PageInfo newPage = new PdfDocument.PageInfo.Builder(pageWidth, pageHeight, 1).create();
-        PdfDocument.Page page = myPdfDocument.startPage(newPage);
+    public void onWrite(android.print.PageRange[] pages,
+                        android.os.ParcelFileDescriptor destination,
+                        CancellationSignal cancellationSignal,
+                        WriteResultCallback callback) {
 
-        if (cancellationSignal.isCanceled()) {
-            callback.onWriteCancelled();
-            myPdfDocument.close();
-            myPdfDocument = null;
-            return;
-        }
-
-        // Lukis kandungan ke canvas
-        drawPage(page);
-
-        // Selesai melukis
-        myPdfDocument.finishPage(page);
-
-        // Tulis dokumen PDF ke fail destinasi
         try {
-            myPdfDocument.writeTo(new FileOutputStream(destination.getFileDescriptor()));
-        } catch (IOException e) {
-            callback.onWriteFailed(e.toString());
-            return;
+            int pageWidth = 595;
+            int pageHeight = 842;
+            int margin = 50;
+            int y = margin;
+
+            Paint paint = new Paint();
+            paint.setTextSize(12f);
+
+            int pageNumber = 1;
+            PdfDocument.PageInfo pageInfo = new PdfDocument.PageInfo.Builder(pageWidth, pageHeight, pageNumber).create();
+            PdfDocument.Page page = pdfDocument.startPage(pageInfo);
+            Canvas canvas = page.getCanvas();
+
+            for (LessonAdmin lesson : lessonList) {
+
+                if (y > pageHeight - margin) {
+                    pdfDocument.finishPage(page);
+                    pageNumber++;
+                    pageInfo = new PdfDocument.PageInfo.Builder(pageWidth, pageHeight, pageNumber).create();
+                    page = pdfDocument.startPage(pageInfo);
+                    canvas = page.getCanvas();
+                    y = margin;
+                }
+
+                canvas.drawText("Title: " + (lesson.getLesson_title() != null ? lesson.getLesson_title() : ""), margin, y, paint);
+                canvas.drawText("Subject: " + (lesson.getSubject() != null ? lesson.getSubject() : ""), margin, y + 20, paint);
+                canvas.drawText("Year: " + (lesson.getYear() != null ? lesson.getYear() : ""), margin, y + 40, paint);
+
+                y += 70;
+            }
+
+            pdfDocument.finishPage(page);
+            pdfDocument.writeTo(new java.io.FileOutputStream(destination.getFileDescriptor()));
+            callback.onWriteFinished(new android.print.PageRange[]{android.print.PageRange.ALL_PAGES});
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            callback.onWriteFailed(e.getMessage());
         } finally {
-            myPdfDocument.close();
-            myPdfDocument = null;
+            if (pdfDocument != null) {
+                pdfDocument.close();
+            }
         }
-
-        callback.onWriteFinished(pageRanges);
-    }
-
-    private void drawPage(PdfDocument.Page page) {
-        Canvas canvas = page.getCanvas();
-
-        // Tetapan untuk "brush" (Paint)
-        Paint titlePaint = new Paint();
-        titlePaint.setColor(Color.BLACK);
-        titlePaint.setTextSize(20);
-        titlePaint.setFakeBoldText(true);
-
-        Paint textPaint = new Paint();
-        textPaint.setColor(Color.BLACK);
-        textPaint.setTextSize(14);
-
-        int leftMargin = 54;
-        int topMargin = 54;
-        int currentY = topMargin;
-
-        // Lukis Tajuk
-        canvas.drawText("List of All Lessons", leftMargin, currentY, titlePaint);
-        currentY += 40;
-
-        // Lukis setiap item pelajaran
-        for (LessonAdmin lesson : lessonList) {
-            canvas.drawText("Title: " + lesson.getTitle(), leftMargin, currentY, textPaint);
-            currentY += 20;
-            canvas.drawText("Subject: " + lesson.getSubject() + " (" + lesson.getYear() + ")", leftMargin + 10, currentY, textPaint);
-            currentY += 30; // Ruang antara setiap pelajaran
-        }
-
-        // Lukis jumlah pelajaran di bahagian bawah
-        currentY += 40;
-        titlePaint.setTextSize(16);
-        canvas.drawText("Total Lessons: " + lessonList.size(), leftMargin, currentY, titlePaint);
     }
 }
+
+
+
+
+
