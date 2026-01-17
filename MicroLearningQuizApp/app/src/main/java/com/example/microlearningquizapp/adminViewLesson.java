@@ -1,17 +1,27 @@
+//File:adminViewLesson.java
 package com.example.microlearningquizapp;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
+import android.print.PrintManager;
 import android.widget.Button;
-import android.content.Context;
-import android.print.PrintManager; // <-- TAMBAH IMPORT
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.microlearningquizapp.model.LessonAdmin;
+import com.example.microlearningquizapp.remote.LessonService;
+import com.example.microlearningquizapp.remote.RetrofitClient;
+
 import java.util.ArrayList;
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class adminViewLesson extends AppCompatActivity {
 
@@ -30,62 +40,45 @@ public class adminViewLesson extends AppCompatActivity {
         btnAddLesson = findViewById(R.id.btnAddLesson);
         btnPrint = findViewById(R.id.btnPrint);
 
-        loadAllLessonsForAdmin();
-
+        lessonList = new ArrayList<>();
         adapter = new LessonAdapterAdmin(this, lessonList);
         rvLessons.setLayoutManager(new LinearLayoutManager(this));
         rvLessons.setAdapter(adapter);
 
+        loadAllLessonsForAdmin();
+
         btnAddLesson.setOnClickListener(v -> {
-            Intent intent = new Intent(adminViewLesson.this, adminAddLesson.class);
-            startActivity(intent);
+            startActivity(new Intent(adminViewLesson.this, adminAddLesson.class));
         });
 
         btnPrint.setOnClickListener(v -> {
-            doPrint();
+            PrintManager printManager = (PrintManager) getSystemService(Context.PRINT_SERVICE);
+            String jobName = getString(R.string.app_name) + " Document";
+            printManager.print(jobName, new LessonPrintAdapter(this, lessonList), null);
         });
     }
 
-    // FUNGSI BARU UNTUK MEMULAKAN PROSES CETAKAN
-    private void doPrint() {
-        // Dapatkan perkhidmatan PrintManager sistem
-        PrintManager printManager = (PrintManager) getSystemService(Context.PRINT_SERVICE);
-
-        String jobName = getString(R.string.app_name) + " Document";
-
-        // Mula proses cetakan dengan adapter yang telah kita cipta
-        printManager.print(jobName, new LessonPrintAdapter(this, lessonList), null);
-    }
-
     private void loadAllLessonsForAdmin() {
-        lessonList = new ArrayList<>();
+        LessonService service = RetrofitClient.getRetrofitInstance().create(LessonService.class);
+        service.getLessons().enqueue(new Callback<List<LessonAdmin>>() {
+            @Override
+            public void onResponse(Call<List<LessonAdmin>> call, Response<List<LessonAdmin>> response) {
+                if (response.isSuccessful() && response.body() != null) {
+                    lessonList.clear();
+                    lessonList.addAll(response.body());
+                    adapter.notifyDataSetChanged();
+                } else {
+                    Toast.makeText(adminViewLesson.this, "Failed to load lessons", Toast.LENGTH_SHORT).show();
+                }
+            }
 
-        // FIX: Added the 8th argument (an integer) to each constructor call.
-        // Assuming '0' is a suitable default value.
-        // Format: (id, title, subject, year, description, content, videoPath, someNumber)
-
-        lessonList.add(new LessonAdmin("math001", "Addition", "Mathematics", "Year 1", "Learn addition...", "Content here", "", 0));
-        lessonList.add(new LessonAdmin("math002", "Subtraction", "Mathematics", "Year 1", "Learn subtraction...", "Content here", "", 0));
-        lessonList.add(new LessonAdmin("sci001", "Living Things", "Science", "Year 2", "About living things...", "Content here", "", 0));
-        lessonList.add(new LessonAdmin("sci002", "The Solar System", "Science", "Year 3", "About planets...", "Content here", "", 0));
-        lessonList.add(new LessonAdmin("eng001", "Nouns", "English", "Year 1", "About nouns...", "Content here", "", 0));
-        lessonList.add(new LessonAdmin("eng002", "Verbs", "English", "Year 2", "About verbs...", "Content here", "", 0));
-    }
-
-    public void openadminMenu(View view)
-    {
-        int id = view.getId();
-        if (id == R.id.adminnavProfile) {
-            startActivity(new Intent(this, AdminProfile.class));
-        } else if (id == R.id.adminnavHome) {
-            startActivity(new Intent(this, adminDashboard.class));
-        } else if (id == R.id.adminnavScores) {
-            startActivity(new Intent(this, AdminReportActivity.class));
-        }
-    }
-
-    public void goBack (View view)
-    {
-        finish();
+            @Override
+            public void onFailure(Call<List<LessonAdmin>> call, Throwable t) {
+                Toast.makeText(adminViewLesson.this, "Error: " + t.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }
+
+
+
