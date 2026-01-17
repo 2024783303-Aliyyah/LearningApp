@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -13,8 +13,10 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.MicroLearningQuizApp">
-
-
+        <activity
+            android:name=".model.LessonAdmin"
+            android:exported="false" />
+        <activity android:name=".adminViewLesson" />
         <activity
             android:name=".AdminProfile"
             android:exported="false" />
@@ -37,10 +39,10 @@
             android:name=".quizzesmodules"
             android:exported="false" />
         <activity
-            android:name=".ViewLesson"
+            android:name=".adminEditLesson"
             android:exported="false" />
         <activity
-            android:name=".EditLesson"
+            android:name=".adminAddLesson"
             android:exported="false" />
         <activity
             android:name=".learningmodules"
