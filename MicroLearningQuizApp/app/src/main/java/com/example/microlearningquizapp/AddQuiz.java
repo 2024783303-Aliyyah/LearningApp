@@ -1,3 +1,4 @@
+
 package com.example.microlearningquizapp;
 
 import android.content.Intent;
@@ -24,6 +25,7 @@ public class AddQuiz extends AppCompatActivity {
             " 3 + 1 ?",
             " 2 + 2 ?"
     };
+
     private final int[] correctAnswers = {5, 5, 4, 4};
 
     @Override
